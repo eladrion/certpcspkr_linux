@@ -14,7 +14,7 @@ The only functions which are not synthesised, are
 Those functions are called by the synthesised code using tooling from [VeriFFI](https://github.com/CertiCoq/VeriFFI).
 The synthesised code itself can be found in the folder `synthesised` together with a README.md that
 describes how the code was synthesised.
-The formalisation is not yet published but will be as soon as possible.
+The formalisation is not yet published but will be when it is presentable.
 
 # Aims and Limitations
 
@@ -71,27 +71,28 @@ make CERTICOQ_PATH=../../CertiCoq_kmod VERIFFI_PATH=../../VeriFFI_contrib/
 ```
 
 which produces the `certpcspkr.ko` in the folder `certpcspkr/src`.
-The variable `CERTICOQ_PATH` is important here since the compilation includes copying the CertiCoq garbage collection
+The variables `CERTICOQ_PATH` and `VERIFFI_PATH` are important here since the compilation includes copying the CertiCoq garbage collection
 and other C files.
 
-# Testing in QEMU:
+# Testing in QEMU
 
 If no native PC speaker is available on the machine, the driver can also be tested in QEMU.
-To accomplish this, a virtual machine has to be created. When having a VM `test_vm.qcow2` with Ubuntu 22.04, for example,
-the virtual machine should be started with the command
+To accomplish this, a virtual machine has to be created. Alternatively, the prepared VM can be used.
+This one can be found on [Zenodo](https://doi.org/10.5281/zenodo.10693554).
 
-> qemu-system-x86_64 -enable-kvm -m 8096 -drive file=test_vm.qcow2,if=virtio -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0
+## Starting QEMU
 
-This starts the VM with 8 GB of RAM with KVM support and additionally defines that the guest PC Speaker shall be
+When having a VM `test_vm.qcow2` with Ubuntu 22.04, for example, the virtual machine should be started with the command
+
+> qemu-system-x86_64 -enable-kvm -smp 4 -m 8G -drive file=test_vm.qcow2,if=virtio -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0
+
+This starts the VM with 8 GB of RAM, 4 cores and KVM support and additionally defines that the guest PC Speaker shall be
 redirected to snd0 which is the PulseAudio subsystem of the host.
 
-After starting the machine, the driver and CertiCoq should then be downloaded and built as described above.
-Testing inside the virtual machine
+## Building and testing the driver
 
-There is a prepared virtual machine (to be linked ASAP) for QEMU which includes the cloned repositories in the directory `~/KernelModuleSynthesis`.
-To test it, it has to be downloaded and run with QEMU using
-
-> qemu-system-x86_64 -enable-kvm -m 8096 -drive file=CertPCSpkrVM.qcow,if=virtio -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0
+After starting the machine, the driver, CertiCoq and VeriFFI should then be downloaded and built as described above.
+In the prepared VM from Zenodo, this is already done.
 
 In a shell, type:
 
@@ -101,7 +102,7 @@ cd certpcspkr_linux/src
 make CERTICOQ_PATH=../../CertiCoq_kmod VERIFFI_PATH=../../VeriFFI_contrib/
 ```
 
-Then, the driver can be tested as follows.
+Then, the driver can be tested as on native hardware.
 
 # Testing on Native Hardware
 

@@ -39,7 +39,7 @@ See Building for details.
 
 After cloning this repository locally with
 
-> git clone https://gitup.uni-potsdam.de/mafrank_public/certpcspkr_linux.git ./certpcspkr
+> git clone https://github.com/eladrion/certpcspkr_linux ./certpcspkr
 
 additionally the CertiCoq fork has to be cloned with
 

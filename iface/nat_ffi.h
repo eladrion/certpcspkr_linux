@@ -23,6 +23,4 @@ value nat_shiftl(struct thread_info *tinfo, value x, value y);
 // Checking if x is in interval [min, max]
 value nat_in_interval(struct thread_info *tinfo, value x, value min, value max);
 
-value compute_duration(struct thread_info *tinfo, value x);
-
 #endif // PCSPKR_NAT_FFI_H

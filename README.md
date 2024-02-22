@@ -19,9 +19,9 @@ The formalisation is not yet published but will be as soon as possible.
 # Aims and Limitations
 
 The aim of this project is to show that it is in principle possible to compile working Linux
-Device Drivers from code synthesised by CertiCoq.
-However, this project is still quite experimental. For example emitting a tone with a frequency
-above 511 Hz makes the system freeze. We are currently inspecting the cause of that freeze.
+Device Drivers from code synthesised by CertiCoq. However, this project is still quite experimental
+and the performance of the synthesised code is weaker than manually written code. 
+But it supports the same functionality as the original driver.
 
 The driver is not signed. Thus, when SecureBoot is activated, it will not be possible to load the driver.
 This is also a reason for recommending testing in a virtual machine under QEMU.
@@ -114,5 +114,5 @@ Then, wenn executing
 > sudo dmesg
 
 The log messages should include the ones from the driver stating that it was loaded.
-Executing `beep` or `beep -f 500` should then make the system beep.
-Remember the limitation of the beep frequency value.
+Executing `beep` or `beep -f 500` should then make the system beep. You can even play the
+imperial march on it.

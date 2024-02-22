@@ -15,8 +15,6 @@
 #include <int6x_nat.h>
 // Include primitive operations on int63 from CertiCoq
 #include <prim_int63.h>
-// Include the call to pit_tick_rate.
-#include <pit.h>
 
 inline value nat_div(struct thread_info *tinfo, value x, value y)
 {
@@ -74,12 +72,5 @@ inline value nat_in_interval(struct thread_info *tinfo, value x, value min, valu
 
   // Call the primitive interval check, 1 is true, 3 is false
   return prim_int63_in_interval(val_x, val_min, val_max);
-}
-
-value compute_duration(struct thread_info *tinfo, value x)
-{
-  uint64_t ret_val = pit_tick_rate() / int64_from_nat(x);
-
-  return int64_to_nat(tinfo, ret_val);
 }
 

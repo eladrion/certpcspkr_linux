@@ -7,102 +7,88 @@
 #include "regio_ffi.h"
 #include "pcspkr_evt_linux.h"
 extern struct thread_info *make_tinfo(void);
-extern value f_case_known_131(struct thread_info *, value);
-extern value f_case_130(struct thread_info *, value, value);
-extern value iter_uncurried_known_129(struct thread_info *, value, value);
 extern value f_case_known_128(struct thread_info *, value);
-extern value f_case_known_127(struct thread_info *, value, value, value);
-extern value f_case_known_126(struct thread_info *, value);
-extern value f_case_known_125(struct thread_info *, value, value);
+extern value f_case_127(struct thread_info *, value, value);
+extern value f_case_known_126(struct thread_info *, value, value, value);
+extern value f_case_known_125(struct thread_info *, value);
 extern value f_case_known_124(struct thread_info *, value);
 extern value f_case_known_123(struct thread_info *, value, value);
 extern value f_case_known_122(struct thread_info *, value, value);
-extern value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_121(struct thread_info *, value, value, value, value);
-extern value y_wrapper_120(struct thread_info *, value, value);
+extern value f_case_known_121(struct thread_info *, value, value);
+extern value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_120(struct thread_info *, value, value, value, value);
 extern value y_wrapper_119(struct thread_info *, value, value);
-extern value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_118(struct thread_info *, value, value);
-extern value sub_uncurried_known_117(struct thread_info *, value, value);
-extern value add_uncurried_known_116(struct thread_info *, value, value);
+extern value y_wrapper_118(struct thread_info *, value, value);
+extern value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_117(struct thread_info *, value, value);
+extern value sub_uncurried_known_116(struct thread_info *, value, value);
 extern value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *, value, value);
 extern value eqb_uncurried_known_114(struct thread_info *, value, value);
 extern value eqb_uncurried_known_113(struct thread_info *, value, value);
 extern value body(struct thread_info *);
-value f_case_known_131(struct thread_info *, value);
-value f_case_130(struct thread_info *, value, value);
-value iter_uncurried_known_129(struct thread_info *, value, value);
 value f_case_known_128(struct thread_info *, value);
-value f_case_known_127(struct thread_info *, value, value, value);
-value f_case_known_126(struct thread_info *, value);
-value f_case_known_125(struct thread_info *, value, value);
+value f_case_127(struct thread_info *, value, value);
+value f_case_known_126(struct thread_info *, value, value, value);
+value f_case_known_125(struct thread_info *, value);
 value f_case_known_124(struct thread_info *, value);
 value f_case_known_123(struct thread_info *, value, value);
 value f_case_known_122(struct thread_info *, value, value);
-value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_121(struct thread_info *, value, value, value, value);
-value y_wrapper_120(struct thread_info *, value, value);
+value f_case_known_121(struct thread_info *, value, value);
+value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_120(struct thread_info *, value, value, value, value);
 value y_wrapper_119(struct thread_info *, value, value);
-value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_118(struct thread_info *, value, value);
-value sub_uncurried_known_117(struct thread_info *, value, value);
-value add_uncurried_known_116(struct thread_info *, value, value);
+value y_wrapper_118(struct thread_info *, value, value);
+value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_117(struct thread_info *, value, value);
+value sub_uncurried_known_116(struct thread_info *, value, value);
 value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *, value, value);
 value eqb_uncurried_known_114(struct thread_info *, value, value);
 value eqb_uncurried_known_113(struct thread_info *, value, value);
 value body(struct thread_info *);
-unsigned long long const body_info_1372[2] = { 880LL, 0LL, };
+unsigned long long const body_info_1339[2] = { 880LL, 0LL, };
 
-unsigned long long const eqb_uncurried_known_info_1371[4] = { 0LL, 2LL, 0LL,
+unsigned long long const eqb_uncurried_known_info_1338[4] = { 0LL, 2LL, 0LL,
   1LL, };
 
-unsigned long long const eqb_uncurried_known_info_1370[4] = { 0LL, 2LL, 0LL,
+unsigned long long const eqb_uncurried_known_info_1337[4] = { 0LL, 2LL, 0LL,
   1LL, };
 
-unsigned long long const CoqdZArithdBinIntDefdZdeqb_uncurried_known_info_1369[4] = {
+unsigned long long const CoqdZArithdBinIntDefdZdeqb_uncurried_known_info_1336[4] = {
   0LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const add_uncurried_known_info_1368[4] = { 0LL, 2LL, 0LL,
+unsigned long long const sub_uncurried_known_info_1335[4] = { 0LL, 2LL, 0LL,
   1LL, };
 
-unsigned long long const sub_uncurried_known_info_1367[4] = { 0LL, 2LL, 0LL,
-  1LL, };
-
-unsigned long long const DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_info_1366[4] = {
+unsigned long long const DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_info_1334[4] = {
   9LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const y_wrapper_info_1365[4] = { 0LL, 2LL, 0LL, 1LL, };
+unsigned long long const y_wrapper_info_1333[4] = { 0LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const y_wrapper_info_1364[4] = { 7LL, 2LL, 0LL, 1LL, };
+unsigned long long const y_wrapper_info_1332[4] = { 7LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_info_1363[6] = {
+unsigned long long const DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_info_1331[6] = {
   2LL, 4LL, 0LL, 1LL, 2LL, 3LL, };
 
-unsigned long long const f_case_known_info_1362[4] = { 2LL, 2LL, 0LL, 1LL, };
+unsigned long long const f_case_known_info_1330[4] = { 4LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const f_case_known_info_1361[4] = { 20LL, 2LL, 0LL, 1LL,
+unsigned long long const f_case_known_info_1329[4] = { 2LL, 2LL, 0LL, 1LL, };
+
+unsigned long long const f_case_known_info_1328[4] = { 20LL, 2LL, 0LL, 1LL,
   };
 
-unsigned long long const f_case_known_info_1360[3] = { 0LL, 1LL, 0LL, };
+unsigned long long const f_case_known_info_1327[3] = { 0LL, 1LL, 0LL, };
 
-unsigned long long const f_case_known_info_1359[4] = { 4LL, 2LL, 0LL, 1LL, };
+unsigned long long const f_case_known_info_1326[3] = { 0LL, 1LL, 0LL, };
 
-unsigned long long const f_case_known_info_1358[3] = { 0LL, 1LL, 0LL, };
-
-unsigned long long const f_case_known_info_1357[5] = { 0LL, 3LL, 0LL, 1LL,
+unsigned long long const f_case_known_info_1325[5] = { 0LL, 3LL, 0LL, 1LL,
   2LL, };
 
-unsigned long long const f_case_known_info_1356[3] = { 2LL, 1LL, 0LL, };
+unsigned long long const f_case_info_1324[4] = { 0LL, 2LL, 0LL, 1LL, };
 
-unsigned long long const iter_uncurried_known_info_1355[4] = { 0LL, 2LL, 0LL,
-  1LL, };
+unsigned long long const f_case_known_info_1323[3] = { 0LL, 1LL, 0LL, };
 
-unsigned long long const f_case_info_1354[4] = { 0LL, 2LL, 0LL, 1LL, };
-
-unsigned long long const f_case_known_info_1353[3] = { 0LL, 1LL, 0LL, };
-
-value f_case_known_131(struct thread_info *$tinfo, value $s_891)
+value f_case_known_128(struct thread_info *$tinfo, value $s_861)
 {
   struct stack_frame frame;
   value root[1];
-  register value $y_892;
-  register value $y_893;
+  register value $y_862;
+  register value $y_863;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -114,39 +100,69 @@ value f_case_known_131(struct thread_info *$tinfo, value $s_891)
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($s_891 & 1) == 0) {
-    switch (*((value *) $s_891 + -1LL) & 255LL) {
+  if (($s_861 & 1) == 0) {
+    switch (*((value *) $s_861 + -1LL) & 255LL) {
       
     }
   } else {
-    switch ($s_891 >> 1LL) {
+    switch ($s_861 >> 1LL) {
       case 0:
-        $y_892 = 3LL;
+        $y_862 = 3LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_892;
+        return $y_862;
         break;
       default:
-        $y_893 = 1LL;
+        $y_863 = 1LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_893;
+        return $y_863;
         break;
       
     }
   }
 }
 
-value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
+value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
 {
   struct stack_frame frame;
   value root[4];
-  register value $count_325;
+  register value $count_295;
+  register value $y_297;
+  register value $y_299;
+  register value $y_300;
+  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_301;
+  register value $prim_302;
+  register value $y_303;
+  register value $y_304;
+  register value $y_305;
+  register value $y_306;
+  register value $y_307;
+  register value $y_308;
+  register value $y_309;
+  register value $y_310;
+  register value $y_311;
+  register value $prim_312;
+  register value $y_313;
+  register value $y_314;
+  register value $y_315;
+  register value $y_316;
+  register value $y_317;
+  register value $y_318;
+  register value $y_319;
+  register value $y_320;
+  register value $y_321;
+  register value $y_322;
+  register value $y_323;
+  register value $y_324;
+  register value $y_325;
+  register value $y_326;
   register value $y_327;
+  register value $y_328;
   register value $y_329;
   register value $y_330;
-  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_331;
-  register value $prim_332;
+  register value $y_331;
+  register value $y_332;
   register value $y_333;
   register value $y_334;
   register value $y_335;
@@ -156,7 +172,7 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
   register value $y_339;
   register value $y_340;
   register value $y_341;
-  register value $prim_342;
+  register value $y_342;
   register value $y_343;
   register value $y_344;
   register value $y_345;
@@ -383,67 +399,67 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
   register value $y_566;
   register value $y_567;
   register value $y_568;
-  register value $y_569;
-  register value $y_570;
-  register value $y_571;
-  register value $y_572;
+  register value $prim_569;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_570;
+  register value $DDFV_FWdOSdRegistersdCmd_proj_571;
+  register value $prim_572;
   register value $y_573;
-  register value $y_574;
   register value $y_575;
-  register value $y_576;
-  register value $y_577;
+  register value $DDFV_FWdOSdRegistersdData2_proj_576;
+  register value $prim_577;
   register value $y_578;
-  register value $y_579;
   register value $y_580;
-  register value $y_581;
-  register value $y_582;
+  register value $DDFV_FWdOSdRegistersdData2_proj_581;
+  register value $prim_582;
   register value $y_583;
-  register value $y_584;
   register value $y_585;
-  register value $y_586;
-  register value $y_587;
+  register value $DDFV_FWdOSdRegistersdPc_spk_proj_586;
+  register value $prim_587;
   register value $y_588;
   register value $y_589;
   register value $y_590;
   register value $y_591;
-  register value $y_592;
-  register value $y_593;
-  register value $y_594;
+  register value $prim_592;
+  register value $DDFV_FWdOSdRegistersdPc_spk_proj_593;
+  register value $prim_594;
   register value $y_595;
   register value $y_596;
   register value $y_597;
   register value $y_598;
-  register value $prim_599;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_600;
-  register value $DDFV_FWdOSdRegistersdCmd_proj_601;
+  register value $y_599;
+  register value $y_600;
+  register value $DDFV_FWdOSdRegistersdPc_spk_proj_601;
   register value $prim_602;
   register value $y_603;
+  register value $y_604;
   register value $y_605;
-  register value $DDFV_FWdOSdRegistersdData2_proj_606;
-  register value $prim_607;
+  register value $y_606;
+  register value $y_607;
   register value $y_608;
+  register value $y_609;
   register value $y_610;
-  register value $DDFV_FWdOSdRegistersdData2_proj_611;
-  register value $prim_612;
+  register value $y_611;
+  register value $y_612;
   register value $y_613;
+  register value $y_614;
   register value $y_615;
-  register value $DDFV_FWdOSdRegistersdPc_spk_proj_616;
-  register value $prim_617;
+  register value $y_616;
+  register value $y_617;
   register value $y_618;
   register value $y_619;
   register value $y_620;
   register value $y_621;
-  register value $prim_622;
-  register value $DDFV_FWdOSdRegistersdPc_spk_proj_623;
-  register value $prim_624;
+  register value $y_622;
+  register value $y_623;
+  register value $y_624;
   register value $y_625;
   register value $y_626;
   register value $y_627;
   register value $y_628;
   register value $y_629;
   register value $y_630;
-  register value $DDFV_FWdOSdRegistersdPc_spk_proj_631;
-  register value $prim_632;
+  register value $y_631;
+  register value $y_632;
   register value $y_633;
   register value $y_634;
   register value $y_635;
@@ -667,40 +683,10 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
   register value $y_853;
   register value $y_854;
   register value $y_855;
-  register value $y_856;
-  register value $y_857;
-  register value $y_858;
-  register value $y_859;
-  register value $y_860;
-  register value $y_861;
-  register value $y_862;
-  register value $y_863;
-  register value $y_864;
-  register value $y_865;
-  register value $y_866;
-  register value $y_867;
-  register value $y_868;
-  register value $y_869;
-  register value $y_870;
-  register value $y_871;
-  register value $y_872;
-  register value $y_873;
-  register value $y_874;
-  register value $y_875;
-  register value $y_876;
-  register value $y_877;
-  register value $y_878;
-  register value $y_879;
-  register value $y_880;
-  register value $y_881;
-  register value $y_882;
-  register value $y_883;
-  register value $y_884;
-  register value $y_885;
-  register value $prim_886;
-  register value $DDFV_FWdOSdRegistersdPc_spk_proj_887;
-  register value $prim_888;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_889;
+  register value $prim_856;
+  register value $DDFV_FWdOSdRegistersdPc_spk_proj_857;
+  register value $prim_858;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_859;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -712,84 +698,220 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($s_324 & 1) == 0) {
-    switch (*((value *) $s_324 + -1LL) & 255LL) {
+  if (($s_294 & 1) == 0) {
+    switch (*((value *) $s_294 + -1LL) & 255LL) {
       default:
-        $count_325 = *((value *) $s_324 + 0LL);
-        $y_327 = 1LL;
+        $count_295 = *((value *) $s_294 + 0LL);
+        $y_297 = 1LL;
         $args = (*$tinfo).args;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        *(root + 1LL) = $count_325;
-        *(root + 0LL) = $env_323;
+        *(root + 1LL) = $count_295;
+        *(root + 0LL) = $env_293;
         frame.next = root + 2LL;
         (*$tinfo).fp = &frame;
-        $y_329 =
+        $y_299 =
           ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
-          ($tinfo, $y_327, $count_325);
+          ($tinfo, $y_297, $count_295);
         $alloc = (*$tinfo).alloc;
         $limit = (*$tinfo).limit;
-        $count_325 = *(root + 1LL);
-        $env_323 = *(root + 0LL);
+        $count_295 = *(root + 1LL);
+        $env_293 = *(root + 0LL);
         (*$tinfo).fp = frame.prev;
         $args = (*$tinfo).args;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        *(root + 1LL) = $count_325;
-        *(root + 0LL) = $env_323;
+        *(root + 1LL) = $count_295;
+        *(root + 0LL) = $env_293;
         frame.next = root + 2LL;
         (*$tinfo).fp = &frame;
-        $y_330 =
-          ((value (*)(struct thread_info *, value)) f_case_known_131)
-          ($tinfo, $y_329);
+        $y_300 =
+          ((value (*)(struct thread_info *, value)) f_case_known_128)
+          ($tinfo, $y_299);
         $alloc = (*$tinfo).alloc;
         $limit = (*$tinfo).limit;
         if (!(526LL <= $limit - $alloc)) {
-          *(root + 2LL) = $y_330;
+          *(root + 2LL) = $y_300;
           frame.next = root + 3LL;
           (*$tinfo).nalloc = 526LL;
           garbage_collect($tinfo);
-          $y_330 = *(root + 2LL);
+          $y_300 = *(root + 2LL);
           $alloc = (*$tinfo).alloc;
           $limit = (*$tinfo).limit;
         }
-        $count_325 = *(root + 1LL);
-        $env_323 = *(root + 0LL);
+        $count_295 = *(root + 1LL);
+        $env_293 = *(root + 0LL);
         (*$tinfo).fp = frame.prev;
-        if (($y_330 & 1) == 0) {
-          switch (*((value *) $y_330 + -1LL) & 255LL) {
+        if (($y_300 & 1) == 0) {
+          switch (*((value *) $y_300 + -1LL) & 255LL) {
             
           }
         } else {
-          switch ($y_330 >> 1LL) {
+          switch ($y_300 >> 1LL) {
             case 0:
-              $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_331 =
-                *((value *) $env_323 + 4LL);
+              $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_301 =
+                *((value *) $env_293 + 4LL);
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 1LL) = $count_325;
-              *(root + 0LL) = $env_323;
+              *(root + 1LL) = $count_295;
+              *(root + 0LL) = $env_293;
               frame.next = root + 2LL;
               (*$tinfo).fp = &frame;
-              $prim_332 =
+              $prim_302 =
                 ((value (*)(struct thread_info *, value, value)) nat_land)
-                ($tinfo, $count_325,
-                 $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_331);
+                ($tinfo, $count_295,
+                 $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_301);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               if (!(526LL <= $limit - $alloc)) {
-                *(root + 2LL) = $prim_332;
+                *(root + 2LL) = $prim_302;
                 frame.next = root + 3LL;
                 (*$tinfo).nalloc = 526LL;
                 garbage_collect($tinfo);
-                $prim_332 = *(root + 2LL);
+                $prim_302 = *(root + 2LL);
                 $alloc = (*$tinfo).alloc;
                 $limit = (*$tinfo).limit;
               }
-              $count_325 = *(root + 1LL);
-              $env_323 = *(root + 0LL);
+              $count_295 = *(root + 1LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              $y_333 = 1LL;
+              $y_303 = 1LL;
+              $y_304 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_304 + -1LL) = 1024LL;
+              *((value *) $y_304 + 0LL) = $y_303;
+              $y_305 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_305 + -1LL) = 1024LL;
+              *((value *) $y_305 + 0LL) = $y_304;
+              $y_306 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_306 + -1LL) = 1024LL;
+              *((value *) $y_306 + 0LL) = $y_305;
+              $y_307 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_307 + -1LL) = 1024LL;
+              *((value *) $y_307 + 0LL) = $y_306;
+              $y_308 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_308 + -1LL) = 1024LL;
+              *((value *) $y_308 + 0LL) = $y_307;
+              $y_309 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_309 + -1LL) = 1024LL;
+              *((value *) $y_309 + 0LL) = $y_308;
+              $y_310 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_310 + -1LL) = 1024LL;
+              *((value *) $y_310 + 0LL) = $y_309;
+              $y_311 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_311 + -1LL) = 1024LL;
+              *((value *) $y_311 + 0LL) = $y_310;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              *(root + 1LL) = $prim_302;
+              *(root + 0LL) = $env_293;
+              frame.next = root + 2LL;
+              (*$tinfo).fp = &frame;
+              $prim_312 =
+                ((value (*)(struct thread_info *, value, value)) nat_shiftr)
+                ($tinfo, $count_295, $y_311);
+              $alloc = (*$tinfo).alloc;
+              $limit = (*$tinfo).limit;
+              if (!(510LL <= $limit - $alloc)) {
+                *(root + 2LL) = $prim_312;
+                frame.next = root + 3LL;
+                (*$tinfo).nalloc = 510LL;
+                garbage_collect($tinfo);
+                $prim_312 = *(root + 2LL);
+                $alloc = (*$tinfo).alloc;
+                $limit = (*$tinfo).limit;
+              }
+              $prim_302 = *(root + 1LL);
+              $env_293 = *(root + 0LL);
+              (*$tinfo).fp = frame.prev;
+              $y_313 = 1LL;
+              $y_314 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_314 + -1LL) = 1024LL;
+              *((value *) $y_314 + 0LL) = $y_313;
+              $y_315 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_315 + -1LL) = 1024LL;
+              *((value *) $y_315 + 0LL) = $y_314;
+              $y_316 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_316 + -1LL) = 1024LL;
+              *((value *) $y_316 + 0LL) = $y_315;
+              $y_317 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_317 + -1LL) = 1024LL;
+              *((value *) $y_317 + 0LL) = $y_316;
+              $y_318 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_318 + -1LL) = 1024LL;
+              *((value *) $y_318 + 0LL) = $y_317;
+              $y_319 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_319 + -1LL) = 1024LL;
+              *((value *) $y_319 + 0LL) = $y_318;
+              $y_320 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_320 + -1LL) = 1024LL;
+              *((value *) $y_320 + 0LL) = $y_319;
+              $y_321 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_321 + -1LL) = 1024LL;
+              *((value *) $y_321 + 0LL) = $y_320;
+              $y_322 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_322 + -1LL) = 1024LL;
+              *((value *) $y_322 + 0LL) = $y_321;
+              $y_323 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_323 + -1LL) = 1024LL;
+              *((value *) $y_323 + 0LL) = $y_322;
+              $y_324 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_324 + -1LL) = 1024LL;
+              *((value *) $y_324 + 0LL) = $y_323;
+              $y_325 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_325 + -1LL) = 1024LL;
+              *((value *) $y_325 + 0LL) = $y_324;
+              $y_326 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_326 + -1LL) = 1024LL;
+              *((value *) $y_326 + 0LL) = $y_325;
+              $y_327 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_327 + -1LL) = 1024LL;
+              *((value *) $y_327 + 0LL) = $y_326;
+              $y_328 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_328 + -1LL) = 1024LL;
+              *((value *) $y_328 + 0LL) = $y_327;
+              $y_329 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_329 + -1LL) = 1024LL;
+              *((value *) $y_329 + 0LL) = $y_328;
+              $y_330 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_330 + -1LL) = 1024LL;
+              *((value *) $y_330 + 0LL) = $y_329;
+              $y_331 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_331 + -1LL) = 1024LL;
+              *((value *) $y_331 + 0LL) = $y_330;
+              $y_332 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_332 + -1LL) = 1024LL;
+              *((value *) $y_332 + 0LL) = $y_331;
+              $y_333 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_333 + -1LL) = 1024LL;
+              *((value *) $y_333 + 0LL) = $y_332;
               $y_334 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
               *((value *) $y_334 + -1LL) = 1024LL;
@@ -822,30 +944,14 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
               $alloc = $alloc + 2LL;
               *((value *) $y_341 + -1LL) = 1024LL;
               *((value *) $y_341 + 0LL) = $y_340;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              *(root + 1LL) = $prim_332;
-              *(root + 0LL) = $env_323;
-              frame.next = root + 2LL;
-              (*$tinfo).fp = &frame;
-              $prim_342 =
-                ((value (*)(struct thread_info *, value, value)) nat_shiftr)
-                ($tinfo, $count_325, $y_341);
-              $alloc = (*$tinfo).alloc;
-              $limit = (*$tinfo).limit;
-              if (!(510LL <= $limit - $alloc)) {
-                *(root + 2LL) = $prim_342;
-                frame.next = root + 3LL;
-                (*$tinfo).nalloc = 510LL;
-                garbage_collect($tinfo);
-                $prim_342 = *(root + 2LL);
-                $alloc = (*$tinfo).alloc;
-                $limit = (*$tinfo).limit;
-              }
-              $prim_332 = *(root + 1LL);
-              $env_323 = *(root + 0LL);
-              (*$tinfo).fp = frame.prev;
-              $y_343 = 1LL;
+              $y_342 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_342 + -1LL) = 1024LL;
+              *((value *) $y_342 + 0LL) = $y_341;
+              $y_343 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_343 + -1LL) = 1024LL;
+              *((value *) $y_343 + 0LL) = $y_342;
               $y_344 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
               *((value *) $y_344 + -1LL) = 1024LL;
@@ -1746,429 +1852,429 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
               $alloc = $alloc + 2LL;
               *((value *) $y_568 + -1LL) = 1024LL;
               *((value *) $y_568 + 0LL) = $y_567;
-              $y_569 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_569 + -1LL) = 1024LL;
-              *((value *) $y_569 + 0LL) = $y_568;
-              $y_570 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_570 + -1LL) = 1024LL;
-              *((value *) $y_570 + 0LL) = $y_569;
-              $y_571 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_571 + -1LL) = 1024LL;
-              *((value *) $y_571 + 0LL) = $y_570;
-              $y_572 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_572 + -1LL) = 1024LL;
-              *((value *) $y_572 + 0LL) = $y_571;
-              $y_573 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_573 + -1LL) = 1024LL;
-              *((value *) $y_573 + 0LL) = $y_572;
-              $y_574 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_574 + -1LL) = 1024LL;
-              *((value *) $y_574 + 0LL) = $y_573;
-              $y_575 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_575 + -1LL) = 1024LL;
-              *((value *) $y_575 + 0LL) = $y_574;
-              $y_576 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_576 + -1LL) = 1024LL;
-              *((value *) $y_576 + 0LL) = $y_575;
-              $y_577 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_577 + -1LL) = 1024LL;
-              *((value *) $y_577 + 0LL) = $y_576;
-              $y_578 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_578 + -1LL) = 1024LL;
-              *((value *) $y_578 + 0LL) = $y_577;
-              $y_579 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_579 + -1LL) = 1024LL;
-              *((value *) $y_579 + 0LL) = $y_578;
-              $y_580 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_580 + -1LL) = 1024LL;
-              *((value *) $y_580 + 0LL) = $y_579;
-              $y_581 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_581 + -1LL) = 1024LL;
-              *((value *) $y_581 + 0LL) = $y_580;
-              $y_582 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_582 + -1LL) = 1024LL;
-              *((value *) $y_582 + 0LL) = $y_581;
-              $y_583 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_583 + -1LL) = 1024LL;
-              *((value *) $y_583 + 0LL) = $y_582;
-              $y_584 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_584 + -1LL) = 1024LL;
-              *((value *) $y_584 + 0LL) = $y_583;
-              $y_585 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_585 + -1LL) = 1024LL;
-              *((value *) $y_585 + 0LL) = $y_584;
-              $y_586 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_586 + -1LL) = 1024LL;
-              *((value *) $y_586 + 0LL) = $y_585;
-              $y_587 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_587 + -1LL) = 1024LL;
-              *((value *) $y_587 + 0LL) = $y_586;
-              $y_588 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_588 + -1LL) = 1024LL;
-              *((value *) $y_588 + 0LL) = $y_587;
-              $y_589 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_589 + -1LL) = 1024LL;
-              *((value *) $y_589 + 0LL) = $y_588;
-              $y_590 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_590 + -1LL) = 1024LL;
-              *((value *) $y_590 + 0LL) = $y_589;
-              $y_591 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_591 + -1LL) = 1024LL;
-              *((value *) $y_591 + 0LL) = $y_590;
-              $y_592 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_592 + -1LL) = 1024LL;
-              *((value *) $y_592 + 0LL) = $y_591;
-              $y_593 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_593 + -1LL) = 1024LL;
-              *((value *) $y_593 + 0LL) = $y_592;
-              $y_594 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_594 + -1LL) = 1024LL;
-              *((value *) $y_594 + 0LL) = $y_593;
-              $y_595 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_595 + -1LL) = 1024LL;
-              *((value *) $y_595 + 0LL) = $y_594;
-              $y_596 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_596 + -1LL) = 1024LL;
-              *((value *) $y_596 + 0LL) = $y_595;
-              $y_597 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_597 + -1LL) = 1024LL;
-              *((value *) $y_597 + 0LL) = $y_596;
-              $y_598 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_598 + -1LL) = 1024LL;
-              *((value *) $y_598 + 0LL) = $y_597;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 1LL) = $prim_332;
-              *(root + 0LL) = $env_323;
+              *(root + 1LL) = $prim_302;
+              *(root + 0LL) = $env_293;
               frame.next = root + 2LL;
               (*$tinfo).fp = &frame;
-              $prim_599 =
+              $prim_569 =
                 ((value (*)(struct thread_info *, value, value)) nat_land)
-                ($tinfo, $prim_342, $y_598);
+                ($tinfo, $prim_312, $y_568);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
-              $prim_332 = *(root + 1LL);
-              $env_323 = *(root + 0LL);
+              $prim_302 = *(root + 1LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_600 =
-                *((value *) $env_323 + 0LL);
-              $DDFV_FWdOSdRegistersdCmd_proj_601 =
-                *((value *) $env_323 + 1LL);
+              $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_570 =
+                *((value *) $env_293 + 0LL);
+              $DDFV_FWdOSdRegistersdCmd_proj_571 =
+                *((value *) $env_293 + 1LL);
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 2LL) = $prim_599;
-              *(root + 1LL) = $prim_332;
-              *(root + 0LL) = $env_323;
+              *(root + 2LL) = $prim_569;
+              *(root + 1LL) = $prim_302;
+              *(root + 0LL) = $env_293;
               frame.next = root + 3LL;
               (*$tinfo).fp = &frame;
-              $prim_602 =
+              $prim_572 =
                 ((value (*)(struct thread_info *, value, value)) out8_p)
                 ($tinfo,
-                 $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_600,
-                 $DDFV_FWdOSdRegistersdCmd_proj_601);
+                 $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_570,
+                 $DDFV_FWdOSdRegistersdCmd_proj_571);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
-              $prim_599 = *(root + 2LL);
-              $prim_332 = *(root + 1LL);
-              $env_323 = *(root + 0LL);
+              $prim_569 = *(root + 2LL);
+              $prim_302 = *(root + 1LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              $y_603 = 1LL;
+              $y_573 = 1LL;
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 2LL) = $prim_599;
-              *(root + 1LL) = $prim_332;
-              *(root + 0LL) = $env_323;
+              *(root + 2LL) = $prim_569;
+              *(root + 1LL) = $prim_302;
+              *(root + 0LL) = $env_293;
               frame.next = root + 3LL;
               (*$tinfo).fp = &frame;
-              $y_605 =
+              $y_575 =
                 ((value (*)(struct thread_info *, value, value)) CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-                ($tinfo, $y_603, $prim_602);
+                ($tinfo, $y_573, $prim_572);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               if (!(2LL <= $limit - $alloc)) {
-                *(root + 3LL) = $y_605;
+                *(root + 3LL) = $y_575;
                 frame.next = root + 4LL;
                 (*$tinfo).nalloc = 2LL;
                 garbage_collect($tinfo);
-                $y_605 = *(root + 3LL);
+                $y_575 = *(root + 3LL);
                 $alloc = (*$tinfo).alloc;
                 $limit = (*$tinfo).limit;
               }
-              $prim_599 = *(root + 2LL);
-              $prim_332 = *(root + 1LL);
-              $env_323 = *(root + 0LL);
+              $prim_569 = *(root + 2LL);
+              $prim_302 = *(root + 1LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              if (($y_605 & 1) == 0) {
-                switch (*((value *) $y_605 + -1LL) & 255LL) {
+              if (($y_575 & 1) == 0) {
+                switch (*((value *) $y_575 + -1LL) & 255LL) {
                   
                 }
               } else {
-                switch ($y_605 >> 1LL) {
+                switch ($y_575 >> 1LL) {
                   case 0:
-                    $DDFV_FWdOSdRegistersdData2_proj_606 =
-                      *((value *) $env_323 + 2LL);
+                    $DDFV_FWdOSdRegistersdData2_proj_576 =
+                      *((value *) $env_293 + 2LL);
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    *(root + 1LL) = $prim_599;
-                    *(root + 0LL) = $env_323;
+                    *(root + 1LL) = $prim_569;
+                    *(root + 0LL) = $env_293;
                     frame.next = root + 2LL;
                     (*$tinfo).fp = &frame;
-                    $prim_607 =
+                    $prim_577 =
                       ((value (*)(struct thread_info *, value, value)) 
                         out8_p)
-                      ($tinfo, $prim_332,
-                       $DDFV_FWdOSdRegistersdData2_proj_606);
+                      ($tinfo, $prim_302,
+                       $DDFV_FWdOSdRegistersdData2_proj_576);
                     $alloc = (*$tinfo).alloc;
                     $limit = (*$tinfo).limit;
-                    $prim_599 = *(root + 1LL);
-                    $env_323 = *(root + 0LL);
+                    $prim_569 = *(root + 1LL);
+                    $env_293 = *(root + 0LL);
                     (*$tinfo).fp = frame.prev;
-                    $y_608 = 1LL;
+                    $y_578 = 1LL;
                     $args = (*$tinfo).args;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    *(root + 1LL) = $prim_599;
-                    *(root + 0LL) = $env_323;
+                    *(root + 1LL) = $prim_569;
+                    *(root + 0LL) = $env_293;
                     frame.next = root + 2LL;
                     (*$tinfo).fp = &frame;
-                    $y_610 =
+                    $y_580 =
                       ((value (*)(struct thread_info *, value, value)) 
                         CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-                      ($tinfo, $y_608, $prim_607);
+                      ($tinfo, $y_578, $prim_577);
                     $alloc = (*$tinfo).alloc;
                     $limit = (*$tinfo).limit;
                     if (!(2LL <= $limit - $alloc)) {
-                      *(root + 2LL) = $y_610;
+                      *(root + 2LL) = $y_580;
                       frame.next = root + 3LL;
                       (*$tinfo).nalloc = 2LL;
                       garbage_collect($tinfo);
-                      $y_610 = *(root + 2LL);
+                      $y_580 = *(root + 2LL);
                       $alloc = (*$tinfo).alloc;
                       $limit = (*$tinfo).limit;
                     }
-                    $prim_599 = *(root + 1LL);
-                    $env_323 = *(root + 0LL);
+                    $prim_569 = *(root + 1LL);
+                    $env_293 = *(root + 0LL);
                     (*$tinfo).fp = frame.prev;
-                    if (($y_610 & 1) == 0) {
-                      switch (*((value *) $y_610 + -1LL) & 255LL) {
+                    if (($y_580 & 1) == 0) {
+                      switch (*((value *) $y_580 + -1LL) & 255LL) {
                         
                       }
                     } else {
-                      switch ($y_610 >> 1LL) {
+                      switch ($y_580 >> 1LL) {
                         case 0:
-                          $DDFV_FWdOSdRegistersdData2_proj_611 =
-                            *((value *) $env_323 + 2LL);
+                          $DDFV_FWdOSdRegistersdData2_proj_581 =
+                            *((value *) $env_293 + 2LL);
                           (*$tinfo).alloc = $alloc;
                           (*$tinfo).limit = $limit;
-                          *(root + 0LL) = $env_323;
+                          *(root + 0LL) = $env_293;
                           frame.next = root + 1LL;
                           (*$tinfo).fp = &frame;
-                          $prim_612 =
+                          $prim_582 =
                             ((value (*)(struct thread_info *, value, value)) 
                               out8)
-                            ($tinfo, $prim_599,
-                             $DDFV_FWdOSdRegistersdData2_proj_611);
+                            ($tinfo, $prim_569,
+                             $DDFV_FWdOSdRegistersdData2_proj_581);
                           $alloc = (*$tinfo).alloc;
                           $limit = (*$tinfo).limit;
-                          $env_323 = *(root + 0LL);
+                          $env_293 = *(root + 0LL);
                           (*$tinfo).fp = frame.prev;
-                          $y_613 = 1LL;
+                          $y_583 = 1LL;
                           $args = (*$tinfo).args;
                           (*$tinfo).alloc = $alloc;
                           (*$tinfo).limit = $limit;
-                          *(root + 0LL) = $env_323;
+                          *(root + 0LL) = $env_293;
                           frame.next = root + 1LL;
                           (*$tinfo).fp = &frame;
-                          $y_615 =
+                          $y_585 =
                             ((value (*)(struct thread_info *, value, value)) 
                               CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-                            ($tinfo, $y_613, $prim_612);
+                            ($tinfo, $y_583, $prim_582);
                           $alloc = (*$tinfo).alloc;
                           $limit = (*$tinfo).limit;
                           if (!(6LL <= $limit - $alloc)) {
-                            *(root + 1LL) = $y_615;
+                            *(root + 1LL) = $y_585;
                             frame.next = root + 2LL;
                             (*$tinfo).nalloc = 6LL;
                             garbage_collect($tinfo);
-                            $y_615 = *(root + 1LL);
+                            $y_585 = *(root + 1LL);
                             $alloc = (*$tinfo).alloc;
                             $limit = (*$tinfo).limit;
                           }
-                          $env_323 = *(root + 0LL);
+                          $env_293 = *(root + 0LL);
                           (*$tinfo).fp = frame.prev;
-                          if (($y_615 & 1) == 0) {
-                            switch (*((value *) $y_615 + -1LL) & 255LL) {
+                          if (($y_585 & 1) == 0) {
+                            switch (*((value *) $y_585 + -1LL) & 255LL) {
                               
                             }
                           } else {
-                            switch ($y_615 >> 1LL) {
+                            switch ($y_585 >> 1LL) {
                               case 0:
-                                $DDFV_FWdOSdRegistersdPc_spk_proj_616 =
-                                  *((value *) $env_323 + 3LL);
+                                $DDFV_FWdOSdRegistersdPc_spk_proj_586 =
+                                  *((value *) $env_293 + 3LL);
                                 (*$tinfo).alloc = $alloc;
                                 (*$tinfo).limit = $limit;
-                                *(root + 0LL) = $env_323;
+                                *(root + 0LL) = $env_293;
                                 frame.next = root + 1LL;
                                 (*$tinfo).fp = &frame;
-                                $prim_617 =
+                                $prim_587 =
                                   ((value (*)(struct thread_info *, value)) 
                                     in8_p)
                                   ($tinfo,
-                                   $DDFV_FWdOSdRegistersdPc_spk_proj_616);
+                                   $DDFV_FWdOSdRegistersdPc_spk_proj_586);
                                 $alloc = (*$tinfo).alloc;
                                 $limit = (*$tinfo).limit;
                                 if (!(6LL <= $limit - $alloc)) {
-                                  *(root + 1LL) = $prim_617;
+                                  *(root + 1LL) = $prim_587;
                                   frame.next = root + 2LL;
                                   (*$tinfo).nalloc = 6LL;
                                   garbage_collect($tinfo);
-                                  $prim_617 = *(root + 1LL);
+                                  $prim_587 = *(root + 1LL);
                                   $alloc = (*$tinfo).alloc;
                                   $limit = (*$tinfo).limit;
                                 }
-                                $env_323 = *(root + 0LL);
+                                $env_293 = *(root + 0LL);
                                 (*$tinfo).fp = frame.prev;
-                                $y_618 = 1LL;
-                                $y_619 = (value) ($alloc + 1LL);
+                                $y_588 = 1LL;
+                                $y_589 = (value) ($alloc + 1LL);
                                 $alloc = $alloc + 2LL;
-                                *((value *) $y_619 + -1LL) = 1024LL;
-                                *((value *) $y_619 + 0LL) = $y_618;
-                                $y_620 = (value) ($alloc + 1LL);
+                                *((value *) $y_589 + -1LL) = 1024LL;
+                                *((value *) $y_589 + 0LL) = $y_588;
+                                $y_590 = (value) ($alloc + 1LL);
                                 $alloc = $alloc + 2LL;
-                                *((value *) $y_620 + -1LL) = 1024LL;
-                                *((value *) $y_620 + 0LL) = $y_619;
-                                $y_621 = (value) ($alloc + 1LL);
+                                *((value *) $y_590 + -1LL) = 1024LL;
+                                *((value *) $y_590 + 0LL) = $y_589;
+                                $y_591 = (value) ($alloc + 1LL);
                                 $alloc = $alloc + 2LL;
-                                *((value *) $y_621 + -1LL) = 1024LL;
-                                *((value *) $y_621 + 0LL) = $y_620;
+                                *((value *) $y_591 + -1LL) = 1024LL;
+                                *((value *) $y_591 + 0LL) = $y_590;
                                 (*$tinfo).alloc = $alloc;
                                 (*$tinfo).limit = $limit;
-                                *(root + 0LL) = $env_323;
+                                *(root + 0LL) = $env_293;
                                 frame.next = root + 1LL;
                                 (*$tinfo).fp = &frame;
-                                $prim_622 =
+                                $prim_592 =
                                   ((value (*)(struct thread_info *, value, value)) 
                                     nat_lor)
-                                  ($tinfo, $prim_617, $y_621);
+                                  ($tinfo, $prim_587, $y_591);
                                 $alloc = (*$tinfo).alloc;
                                 $limit = (*$tinfo).limit;
-                                $env_323 = *(root + 0LL);
+                                $env_293 = *(root + 0LL);
                                 (*$tinfo).fp = frame.prev;
-                                $DDFV_FWdOSdRegistersdPc_spk_proj_623 =
-                                  *((value *) $env_323 + 3LL);
+                                $DDFV_FWdOSdRegistersdPc_spk_proj_593 =
+                                  *((value *) $env_293 + 3LL);
                                 (*$tinfo).alloc = $alloc;
                                 (*$tinfo).limit = $limit;
                                 /*skip*/;
-                                $prim_624 =
+                                $prim_594 =
                                   ((value (*)(struct thread_info *, value, value)) 
                                     out8_p)
-                                  ($tinfo, $prim_622,
-                                   $DDFV_FWdOSdRegistersdPc_spk_proj_623);
+                                  ($tinfo, $prim_592,
+                                   $DDFV_FWdOSdRegistersdPc_spk_proj_593);
                                 $alloc = (*$tinfo).alloc;
                                 $limit = (*$tinfo).limit;
                                 /*skip*/;
                                 (*$tinfo).alloc = $alloc;
                                 (*$tinfo).limit = $limit;
-                                return $prim_624;
+                                return $prim_594;
                                 break;
                               default:
-                                $y_625 = 1LL;
-                                $y_626 = (value) ($alloc + 1LL);
+                                $y_595 = 1LL;
+                                $y_596 = (value) ($alloc + 1LL);
                                 $alloc = $alloc + 2LL;
-                                *((value *) $y_626 + -1LL) = 1024LL;
-                                *((value *) $y_626 + 0LL) = $y_625;
+                                *((value *) $y_596 + -1LL) = 1024LL;
+                                *((value *) $y_596 + 0LL) = $y_595;
                                 (*$tinfo).alloc = $alloc;
                                 (*$tinfo).limit = $limit;
-                                return $y_626;
+                                return $y_596;
                                 break;
                               
                             }
                           }
                           break;
                         default:
-                          $y_627 = 1LL;
-                          $y_628 = (value) ($alloc + 1LL);
+                          $y_597 = 1LL;
+                          $y_598 = (value) ($alloc + 1LL);
                           $alloc = $alloc + 2LL;
-                          *((value *) $y_628 + -1LL) = 1024LL;
-                          *((value *) $y_628 + 0LL) = $y_627;
+                          *((value *) $y_598 + -1LL) = 1024LL;
+                          *((value *) $y_598 + 0LL) = $y_597;
                           (*$tinfo).alloc = $alloc;
                           (*$tinfo).limit = $limit;
-                          return $y_628;
+                          return $y_598;
                           break;
                         
                       }
                     }
                     break;
                   default:
-                    $y_629 = 1LL;
-                    $y_630 = (value) ($alloc + 1LL);
+                    $y_599 = 1LL;
+                    $y_600 = (value) ($alloc + 1LL);
                     $alloc = $alloc + 2LL;
-                    *((value *) $y_630 + -1LL) = 1024LL;
-                    *((value *) $y_630 + 0LL) = $y_629;
+                    *((value *) $y_600 + -1LL) = 1024LL;
+                    *((value *) $y_600 + 0LL) = $y_599;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    return $y_630;
+                    return $y_600;
                     break;
                   
                 }
               }
               break;
             default:
-              $DDFV_FWdOSdRegistersdPc_spk_proj_631 =
-                *((value *) $env_323 + 3LL);
+              $DDFV_FWdOSdRegistersdPc_spk_proj_601 =
+                *((value *) $env_293 + 3LL);
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 0LL) = $env_323;
+              *(root + 0LL) = $env_293;
               frame.next = root + 1LL;
               (*$tinfo).fp = &frame;
-              $prim_632 =
+              $prim_602 =
                 ((value (*)(struct thread_info *, value)) in8_p)
-                ($tinfo, $DDFV_FWdOSdRegistersdPc_spk_proj_631);
+                ($tinfo, $DDFV_FWdOSdRegistersdPc_spk_proj_601);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               if (!(504LL <= $limit - $alloc)) {
-                *(root + 1LL) = $prim_632;
+                *(root + 1LL) = $prim_602;
                 frame.next = root + 2LL;
                 (*$tinfo).nalloc = 504LL;
                 garbage_collect($tinfo);
-                $prim_632 = *(root + 1LL);
+                $prim_602 = *(root + 1LL);
                 $alloc = (*$tinfo).alloc;
                 $limit = (*$tinfo).limit;
               }
-              $env_323 = *(root + 0LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              $y_633 = 1LL;
+              $y_603 = 1LL;
+              $y_604 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_604 + -1LL) = 1024LL;
+              *((value *) $y_604 + 0LL) = $y_603;
+              $y_605 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_605 + -1LL) = 1024LL;
+              *((value *) $y_605 + 0LL) = $y_604;
+              $y_606 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_606 + -1LL) = 1024LL;
+              *((value *) $y_606 + 0LL) = $y_605;
+              $y_607 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_607 + -1LL) = 1024LL;
+              *((value *) $y_607 + 0LL) = $y_606;
+              $y_608 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_608 + -1LL) = 1024LL;
+              *((value *) $y_608 + 0LL) = $y_607;
+              $y_609 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_609 + -1LL) = 1024LL;
+              *((value *) $y_609 + 0LL) = $y_608;
+              $y_610 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_610 + -1LL) = 1024LL;
+              *((value *) $y_610 + 0LL) = $y_609;
+              $y_611 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_611 + -1LL) = 1024LL;
+              *((value *) $y_611 + 0LL) = $y_610;
+              $y_612 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_612 + -1LL) = 1024LL;
+              *((value *) $y_612 + 0LL) = $y_611;
+              $y_613 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_613 + -1LL) = 1024LL;
+              *((value *) $y_613 + 0LL) = $y_612;
+              $y_614 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_614 + -1LL) = 1024LL;
+              *((value *) $y_614 + 0LL) = $y_613;
+              $y_615 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_615 + -1LL) = 1024LL;
+              *((value *) $y_615 + 0LL) = $y_614;
+              $y_616 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_616 + -1LL) = 1024LL;
+              *((value *) $y_616 + 0LL) = $y_615;
+              $y_617 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_617 + -1LL) = 1024LL;
+              *((value *) $y_617 + 0LL) = $y_616;
+              $y_618 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_618 + -1LL) = 1024LL;
+              *((value *) $y_618 + 0LL) = $y_617;
+              $y_619 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_619 + -1LL) = 1024LL;
+              *((value *) $y_619 + 0LL) = $y_618;
+              $y_620 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_620 + -1LL) = 1024LL;
+              *((value *) $y_620 + 0LL) = $y_619;
+              $y_621 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_621 + -1LL) = 1024LL;
+              *((value *) $y_621 + 0LL) = $y_620;
+              $y_622 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_622 + -1LL) = 1024LL;
+              *((value *) $y_622 + 0LL) = $y_621;
+              $y_623 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_623 + -1LL) = 1024LL;
+              *((value *) $y_623 + 0LL) = $y_622;
+              $y_624 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_624 + -1LL) = 1024LL;
+              *((value *) $y_624 + 0LL) = $y_623;
+              $y_625 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_625 + -1LL) = 1024LL;
+              *((value *) $y_625 + 0LL) = $y_624;
+              $y_626 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_626 + -1LL) = 1024LL;
+              *((value *) $y_626 + 0LL) = $y_625;
+              $y_627 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_627 + -1LL) = 1024LL;
+              *((value *) $y_627 + 0LL) = $y_626;
+              $y_628 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_628 + -1LL) = 1024LL;
+              *((value *) $y_628 + 0LL) = $y_627;
+              $y_629 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_629 + -1LL) = 1024LL;
+              *((value *) $y_629 + 0LL) = $y_628;
+              $y_630 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_630 + -1LL) = 1024LL;
+              *((value *) $y_630 + 0LL) = $y_629;
+              $y_631 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_631 + -1LL) = 1024LL;
+              *((value *) $y_631 + 0LL) = $y_630;
+              $y_632 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_632 + -1LL) = 1024LL;
+              *((value *) $y_632 + 0LL) = $y_631;
+              $y_633 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_633 + -1LL) = 1024LL;
+              *((value *) $y_633 + 0LL) = $y_632;
               $y_634 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
               *((value *) $y_634 + -1LL) = 1024LL;
@@ -3057,152 +3163,32 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
               $alloc = $alloc + 2LL;
               *((value *) $y_855 + -1LL) = 1024LL;
               *((value *) $y_855 + 0LL) = $y_854;
-              $y_856 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_856 + -1LL) = 1024LL;
-              *((value *) $y_856 + 0LL) = $y_855;
-              $y_857 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_857 + -1LL) = 1024LL;
-              *((value *) $y_857 + 0LL) = $y_856;
-              $y_858 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_858 + -1LL) = 1024LL;
-              *((value *) $y_858 + 0LL) = $y_857;
-              $y_859 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_859 + -1LL) = 1024LL;
-              *((value *) $y_859 + 0LL) = $y_858;
-              $y_860 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_860 + -1LL) = 1024LL;
-              *((value *) $y_860 + 0LL) = $y_859;
-              $y_861 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_861 + -1LL) = 1024LL;
-              *((value *) $y_861 + 0LL) = $y_860;
-              $y_862 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_862 + -1LL) = 1024LL;
-              *((value *) $y_862 + 0LL) = $y_861;
-              $y_863 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_863 + -1LL) = 1024LL;
-              *((value *) $y_863 + 0LL) = $y_862;
-              $y_864 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_864 + -1LL) = 1024LL;
-              *((value *) $y_864 + 0LL) = $y_863;
-              $y_865 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_865 + -1LL) = 1024LL;
-              *((value *) $y_865 + 0LL) = $y_864;
-              $y_866 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_866 + -1LL) = 1024LL;
-              *((value *) $y_866 + 0LL) = $y_865;
-              $y_867 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_867 + -1LL) = 1024LL;
-              *((value *) $y_867 + 0LL) = $y_866;
-              $y_868 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_868 + -1LL) = 1024LL;
-              *((value *) $y_868 + 0LL) = $y_867;
-              $y_869 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_869 + -1LL) = 1024LL;
-              *((value *) $y_869 + 0LL) = $y_868;
-              $y_870 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_870 + -1LL) = 1024LL;
-              *((value *) $y_870 + 0LL) = $y_869;
-              $y_871 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_871 + -1LL) = 1024LL;
-              *((value *) $y_871 + 0LL) = $y_870;
-              $y_872 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_872 + -1LL) = 1024LL;
-              *((value *) $y_872 + 0LL) = $y_871;
-              $y_873 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_873 + -1LL) = 1024LL;
-              *((value *) $y_873 + 0LL) = $y_872;
-              $y_874 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_874 + -1LL) = 1024LL;
-              *((value *) $y_874 + 0LL) = $y_873;
-              $y_875 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_875 + -1LL) = 1024LL;
-              *((value *) $y_875 + 0LL) = $y_874;
-              $y_876 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_876 + -1LL) = 1024LL;
-              *((value *) $y_876 + 0LL) = $y_875;
-              $y_877 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_877 + -1LL) = 1024LL;
-              *((value *) $y_877 + 0LL) = $y_876;
-              $y_878 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_878 + -1LL) = 1024LL;
-              *((value *) $y_878 + 0LL) = $y_877;
-              $y_879 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_879 + -1LL) = 1024LL;
-              *((value *) $y_879 + 0LL) = $y_878;
-              $y_880 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_880 + -1LL) = 1024LL;
-              *((value *) $y_880 + 0LL) = $y_879;
-              $y_881 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_881 + -1LL) = 1024LL;
-              *((value *) $y_881 + 0LL) = $y_880;
-              $y_882 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_882 + -1LL) = 1024LL;
-              *((value *) $y_882 + 0LL) = $y_881;
-              $y_883 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_883 + -1LL) = 1024LL;
-              *((value *) $y_883 + 0LL) = $y_882;
-              $y_884 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_884 + -1LL) = 1024LL;
-              *((value *) $y_884 + 0LL) = $y_883;
-              $y_885 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_885 + -1LL) = 1024LL;
-              *((value *) $y_885 + 0LL) = $y_884;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 0LL) = $env_323;
+              *(root + 0LL) = $env_293;
               frame.next = root + 1LL;
               (*$tinfo).fp = &frame;
-              $prim_886 =
+              $prim_856 =
                 ((value (*)(struct thread_info *, value, value)) nat_land)
-                ($tinfo, $prim_632, $y_885);
+                ($tinfo, $prim_602, $y_855);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
-              $env_323 = *(root + 0LL);
+              $env_293 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              $DDFV_FWdOSdRegistersdPc_spk_proj_887 =
-                *((value *) $env_323 + 3LL);
+              $DDFV_FWdOSdRegistersdPc_spk_proj_857 =
+                *((value *) $env_293 + 3LL);
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               /*skip*/;
-              $prim_888 =
+              $prim_858 =
                 ((value (*)(struct thread_info *, value, value)) out8)
-                ($tinfo, $prim_886, $DDFV_FWdOSdRegistersdPc_spk_proj_887);
+                ($tinfo, $prim_856, $DDFV_FWdOSdRegistersdPc_spk_proj_857);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               /*skip*/;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $prim_888;
+              return $prim_858;
               break;
             
           }
@@ -3211,252 +3197,24 @@ value f_case_130(struct thread_info *$tinfo, value $env_323, value $s_324)
       
     }
   } else {
-    switch ($s_324 >> 1LL) {
+    switch ($s_294 >> 1LL) {
       default:
-        $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_889 =
-          *((value *) $env_323 + 5LL);
+        $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_859 =
+          *((value *) $env_293 + 5LL);
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_889;
+        return $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_859;
         break;
       
     }
   }
 }
 
-value iter_uncurried_known_129(struct thread_info *$tinfo, value $a_313, value $p_314)
-{
-  struct stack_frame frame;
-  value root[2];
-  register value $p_315;
-  register value $y_317;
-  register value $y_318;
-  register value $p_320;
-  register value $y_322;
-  register value *$alloc;
-  register value *$limit;
-  register value *$args;
-  register _Bool $arg;
-  register value $result;
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  $args = (*$tinfo).args;
-  frame.next = root;
-  frame.root = root;
-  frame.prev = (*$tinfo).fp;
-  if (($p_314 & 1) == 0) {
-    switch (*((value *) $p_314 + -1LL) & 255LL) {
-      case 0:
-        $p_315 = *((value *) $p_314 + 0LL);
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        *(root + 1LL) = $p_315;
-        *(root + 0LL) = $a_313;
-        frame.next = root + 2LL;
-        (*$tinfo).fp = &frame;
-        $y_317 =
-          ((value (*)(struct thread_info *, value, value)) add_uncurried_known_116)
-          ($tinfo, $a_313, $a_313);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        $p_315 = *(root + 1LL);
-        $a_313 = *(root + 0LL);
-        (*$tinfo).fp = frame.prev;
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        *(root + 0LL) = $a_313;
-        frame.next = root + 1LL;
-        (*$tinfo).fp = &frame;
-        $y_318 =
-          ((value (*)(struct thread_info *, value, value)) iter_uncurried_known_129)
-          ($tinfo, $y_317, $p_315);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        $a_313 = *(root + 0LL);
-        (*$tinfo).fp = frame.prev;
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        $result =
-          ((value (*)(struct thread_info *, value, value)) add_uncurried_known_116)
-          ($tinfo, $y_318, $a_313);
-        return $result;
-        break;
-      default:
-        $p_320 = *((value *) $p_314 + 0LL);
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        *(root + 0LL) = $p_320;
-        frame.next = root + 1LL;
-        (*$tinfo).fp = &frame;
-        $y_322 =
-          ((value (*)(struct thread_info *, value, value)) add_uncurried_known_116)
-          ($tinfo, $a_313, $a_313);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        $p_320 = *(root + 0LL);
-        (*$tinfo).fp = frame.prev;
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        $result =
-          ((value (*)(struct thread_info *, value, value)) iter_uncurried_known_129)
-          ($tinfo, $y_322, $p_320);
-        return $result;
-        break;
-      
-    }
-  } else {
-    switch ($p_314 >> 1LL) {
-      default:
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $a_313;
-        break;
-      
-    }
-  }
-}
-
-value f_case_known_128(struct thread_info *$tinfo, value $s_305)
-{
-  struct stack_frame frame;
-  value root[1];
-  register value $y_306;
-  register value $p_307;
-  register value $y_309;
-  register value $y_310;
-  register value $y_311;
-  register value *$alloc;
-  register value *$limit;
-  register value *$args;
-  register _Bool $arg;
-  register value $result;
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  $args = (*$tinfo).args;
-  frame.next = root;
-  frame.root = root;
-  frame.prev = (*$tinfo).fp;
-  if (!(2LL <= $limit - $alloc)) {
-    *(root + 0LL) = $s_305;
-    frame.next = root + 1LL;
-    (*$tinfo).fp = &frame;
-    (*$tinfo).nalloc = 2LL;
-    garbage_collect($tinfo);
-    $s_305 = *(root + 0LL);
-    (*$tinfo).fp = frame.prev;
-    $alloc = (*$tinfo).alloc;
-    $limit = (*$tinfo).limit;
-  }
-  if (($s_305 & 1) == 0) {
-    switch (*((value *) $s_305 + -1LL) & 255LL) {
-      case 0:
-        $p_307 = *((value *) $s_305 + 0LL);
-        $y_309 = 1LL;
-        $y_310 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_310 + -1LL) = 1024LL;
-        *((value *) $y_310 + 0LL) = $y_309;
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        $result =
-          ((value (*)(struct thread_info *, value, value)) iter_uncurried_known_129)
-          ($tinfo, $y_310, $p_307);
-        return $result;
-        break;
-      default:
-        $y_311 = 1LL;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_311;
-        break;
-      
-    }
-  } else {
-    switch ($s_305 >> 1LL) {
-      default:
-        $y_306 = 1LL;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_306;
-        break;
-      
-    }
-  }
-}
-
-value f_case_known_127(struct thread_info *$tinfo, value $s_298, value $val_299, value $y_300)
+value f_case_known_126(struct thread_info *$tinfo, value $s_289, value $val_290, value $y_291)
 {
   struct stack_frame frame;
   value root[3];
-  register value $y_302;
-  register value $prim_303;
-  register value *$alloc;
-  register value *$limit;
-  register value *$args;
-  register _Bool $arg;
-  register value $result;
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  $args = (*$tinfo).args;
-  frame.next = root;
-  frame.root = root;
-  frame.prev = (*$tinfo).fp;
-  if (($s_298 & 1) == 0) {
-    switch (*((value *) $s_298 + -1LL) & 255LL) {
-      
-    }
-  } else {
-    switch ($s_298 >> 1LL) {
-      case 0:
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        /*skip*/;
-        $y_302 =
-          ((value (*)(struct thread_info *, value)) f_case_known_128)
-          ($tinfo, $val_299);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        /*skip*/;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        /*skip*/;
-        $prim_303 =
-          ((value (*)(struct thread_info *, value)) compute_duration)
-          ($tinfo, $y_302);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        /*skip*/;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $prim_303;
-        break;
-      default:
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_300;
-        break;
-      
-    }
-  }
-}
-
-value f_case_known_126(struct thread_info *$tinfo, value $s_289)
-{
-  struct stack_frame frame;
-  value root[1];
-  register value $val_290;
-  register value $y_291;
-  register value $prim_293;
-  register value $y_294;
-  register value $y_295;
-  register value $y_296;
+  register value $prim_292;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -3470,64 +3228,41 @@ value f_case_known_126(struct thread_info *$tinfo, value $s_289)
   frame.prev = (*$tinfo).fp;
   if (($s_289 & 1) == 0) {
     switch (*((value *) $s_289 + -1LL) & 255LL) {
-      default:
-        $val_290 = *((value *) $s_289 + 0LL);
-        $y_291 = 1LL;
-        $prim_293 = ((value (*)(value)) z_val_in_freq_interval)($val_290);
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        /*skip*/;
-        $y_294 =
-          ((value (*)(struct thread_info *, value, value, value)) f_case_known_127)
-          ($tinfo, $prim_293, $val_290, $y_291);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        if (!(2LL <= $limit - $alloc)) {
-          *(root + 0LL) = $y_294;
-          frame.next = root + 1LL;
-          (*$tinfo).fp = &frame;
-          (*$tinfo).nalloc = 2LL;
-          garbage_collect($tinfo);
-          $y_294 = *(root + 0LL);
-          (*$tinfo).fp = frame.prev;
-          $alloc = (*$tinfo).alloc;
-          $limit = (*$tinfo).limit;
-        }
-        /*skip*/;
-        $y_295 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_295 + -1LL) = 1024LL;
-        *((value *) $y_295 + 0LL) = $y_294;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_295;
-        break;
       
     }
   } else {
     switch ($s_289 >> 1LL) {
-      default:
-        $y_296 = 1LL;
+      case 0:
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_296;
+        /*skip*/;
+        $prim_292 =
+          ((value (*)(struct thread_info *, value)) compute_duration)
+          ($tinfo, $val_290);
+        $alloc = (*$tinfo).alloc;
+        $limit = (*$tinfo).limit;
+        /*skip*/;
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        return $prim_292;
+        break;
+      default:
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        return $y_291;
         break;
       
     }
   }
 }
 
-value f_case_known_125(struct thread_info *$tinfo, value $s_276, value $code_277)
+value f_case_known_125(struct thread_info *$tinfo, value $s_280)
 {
   struct stack_frame frame;
-  value root[2];
-  register value $y_278;
-  register value $y_279;
-  register value $y_280;
-  register value $y_281;
+  value root[1];
+  register value $val_281;
   register value $y_282;
-  register value $y_284;
+  register value $prim_284;
   register value $y_285;
   register value $y_286;
   register value $y_287;
@@ -3542,104 +3277,63 @@ value f_case_known_125(struct thread_info *$tinfo, value $s_276, value $code_277
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (!(4LL <= $limit - $alloc)) {
-    *(root + 1LL) = $code_277;
-    *(root + 0LL) = $s_276;
-    frame.next = root + 2LL;
-    (*$tinfo).fp = &frame;
-    (*$tinfo).nalloc = 4LL;
-    garbage_collect($tinfo);
-    $code_277 = *(root + 1LL);
-    $s_276 = *(root + 0LL);
-    (*$tinfo).fp = frame.prev;
-    $alloc = (*$tinfo).alloc;
-    $limit = (*$tinfo).limit;
-  }
-  if (($s_276 & 1) == 0) {
-    switch (*((value *) $s_276 + -1LL) & 255LL) {
-      
-    }
-  } else {
-    switch ($s_276 >> 1LL) {
-      case 0:
-        $y_278 = 1LL;
-        $y_279 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_279 + -1LL) = 1024LL;
-        *((value *) $y_279 + 0LL) = $y_278;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_279;
-        break;
+  if (($s_280 & 1) == 0) {
+    switch (*((value *) $s_280 + -1LL) & 255LL) {
       default:
-        $y_280 = 1LL;
-        $y_281 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_281 + -1LL) = 1024LL;
-        *((value *) $y_281 + 0LL) = $y_280;
-        $y_282 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_282 + -1LL) = 1024LL;
-        *((value *) $y_282 + 0LL) = $y_281;
+        $val_281 = *((value *) $s_280 + 0LL);
+        $y_282 = 1LL;
+        $prim_284 = ((value (*)(value)) z_val_in_freq_interval)($val_281);
         $args = (*$tinfo).args;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
         /*skip*/;
-        $y_284 =
-          ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
-          ($tinfo, $y_282, $code_277);
+        $y_285 =
+          ((value (*)(struct thread_info *, value, value, value)) f_case_known_126)
+          ($tinfo, $prim_284, $val_281, $y_282);
         $alloc = (*$tinfo).alloc;
         $limit = (*$tinfo).limit;
         if (!(2LL <= $limit - $alloc)) {
-          *(root + 0LL) = $y_284;
+          *(root + 0LL) = $y_285;
           frame.next = root + 1LL;
           (*$tinfo).fp = &frame;
           (*$tinfo).nalloc = 2LL;
           garbage_collect($tinfo);
-          $y_284 = *(root + 0LL);
+          $y_285 = *(root + 0LL);
           (*$tinfo).fp = frame.prev;
           $alloc = (*$tinfo).alloc;
           $limit = (*$tinfo).limit;
         }
         /*skip*/;
-        if (($y_284 & 1) == 0) {
-          switch (*((value *) $y_284 + -1LL) & 255LL) {
-            
-          }
-        } else {
-          switch ($y_284 >> 1LL) {
-            case 0:
-              $y_285 = 3LL;
-              $y_286 = (value) ($alloc + 1LL);
-              $alloc = $alloc + 2LL;
-              *((value *) $y_286 + -1LL) = 1024LL;
-              *((value *) $y_286 + 0LL) = $y_285;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_286;
-              break;
-            default:
-              $y_287 = 1LL;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_287;
-              break;
-            
-          }
-        }
+        $y_286 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_286 + -1LL) = 1024LL;
+        *((value *) $y_286 + 0LL) = $y_285;
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        return $y_286;
+        break;
+      
+    }
+  } else {
+    switch ($s_280 >> 1LL) {
+      default:
+        $y_287 = 1LL;
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        return $y_287;
         break;
       
     }
   }
 }
 
-value f_case_known_124(struct thread_info *$tinfo, value $s_271)
+value f_case_known_124(struct thread_info *$tinfo, value $s_275)
 {
   struct stack_frame frame;
   value root[1];
-  register value $y_272;
-  register value $y_273;
-  register value $y_274;
+  register value $y_276;
+  register value $y_277;
+  register value $y_278;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -3651,43 +3345,39 @@ value f_case_known_124(struct thread_info *$tinfo, value $s_271)
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($s_271 & 1) == 0) {
-    switch (*((value *) $s_271 + -1LL) & 255LL) {
+  if (($s_275 & 1) == 0) {
+    switch (*((value *) $s_275 + -1LL) & 255LL) {
       case 0:
-        $y_273 = 1LL;
+        $y_277 = 1LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_273;
+        return $y_277;
         break;
       default:
-        $y_274 = 1LL;
+        $y_278 = 1LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_274;
+        return $y_278;
         break;
       
     }
   } else {
-    switch ($s_271 >> 1LL) {
+    switch ($s_275 >> 1LL) {
       default:
-        $y_272 = 3LL;
+        $y_276 = 3LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_272;
+        return $y_276;
         break;
       
     }
   }
 }
 
-value f_case_known_123(struct thread_info *$tinfo, value $s_257, value $value_258)
+value f_case_known_123(struct thread_info *$tinfo, value $s_261, value $value_262)
 {
   struct stack_frame frame;
   value root[2];
-  register value $y_259;
-  register value $y_260;
-  register value $y_261;
-  register value $y_262;
   register value $y_263;
   register value $y_264;
   register value $y_265;
@@ -3695,6 +3385,10 @@ value f_case_known_123(struct thread_info *$tinfo, value $s_257, value $value_25
   register value $y_267;
   register value $y_268;
   register value $y_269;
+  register value $y_270;
+  register value $y_271;
+  register value $y_272;
+  register value $y_273;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -3707,45 +3401,29 @@ value f_case_known_123(struct thread_info *$tinfo, value $s_257, value $value_25
   frame.root = root;
   frame.prev = (*$tinfo).fp;
   if (!(20LL <= $limit - $alloc)) {
-    *(root + 1LL) = $value_258;
-    *(root + 0LL) = $s_257;
+    *(root + 1LL) = $value_262;
+    *(root + 0LL) = $s_261;
     frame.next = root + 2LL;
     (*$tinfo).fp = &frame;
     (*$tinfo).nalloc = 20LL;
     garbage_collect($tinfo);
-    $value_258 = *(root + 1LL);
-    $s_257 = *(root + 0LL);
+    $value_262 = *(root + 1LL);
+    $s_261 = *(root + 0LL);
     (*$tinfo).fp = frame.prev;
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  if (($s_257 & 1) == 0) {
-    switch (*((value *) $s_257 + -1LL) & 255LL) {
+  if (($s_261 & 1) == 0) {
+    switch (*((value *) $s_261 + -1LL) & 255LL) {
       
     }
   } else {
-    switch ($s_257 >> 1LL) {
+    switch ($s_261 >> 1LL) {
       case 0:
-        $y_259 = 1LL;
-        $y_260 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_260 + -1LL) = 1024LL;
-        *((value *) $y_260 + 0LL) = $y_259;
-        $y_261 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_261 + -1LL) = 1024LL;
-        *((value *) $y_261 + 0LL) = $y_260;
-        $y_262 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_262 + -1LL) = 1024LL;
-        *((value *) $y_262 + 0LL) = $y_261;
-        $y_263 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_263 + -1LL) = 1024LL;
-        *((value *) $y_263 + 0LL) = $y_262;
+        $y_263 = 1LL;
         $y_264 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
-        *((value *) $y_264 + -1LL) = 1025LL;
+        *((value *) $y_264 + -1LL) = 1024LL;
         *((value *) $y_264 + 0LL) = $y_263;
         $y_265 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
@@ -3753,11 +3431,11 @@ value f_case_known_123(struct thread_info *$tinfo, value $s_257, value $value_25
         *((value *) $y_265 + 0LL) = $y_264;
         $y_266 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
-        *((value *) $y_266 + -1LL) = 1025LL;
+        *((value *) $y_266 + -1LL) = 1024LL;
         *((value *) $y_266 + 0LL) = $y_265;
         $y_267 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
-        *((value *) $y_267 + -1LL) = 1025LL;
+        *((value *) $y_267 + -1LL) = 1024LL;
         *((value *) $y_267 + 0LL) = $y_266;
         $y_268 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
@@ -3767,30 +3445,46 @@ value f_case_known_123(struct thread_info *$tinfo, value $s_257, value $value_25
         $alloc = $alloc + 2LL;
         *((value *) $y_269 + -1LL) = 1024LL;
         *((value *) $y_269 + 0LL) = $y_268;
+        $y_270 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_270 + -1LL) = 1025LL;
+        *((value *) $y_270 + 0LL) = $y_269;
+        $y_271 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_271 + -1LL) = 1025LL;
+        *((value *) $y_271 + 0LL) = $y_270;
+        $y_272 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_272 + -1LL) = 1025LL;
+        *((value *) $y_272 + 0LL) = $y_271;
+        $y_273 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_273 + -1LL) = 1024LL;
+        *((value *) $y_273 + 0LL) = $y_272;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_269;
+        return $y_273;
         break;
       default:
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $value_258;
+        return $value_262;
         break;
       
     }
   }
 }
 
-value f_case_known_122(struct thread_info *$tinfo, value $s_246, value $value_247)
+value f_case_known_122(struct thread_info *$tinfo, value $s_250, value $value_251)
 {
   struct stack_frame frame;
   value root[2];
-  register value $s_248;
-  register value $y_251;
-  register value $y_252;
-  register value $y_253;
-  register value $y_254;
+  register value $s_252;
   register value $y_255;
+  register value $y_256;
+  register value $y_257;
+  register value $y_258;
+  register value $y_259;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -3803,79 +3497,79 @@ value f_case_known_122(struct thread_info *$tinfo, value $s_246, value $value_24
   frame.root = root;
   frame.prev = (*$tinfo).fp;
   if (!(2LL <= $limit - $alloc)) {
-    *(root + 1LL) = $value_247;
-    *(root + 0LL) = $s_246;
+    *(root + 1LL) = $value_251;
+    *(root + 0LL) = $s_250;
     frame.next = root + 2LL;
     (*$tinfo).fp = &frame;
     (*$tinfo).nalloc = 2LL;
     garbage_collect($tinfo);
-    $value_247 = *(root + 1LL);
-    $s_246 = *(root + 0LL);
+    $value_251 = *(root + 1LL);
+    $s_250 = *(root + 0LL);
     (*$tinfo).fp = frame.prev;
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  if (($s_246 & 1) == 0) {
-    switch (*((value *) $s_246 + -1LL) & 255LL) {
+  if (($s_250 & 1) == 0) {
+    switch (*((value *) $s_250 + -1LL) & 255LL) {
       default:
-        $s_248 = *((value *) $s_246 + 0LL);
-        if (($s_248 & 1) == 0) {
-          switch (*((value *) $s_248 + -1LL) & 255LL) {
+        $s_252 = *((value *) $s_250 + 0LL);
+        if (($s_252 & 1) == 0) {
+          switch (*((value *) $s_252 + -1LL) & 255LL) {
             
           }
         } else {
-          switch ($s_248 >> 1LL) {
+          switch ($s_252 >> 1LL) {
             case 0:
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 0LL) = $value_247;
+              *(root + 0LL) = $value_251;
               frame.next = root + 1LL;
               (*$tinfo).fp = &frame;
-              $y_251 =
+              $y_255 =
                 ((value (*)(struct thread_info *, value)) f_case_known_124)
-                ($tinfo, $value_247);
+                ($tinfo, $value_251);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
-              $value_247 = *(root + 0LL);
+              $value_251 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               /*skip*/;
-              $y_252 =
+              $y_256 =
                 ((value (*)(struct thread_info *, value, value)) f_case_known_123)
-                ($tinfo, $y_251, $value_247);
+                ($tinfo, $y_255, $value_251);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               if (!(2LL <= $limit - $alloc)) {
-                *(root + 0LL) = $y_252;
+                *(root + 0LL) = $y_256;
                 frame.next = root + 1LL;
                 (*$tinfo).fp = &frame;
                 (*$tinfo).nalloc = 2LL;
                 garbage_collect($tinfo);
-                $y_252 = *(root + 0LL);
+                $y_256 = *(root + 0LL);
                 (*$tinfo).fp = frame.prev;
                 $alloc = (*$tinfo).alloc;
                 $limit = (*$tinfo).limit;
               }
               /*skip*/;
-              $y_253 = (value) ($alloc + 1LL);
+              $y_257 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
-              *((value *) $y_253 + -1LL) = 1024LL;
-              *((value *) $y_253 + 0LL) = $y_252;
+              *((value *) $y_257 + -1LL) = 1024LL;
+              *((value *) $y_257 + 0LL) = $y_256;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_253;
+              return $y_257;
               break;
             default:
-              $y_254 = (value) ($alloc + 1LL);
+              $y_258 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
-              *((value *) $y_254 + -1LL) = 1024LL;
-              *((value *) $y_254 + 0LL) = $value_247;
+              *((value *) $y_258 + -1LL) = 1024LL;
+              *((value *) $y_258 + 0LL) = $value_251;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_254;
+              return $y_258;
               break;
             
           }
@@ -3884,56 +3578,171 @@ value f_case_known_122(struct thread_info *$tinfo, value $s_246, value $value_24
       
     }
   } else {
-    switch ($s_246 >> 1LL) {
+    switch ($s_250 >> 1LL) {
       default:
-        $y_255 = 1LL;
+        $y_259 = 1LL;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $y_255;
+        return $y_259;
         break;
       
     }
   }
 }
 
-value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_121(struct thread_info *$tinfo, value $env_199, value $value_200, value $code_201, value $type_202)
+value f_case_known_121(struct thread_info *$tinfo, value $s_237, value $code_238)
 {
   struct stack_frame frame;
-  value root[4];
-  register value $y_205;
-  register value $y_206;
-  register value $y_208;
-  register value $y_209;
-  register value $y_210;
-  register value $y_212;
-  register value $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_213;
-  register value $y_215;
-  register value $y_216;
-  register value $y_217;
-  register value $prim_218;
-  register value $y_219;
-  register value $y_221;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_222;
-  register value $DDFV_FWdOSdRegistersdCmd_proj_223;
-  register value $DDFV_FWdOSdRegistersdData2_proj_224;
-  register value $DDFV_FWdOSdRegistersdPc_spk_proj_225;
-  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_226;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_227;
-  register value $env_228;
-  register value $result_229;
-  register value $y_230;
-  register value $y_232;
-  register value $y_233;
-  register value $prim_234;
-  register value $y_235;
-  register value $prim_236;
-  register value $y_237;
+  value root[2];
   register value $y_239;
   register value $y_240;
   register value $y_241;
   register value $y_242;
   register value $y_243;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_244;
+  register value $y_245;
+  register value $y_246;
+  register value $y_247;
+  register value $y_248;
+  register value *$alloc;
+  register value *$limit;
+  register value *$args;
+  register _Bool $arg;
+  register value $result;
+  $alloc = (*$tinfo).alloc;
+  $limit = (*$tinfo).limit;
+  $args = (*$tinfo).args;
+  frame.next = root;
+  frame.root = root;
+  frame.prev = (*$tinfo).fp;
+  if (!(4LL <= $limit - $alloc)) {
+    *(root + 1LL) = $code_238;
+    *(root + 0LL) = $s_237;
+    frame.next = root + 2LL;
+    (*$tinfo).fp = &frame;
+    (*$tinfo).nalloc = 4LL;
+    garbage_collect($tinfo);
+    $code_238 = *(root + 1LL);
+    $s_237 = *(root + 0LL);
+    (*$tinfo).fp = frame.prev;
+    $alloc = (*$tinfo).alloc;
+    $limit = (*$tinfo).limit;
+  }
+  if (($s_237 & 1) == 0) {
+    switch (*((value *) $s_237 + -1LL) & 255LL) {
+      
+    }
+  } else {
+    switch ($s_237 >> 1LL) {
+      case 0:
+        $y_239 = 1LL;
+        $y_240 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_240 + -1LL) = 1024LL;
+        *((value *) $y_240 + 0LL) = $y_239;
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        return $y_240;
+        break;
+      default:
+        $y_241 = 1LL;
+        $y_242 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_242 + -1LL) = 1024LL;
+        *((value *) $y_242 + 0LL) = $y_241;
+        $y_243 = (value) ($alloc + 1LL);
+        $alloc = $alloc + 2LL;
+        *((value *) $y_243 + -1LL) = 1024LL;
+        *((value *) $y_243 + 0LL) = $y_242;
+        $args = (*$tinfo).args;
+        (*$tinfo).alloc = $alloc;
+        (*$tinfo).limit = $limit;
+        /*skip*/;
+        $y_245 =
+          ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
+          ($tinfo, $y_243, $code_238);
+        $alloc = (*$tinfo).alloc;
+        $limit = (*$tinfo).limit;
+        if (!(2LL <= $limit - $alloc)) {
+          *(root + 0LL) = $y_245;
+          frame.next = root + 1LL;
+          (*$tinfo).fp = &frame;
+          (*$tinfo).nalloc = 2LL;
+          garbage_collect($tinfo);
+          $y_245 = *(root + 0LL);
+          (*$tinfo).fp = frame.prev;
+          $alloc = (*$tinfo).alloc;
+          $limit = (*$tinfo).limit;
+        }
+        /*skip*/;
+        if (($y_245 & 1) == 0) {
+          switch (*((value *) $y_245 + -1LL) & 255LL) {
+            
+          }
+        } else {
+          switch ($y_245 >> 1LL) {
+            case 0:
+              $y_246 = 3LL;
+              $y_247 = (value) ($alloc + 1LL);
+              $alloc = $alloc + 2LL;
+              *((value *) $y_247 + -1LL) = 1024LL;
+              *((value *) $y_247 + 0LL) = $y_246;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              return $y_247;
+              break;
+            default:
+              $y_248 = 1LL;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              return $y_248;
+              break;
+            
+          }
+        }
+        break;
+      
+    }
+  }
+}
+
+value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_120(struct thread_info *$tinfo, value $env_190, value $value_191, value $code_192, value $type_193)
+{
+  struct stack_frame frame;
+  value root[4];
+  register value $y_195;
+  register value $y_196;
+  register value $y_198;
+  register value $snd_type_199;
+  register value $y_201;
+  register value $y_203;
+  register value $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_204;
+  register value $y_206;
+  register value $y_207;
+  register value $y_208;
+  register value $prim_209;
+  register value $y_210;
+  register value $y_212;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_213;
+  register value $DDFV_FWdOSdRegistersdCmd_proj_214;
+  register value $DDFV_FWdOSdRegistersdData2_proj_215;
+  register value $DDFV_FWdOSdRegistersdPc_spk_proj_216;
+  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_217;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_218;
+  register value $env_219;
+  register value $result_220;
+  register value $y_221;
+  register value $y_223;
+  register value $y_224;
+  register value $prim_225;
+  register value $y_226;
+  register value $prim_227;
+  register value $y_228;
+  register value $y_230;
+  register value $y_231;
+  register value $y_232;
+  register value $y_233;
+  register value $y_234;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_235;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -3946,307 +3755,307 @@ value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_
   frame.root = root;
   frame.prev = (*$tinfo).fp;
   if (!(2LL <= $limit - $alloc)) {
-    *(root + 3LL) = $type_202;
-    *(root + 2LL) = $code_201;
-    *(root + 1LL) = $value_200;
-    *(root + 0LL) = $env_199;
+    *(root + 3LL) = $type_193;
+    *(root + 2LL) = $code_192;
+    *(root + 1LL) = $value_191;
+    *(root + 0LL) = $env_190;
     frame.next = root + 4LL;
     (*$tinfo).fp = &frame;
     (*$tinfo).nalloc = 2LL;
     garbage_collect($tinfo);
-    $type_202 = *(root + 3LL);
-    $code_201 = *(root + 2LL);
-    $value_200 = *(root + 1LL);
-    $env_199 = *(root + 0LL);
+    $type_193 = *(root + 3LL);
+    $code_192 = *(root + 2LL);
+    $value_191 = *(root + 1LL);
+    $env_190 = *(root + 0LL);
     (*$tinfo).fp = frame.prev;
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  $y_205 = 1LL;
-  $y_206 = (value) ($alloc + 1LL);
+  $y_195 = 1LL;
+  $y_196 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_206 + -1LL) = 1024LL;
-  *((value *) $y_206 + 0LL) = $y_205;
+  *((value *) $y_196 + -1LL) = 1024LL;
+  *((value *) $y_196 + 0LL) = $y_195;
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  *(root + 3LL) = $type_202;
-  *(root + 2LL) = $code_201;
-  *(root + 1LL) = $value_200;
-  *(root + 0LL) = $env_199;
+  *(root + 3LL) = $type_193;
+  *(root + 2LL) = $code_192;
+  *(root + 1LL) = $value_191;
+  *(root + 0LL) = $env_190;
   frame.next = root + 4LL;
   (*$tinfo).fp = &frame;
-  $y_208 =
+  $y_198 =
     ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
-    ($tinfo, $y_206, $code_201);
+    ($tinfo, $y_196, $code_192);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;
-  $type_202 = *(root + 3LL);
-  $code_201 = *(root + 2LL);
-  $value_200 = *(root + 1LL);
-  $env_199 = *(root + 0LL);
+  $type_193 = *(root + 3LL);
+  $code_192 = *(root + 2LL);
+  $value_191 = *(root + 1LL);
+  $env_190 = *(root + 0LL);
   (*$tinfo).fp = frame.prev;
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  *(root + 2LL) = $type_202;
-  *(root + 1LL) = $value_200;
-  *(root + 0LL) = $env_199;
+  *(root + 2LL) = $type_193;
+  *(root + 1LL) = $value_191;
+  *(root + 0LL) = $env_190;
   frame.next = root + 3LL;
   (*$tinfo).fp = &frame;
-  $y_209 =
-    ((value (*)(struct thread_info *, value, value)) f_case_known_125)
-    ($tinfo, $y_208, $code_201);
+  $snd_type_199 =
+    ((value (*)(struct thread_info *, value, value)) f_case_known_121)
+    ($tinfo, $y_198, $code_192);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;
-  $type_202 = *(root + 2LL);
-  $value_200 = *(root + 1LL);
-  $env_199 = *(root + 0LL);
+  $type_193 = *(root + 2LL);
+  $value_191 = *(root + 1LL);
+  $env_190 = *(root + 0LL);
   (*$tinfo).fp = frame.prev;
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  *(root + 1LL) = $type_202;
-  *(root + 0LL) = $env_199;
+  *(root + 1LL) = $type_193;
+  *(root + 0LL) = $env_190;
   frame.next = root + 2LL;
   (*$tinfo).fp = &frame;
-  $y_210 =
+  $y_201 =
     ((value (*)(struct thread_info *, value, value)) f_case_known_122)
-    ($tinfo, $y_209, $value_200);
+    ($tinfo, $snd_type_199, $value_191);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;
-  $type_202 = *(root + 1LL);
-  $env_199 = *(root + 0LL);
+  $type_193 = *(root + 1LL);
+  $env_190 = *(root + 0LL);
   (*$tinfo).fp = frame.prev;
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  *(root + 1LL) = $type_202;
-  *(root + 0LL) = $env_199;
+  *(root + 1LL) = $type_193;
+  *(root + 0LL) = $env_190;
   frame.next = root + 2LL;
   (*$tinfo).fp = &frame;
-  $y_212 =
-    ((value (*)(struct thread_info *, value)) f_case_known_126)
-    ($tinfo, $y_210);
+  $y_203 =
+    ((value (*)(struct thread_info *, value)) f_case_known_125)
+    ($tinfo, $y_201);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;
-  $type_202 = *(root + 1LL);
-  $env_199 = *(root + 0LL);
+  $type_193 = *(root + 1LL);
+  $env_190 = *(root + 0LL);
   (*$tinfo).fp = frame.prev;
-  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_213 =
-    *((value *) $env_199 + 0LL);
+  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_204 =
+    *((value *) $env_190 + 0LL);
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  *(root + 1LL) = $y_212;
-  *(root + 0LL) = $env_199;
+  *(root + 1LL) = $y_203;
+  *(root + 0LL) = $env_190;
   frame.next = root + 2LL;
   (*$tinfo).fp = &frame;
-  $y_215 =
+  $y_206 =
     ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
-    ($tinfo, $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_213, $type_202);
+    ($tinfo, $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_proj_204, $type_193);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;
   if (!(2LL <= $limit - $alloc)) {
-    *(root + 2LL) = $y_215;
+    *(root + 2LL) = $y_206;
     frame.next = root + 3LL;
     (*$tinfo).nalloc = 2LL;
     garbage_collect($tinfo);
-    $y_215 = *(root + 2LL);
+    $y_206 = *(root + 2LL);
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  $y_212 = *(root + 1LL);
-  $env_199 = *(root + 0LL);
+  $y_203 = *(root + 1LL);
+  $env_190 = *(root + 0LL);
   (*$tinfo).fp = frame.prev;
-  if (($y_215 & 1) == 0) {
-    switch (*((value *) $y_215 + -1LL) & 255LL) {
+  if (($y_206 & 1) == 0) {
+    switch (*((value *) $y_206 + -1LL) & 255LL) {
       
     }
   } else {
-    switch ($y_215 >> 1LL) {
+    switch ($y_206 >> 1LL) {
       case 0:
-        $y_216 = 1LL;
-        $y_217 = (value) ($alloc + 1LL);
+        $y_207 = 1LL;
+        $y_208 = (value) ($alloc + 1LL);
         $alloc = $alloc + 2LL;
-        *((value *) $y_217 + -1LL) = 1024LL;
-        *((value *) $y_217 + 0LL) = $y_216;
+        *((value *) $y_208 + -1LL) = 1024LL;
+        *((value *) $y_208 + 0LL) = $y_207;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        *(root + 1LL) = $y_212;
-        *(root + 0LL) = $env_199;
+        *(root + 1LL) = $y_203;
+        *(root + 0LL) = $env_190;
         frame.next = root + 2LL;
         (*$tinfo).fp = &frame;
-        $prim_218 =
+        $prim_209 =
           ((value (*)(struct thread_info *, value)) spinlock)
-          ($tinfo, $y_217);
+          ($tinfo, $y_208);
         $alloc = (*$tinfo).alloc;
         $limit = (*$tinfo).limit;
-        $y_212 = *(root + 1LL);
-        $env_199 = *(root + 0LL);
+        $y_203 = *(root + 1LL);
+        $env_190 = *(root + 0LL);
         (*$tinfo).fp = frame.prev;
-        $y_219 = 1LL;
+        $y_210 = 1LL;
         $args = (*$tinfo).args;
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        *(root + 1LL) = $y_212;
-        *(root + 0LL) = $env_199;
+        *(root + 1LL) = $y_203;
+        *(root + 0LL) = $env_190;
         frame.next = root + 2LL;
         (*$tinfo).fp = &frame;
-        $y_221 =
+        $y_212 =
           ((value (*)(struct thread_info *, value, value)) CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-          ($tinfo, $y_219, $prim_218);
+          ($tinfo, $y_210, $prim_209);
         $alloc = (*$tinfo).alloc;
         $limit = (*$tinfo).limit;
         if (!(7LL <= $limit - $alloc)) {
-          *(root + 2LL) = $y_221;
+          *(root + 2LL) = $y_212;
           frame.next = root + 3LL;
           (*$tinfo).nalloc = 7LL;
           garbage_collect($tinfo);
-          $y_221 = *(root + 2LL);
+          $y_212 = *(root + 2LL);
           $alloc = (*$tinfo).alloc;
           $limit = (*$tinfo).limit;
         }
-        $y_212 = *(root + 1LL);
-        $env_199 = *(root + 0LL);
+        $y_203 = *(root + 1LL);
+        $env_190 = *(root + 0LL);
         (*$tinfo).fp = frame.prev;
-        if (($y_221 & 1) == 0) {
-          switch (*((value *) $y_221 + -1LL) & 255LL) {
+        if (($y_212 & 1) == 0) {
+          switch (*((value *) $y_212 + -1LL) & 255LL) {
             
           }
         } else {
-          switch ($y_221 >> 1LL) {
+          switch ($y_212 >> 1LL) {
             case 0:
-              $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_222 =
-                *((value *) $env_199 + 1LL);
-              $DDFV_FWdOSdRegistersdCmd_proj_223 =
-                *((value *) $env_199 + 2LL);
-              $DDFV_FWdOSdRegistersdData2_proj_224 =
-                *((value *) $env_199 + 3LL);
-              $DDFV_FWdOSdRegistersdPc_spk_proj_225 =
-                *((value *) $env_199 + 4LL);
-              $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_226 =
-                *((value *) $env_199 + 5LL);
-              $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_227 =
-                *((value *) $env_199 + 6LL);
-              $env_228 = (value) ($alloc + 1LL);
+              $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_213 =
+                *((value *) $env_190 + 1LL);
+              $DDFV_FWdOSdRegistersdCmd_proj_214 =
+                *((value *) $env_190 + 2LL);
+              $DDFV_FWdOSdRegistersdData2_proj_215 =
+                *((value *) $env_190 + 3LL);
+              $DDFV_FWdOSdRegistersdPc_spk_proj_216 =
+                *((value *) $env_190 + 4LL);
+              $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_217 =
+                *((value *) $env_190 + 5LL);
+              $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_218 =
+                *((value *) $env_190 + 6LL);
+              $env_219 = (value) ($alloc + 1LL);
               $alloc = $alloc + 7LL;
-              *((value *) $env_228 + -1LL) = 6144LL;
-              *((value *) $env_228 + 0LL) =
-                $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_222;
-              *((value *) $env_228 + 1LL) =
-                $DDFV_FWdOSdRegistersdCmd_proj_223;
-              *((value *) $env_228 + 2LL) =
-                $DDFV_FWdOSdRegistersdData2_proj_224;
-              *((value *) $env_228 + 3LL) =
-                $DDFV_FWdOSdRegistersdPc_spk_proj_225;
-              *((value *) $env_228 + 4LL) =
-                $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_226;
-              *((value *) $env_228 + 5LL) =
-                $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_227;
+              *((value *) $env_219 + -1LL) = 6144LL;
+              *((value *) $env_219 + 0LL) =
+                $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_proj_213;
+              *((value *) $env_219 + 1LL) =
+                $DDFV_FWdOSdRegistersdCmd_proj_214;
+              *((value *) $env_219 + 2LL) =
+                $DDFV_FWdOSdRegistersdData2_proj_215;
+              *((value *) $env_219 + 3LL) =
+                $DDFV_FWdOSdRegistersdPc_spk_proj_216;
+              *((value *) $env_219 + 4LL) =
+                $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_217;
+              *((value *) $env_219 + 5LL) =
+                $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_218;
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               /*skip*/;
-              $result_229 =
-                ((value (*)(struct thread_info *, value, value)) f_case_130)
-                ($tinfo, $env_228, $y_212);
+              $result_220 =
+                ((value (*)(struct thread_info *, value, value)) f_case_127)
+                ($tinfo, $env_219, $y_203);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
               /*skip*/;
-              $y_230 = 1LL;
+              $y_221 = 1LL;
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              *(root + 0LL) = $result_229;
+              *(root + 0LL) = $result_220;
               frame.next = root + 1LL;
               (*$tinfo).fp = &frame;
-              $y_232 =
+              $y_223 =
                 ((value (*)(struct thread_info *, value, value)) CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-                ($tinfo, $y_230, $result_229);
+                ($tinfo, $y_221, $result_220);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
-              $result_229 = *(root + 0LL);
+              $result_220 = *(root + 0LL);
               (*$tinfo).fp = frame.prev;
-              if (($y_232 & 1) == 0) {
-                switch (*((value *) $y_232 + -1LL) & 255LL) {
+              if (($y_223 & 1) == 0) {
+                switch (*((value *) $y_223 + -1LL) & 255LL) {
                   
                 }
               } else {
-                switch ($y_232 >> 1LL) {
+                switch ($y_223 >> 1LL) {
                   case 0:
-                    $y_233 = 1LL;
+                    $y_224 = 1LL;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
                     /*skip*/;
-                    $prim_234 =
+                    $prim_225 =
                       ((value (*)(struct thread_info *, value)) spinlock)
-                      ($tinfo, $y_233);
+                      ($tinfo, $y_224);
                     $alloc = (*$tinfo).alloc;
                     $limit = (*$tinfo).limit;
                     /*skip*/;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    return $prim_234;
+                    return $prim_225;
                     break;
                   default:
-                    $y_235 = 1LL;
+                    $y_226 = 1LL;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    *(root + 0LL) = $result_229;
+                    *(root + 0LL) = $result_220;
                     frame.next = root + 1LL;
                     (*$tinfo).fp = &frame;
-                    $prim_236 =
+                    $prim_227 =
                       ((value (*)(struct thread_info *, value)) spinlock)
-                      ($tinfo, $y_235);
+                      ($tinfo, $y_226);
                     $alloc = (*$tinfo).alloc;
                     $limit = (*$tinfo).limit;
-                    $result_229 = *(root + 0LL);
+                    $result_220 = *(root + 0LL);
                     (*$tinfo).fp = frame.prev;
-                    $y_237 = 1LL;
+                    $y_228 = 1LL;
                     $args = (*$tinfo).args;
                     (*$tinfo).alloc = $alloc;
                     (*$tinfo).limit = $limit;
-                    *(root + 0LL) = $result_229;
+                    *(root + 0LL) = $result_220;
                     frame.next = root + 1LL;
                     (*$tinfo).fp = &frame;
-                    $y_239 =
+                    $y_230 =
                       ((value (*)(struct thread_info *, value, value)) 
                         CoqdZArithdBinIntDefdZdeqb_uncurried_known_115)
-                      ($tinfo, $y_237, $prim_236);
+                      ($tinfo, $y_228, $prim_227);
                     $alloc = (*$tinfo).alloc;
                     $limit = (*$tinfo).limit;
                     if (!(2LL <= $limit - $alloc)) {
-                      *(root + 1LL) = $y_239;
+                      *(root + 1LL) = $y_230;
                       frame.next = root + 2LL;
                       (*$tinfo).nalloc = 2LL;
                       garbage_collect($tinfo);
-                      $y_239 = *(root + 1LL);
+                      $y_230 = *(root + 1LL);
                       $alloc = (*$tinfo).alloc;
                       $limit = (*$tinfo).limit;
                     }
-                    $result_229 = *(root + 0LL);
+                    $result_220 = *(root + 0LL);
                     (*$tinfo).fp = frame.prev;
-                    if (($y_239 & 1) == 0) {
-                      switch (*((value *) $y_239 + -1LL) & 255LL) {
+                    if (($y_230 & 1) == 0) {
+                      switch (*((value *) $y_230 + -1LL) & 255LL) {
                         
                       }
                     } else {
-                      switch ($y_239 >> 1LL) {
+                      switch ($y_230 >> 1LL) {
                         case 0:
                           (*$tinfo).alloc = $alloc;
                           (*$tinfo).limit = $limit;
-                          return $result_229;
+                          return $result_220;
                           break;
                         default:
-                          $y_240 = 1LL;
-                          $y_241 = (value) ($alloc + 1LL);
+                          $y_231 = 1LL;
+                          $y_232 = (value) ($alloc + 1LL);
                           $alloc = $alloc + 2LL;
-                          *((value *) $y_241 + -1LL) = 1024LL;
-                          *((value *) $y_241 + 0LL) = $y_240;
+                          *((value *) $y_232 + -1LL) = 1024LL;
+                          *((value *) $y_232 + 0LL) = $y_231;
                           (*$tinfo).alloc = $alloc;
                           (*$tinfo).limit = $limit;
-                          return $y_241;
+                          return $y_232;
                           break;
                         
                       }
@@ -4257,39 +4066,39 @@ value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_
               }
               break;
             default:
-              $y_242 = 1LL;
-              $y_243 = (value) ($alloc + 1LL);
+              $y_233 = 1LL;
+              $y_234 = (value) ($alloc + 1LL);
               $alloc = $alloc + 2LL;
-              *((value *) $y_243 + -1LL) = 1024LL;
-              *((value *) $y_243 + 0LL) = $y_242;
+              *((value *) $y_234 + -1LL) = 1024LL;
+              *((value *) $y_234 + 0LL) = $y_233;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_243;
+              return $y_234;
               break;
             
           }
         }
         break;
       default:
-        $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_244 =
-          *((value *) $env_199 + 6LL);
+        $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_235 =
+          *((value *) $env_190 + 6LL);
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_244;
+        return $DDFV_FWdPlatformdPcspkrdOs_commdeinval_proj_235;
         break;
       
     }
   }
 }
 
-value y_wrapper_120(struct thread_info *$tinfo, value $env_193, value $code_194)
+value y_wrapper_119(struct thread_info *$tinfo, value $env_184, value $code_185)
 {
   struct stack_frame frame;
   value root[2];
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_195;
-  register value $type_proj_196;
-  register value $env_197;
-  register value $y_wrapper_clo_198;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_186;
+  register value $type_proj_187;
+  register value $env_188;
+  register value $y_wrapper_clo_189;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4302,47 +4111,47 @@ value y_wrapper_120(struct thread_info *$tinfo, value $env_193, value $code_194)
   frame.root = root;
   frame.prev = (*$tinfo).fp;
   if (!(7LL <= $limit - $alloc)) {
-    *(root + 1LL) = $code_194;
-    *(root + 0LL) = $env_193;
+    *(root + 1LL) = $code_185;
+    *(root + 0LL) = $env_184;
     frame.next = root + 2LL;
     (*$tinfo).fp = &frame;
     (*$tinfo).nalloc = 7LL;
     garbage_collect($tinfo);
-    $code_194 = *(root + 1LL);
-    $env_193 = *(root + 0LL);
+    $code_185 = *(root + 1LL);
+    $env_184 = *(root + 0LL);
     (*$tinfo).fp = frame.prev;
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_195 =
-    *((value *) $env_193 + 0LL);
-  $type_proj_196 = *((value *) $env_193 + 1LL);
-  $env_197 = (value) ($alloc + 1LL);
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_186 =
+    *((value *) $env_184 + 0LL);
+  $type_proj_187 = *((value *) $env_184 + 1LL);
+  $env_188 = (value) ($alloc + 1LL);
   $alloc = $alloc + 4LL;
-  *((value *) $env_197 + -1LL) = 3072LL;
-  *((value *) $env_197 + 0LL) = $code_194;
-  *((value *) $env_197 + 1LL) = $type_proj_196;
-  *((value *) $env_197 + 2LL) =
-    $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_195;
-  $y_wrapper_clo_198 = (value) ($alloc + 1LL);
+  *((value *) $env_188 + -1LL) = 3072LL;
+  *((value *) $env_188 + 0LL) = $code_185;
+  *((value *) $env_188 + 1LL) = $type_proj_187;
+  *((value *) $env_188 + 2LL) =
+    $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_186;
+  $y_wrapper_clo_189 = (value) ($alloc + 1LL);
   $alloc = $alloc + 3LL;
-  *((value *) $y_wrapper_clo_198 + -1LL) = 2048LL;
-  *((value *) $y_wrapper_clo_198 + 0LL) = y_wrapper_119;
-  *((value *) $y_wrapper_clo_198 + 1LL) = $env_197;
+  *((value *) $y_wrapper_clo_189 + -1LL) = 2048LL;
+  *((value *) $y_wrapper_clo_189 + 0LL) = y_wrapper_118;
+  *((value *) $y_wrapper_clo_189 + 1LL) = $env_188;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  return $y_wrapper_clo_198;
+  return $y_wrapper_clo_189;
 }
 
-value y_wrapper_119(struct thread_info *$tinfo, value $env_186, value $value_187)
+value y_wrapper_118(struct thread_info *$tinfo, value $env_177, value $value_178)
 {
   struct stack_frame frame;
   value root[2];
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_188;
-  register value $type_proj_189;
-  register value $code_proj_190;
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_191;
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_192;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_179;
+  register value $type_proj_180;
+  register value $code_proj_181;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_182;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_183;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4354,34 +4163,34 @@ value y_wrapper_119(struct thread_info *$tinfo, value $env_186, value $value_187
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_188 =
-    *((value *) $env_186 + 2LL);
-  $type_proj_189 = *((value *) $env_186 + 1LL);
-  $code_proj_190 = *((value *) $env_186 + 0LL);
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_191 =
-    *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_188
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_179 =
+    *((value *) $env_177 + 2LL);
+  $type_proj_180 = *((value *) $env_177 + 1LL);
+  $code_proj_181 = *((value *) $env_177 + 0LL);
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_182 =
+    *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_179
        + 0LL);
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_192 =
-    *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_188
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_183 =
+    *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_proj_179
        + 1LL);
   $args = (*$tinfo).args;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
   $result =
-    ((value (*)(struct thread_info *, value, value, value, value)) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_191)
+    ((value (*)(struct thread_info *, value, value, value, value)) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_code_182)
     ($tinfo,
-     $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_192,
-     $value_187, $code_proj_190, $type_proj_189);
+     $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_env_183,
+     $value_178, $code_proj_181, $type_proj_180);
   return $result;
 }
 
-value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_118(struct thread_info *$tinfo, value $env_181, value $type_182)
+value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_117(struct thread_info *$tinfo, value $env_172, value $type_173)
 {
   struct stack_frame frame;
   value root[2];
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183;
-  register value $env_184;
-  register value $y_wrapper_clo_185;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174;
+  register value $env_175;
+  register value $y_wrapper_clo_176;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4394,52 +4203,52 @@ value DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_118(struct thread_in
   frame.root = root;
   frame.prev = (*$tinfo).fp;
   if (!(9LL <= $limit - $alloc)) {
-    *(root + 1LL) = $type_182;
-    *(root + 0LL) = $env_181;
+    *(root + 1LL) = $type_173;
+    *(root + 0LL) = $env_172;
     frame.next = root + 2LL;
     (*$tinfo).fp = &frame;
     (*$tinfo).nalloc = 9LL;
     garbage_collect($tinfo);
-    $type_182 = *(root + 1LL);
-    $env_181 = *(root + 0LL);
+    $type_173 = *(root + 1LL);
+    $env_172 = *(root + 0LL);
     (*$tinfo).fp = frame.prev;
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183 =
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174 =
     (value) ($alloc + 1LL);
   $alloc = $alloc + 3LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174
      + -1LL) =
     2048LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174
      + 0LL) =
-    DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_121;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183
+    DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_120;
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174
      + 1LL) =
-    $env_181;
-  $env_184 = (value) ($alloc + 1LL);
+    $env_172;
+  $env_175 = (value) ($alloc + 1LL);
   $alloc = $alloc + 3LL;
-  *((value *) $env_184 + -1LL) = 2048LL;
-  *((value *) $env_184 + 0LL) =
-    $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_183;
-  *((value *) $env_184 + 1LL) = $type_182;
-  $y_wrapper_clo_185 = (value) ($alloc + 1LL);
+  *((value *) $env_175 + -1LL) = 2048LL;
+  *((value *) $env_175 + 0LL) =
+    $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_uncurried_uncurried_clo_174;
+  *((value *) $env_175 + 1LL) = $type_173;
+  $y_wrapper_clo_176 = (value) ($alloc + 1LL);
   $alloc = $alloc + 3LL;
-  *((value *) $y_wrapper_clo_185 + -1LL) = 2048LL;
-  *((value *) $y_wrapper_clo_185 + 0LL) = y_wrapper_120;
-  *((value *) $y_wrapper_clo_185 + 1LL) = $env_184;
+  *((value *) $y_wrapper_clo_176 + -1LL) = 2048LL;
+  *((value *) $y_wrapper_clo_176 + 0LL) = y_wrapper_119;
+  *((value *) $y_wrapper_clo_176 + 1LL) = $env_175;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  return $y_wrapper_clo_185;
+  return $y_wrapper_clo_176;
 }
 
-value sub_uncurried_known_117(struct thread_info *$tinfo, value $m_177, value $n_178)
+value sub_uncurried_known_116(struct thread_info *$tinfo, value $m_168, value $n_169)
 {
   struct stack_frame frame;
   value root[2];
-  register value $k_179;
-  register value $l_180;
+  register value $k_170;
+  register value $l_171;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4451,30 +4260,30 @@ value sub_uncurried_known_117(struct thread_info *$tinfo, value $m_177, value $n
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($n_178 & 1) == 0) {
-    switch (*((value *) $n_178 + -1LL) & 255LL) {
+  if (($n_169 & 1) == 0) {
+    switch (*((value *) $n_169 + -1LL) & 255LL) {
       default:
-        $k_179 = *((value *) $n_178 + 0LL);
-        if (($m_177 & 1) == 0) {
-          switch (*((value *) $m_177 + -1LL) & 255LL) {
+        $k_170 = *((value *) $n_169 + 0LL);
+        if (($m_168 & 1) == 0) {
+          switch (*((value *) $m_168 + -1LL) & 255LL) {
             default:
-              $l_180 = *((value *) $m_177 + 0LL);
+              $l_171 = *((value *) $m_168 + 0LL);
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               $result =
-                ((value (*)(struct thread_info *, value, value)) sub_uncurried_known_117)
-                ($tinfo, $l_180, $k_179);
+                ((value (*)(struct thread_info *, value, value)) sub_uncurried_known_116)
+                ($tinfo, $l_171, $k_170);
               return $result;
               break;
             
           }
         } else {
-          switch ($m_177 >> 1LL) {
+          switch ($m_168 >> 1LL) {
             default:
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $n_178;
+              return $n_169;
               break;
             
           }
@@ -4483,97 +4292,32 @@ value sub_uncurried_known_117(struct thread_info *$tinfo, value $m_177, value $n
       
     }
   } else {
-    switch ($n_178 >> 1LL) {
+    switch ($n_169 >> 1LL) {
       default:
         (*$tinfo).alloc = $alloc;
         (*$tinfo).limit = $limit;
-        return $n_178;
+        return $n_169;
         break;
       
     }
   }
 }
 
-value add_uncurried_known_116(struct thread_info *$tinfo, value $m_171, value $n_172)
+value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo, value $y_152, value $x_153)
 {
   struct stack_frame frame;
   value root[2];
-  register value $p_173;
-  register value $y_174;
-  register value $y_175;
-  register value *$alloc;
-  register value *$limit;
-  register value *$args;
-  register _Bool $arg;
-  register value $result;
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  $args = (*$tinfo).args;
-  frame.next = root;
-  frame.root = root;
-  frame.prev = (*$tinfo).fp;
-  if (($n_172 & 1) == 0) {
-    switch (*((value *) $n_172 + -1LL) & 255LL) {
-      default:
-        $p_173 = *((value *) $n_172 + 0LL);
-        $args = (*$tinfo).args;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        /*skip*/;
-        $y_174 =
-          ((value (*)(struct thread_info *, value, value)) add_uncurried_known_116)
-          ($tinfo, $m_171, $p_173);
-        $alloc = (*$tinfo).alloc;
-        $limit = (*$tinfo).limit;
-        if (!(2LL <= $limit - $alloc)) {
-          *(root + 0LL) = $y_174;
-          frame.next = root + 1LL;
-          (*$tinfo).fp = &frame;
-          (*$tinfo).nalloc = 2LL;
-          garbage_collect($tinfo);
-          $y_174 = *(root + 0LL);
-          (*$tinfo).fp = frame.prev;
-          $alloc = (*$tinfo).alloc;
-          $limit = (*$tinfo).limit;
-        }
-        /*skip*/;
-        $y_175 = (value) ($alloc + 1LL);
-        $alloc = $alloc + 2LL;
-        *((value *) $y_175 + -1LL) = 1024LL;
-        *((value *) $y_175 + 0LL) = $y_174;
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $y_175;
-        break;
-      
-    }
-  } else {
-    switch ($n_172 >> 1LL) {
-      default:
-        (*$tinfo).alloc = $alloc;
-        (*$tinfo).limit = $limit;
-        return $m_171;
-        break;
-      
-    }
-  }
-}
-
-value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo, value $y_155, value $x_156)
-{
-  struct stack_frame frame;
-  value root[2];
-  register value $y_157;
+  register value $y_154;
+  register value $y_155;
+  register value $y_156;
+  register value $p_157;
   register value $y_158;
-  register value $y_159;
-  register value $p_160;
+  register value $q_159;
   register value $y_161;
-  register value $q_162;
+  register value $p_162;
+  register value $y_163;
   register value $y_164;
-  register value $p_165;
-  register value $y_166;
-  register value $y_167;
-  register value $q_168;
+  register value $q_165;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4585,32 +4329,22 @@ value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo,
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($x_156 & 1) == 0) {
-    switch (*((value *) $x_156 + -1LL) & 255LL) {
+  if (($x_153 & 1) == 0) {
+    switch (*((value *) $x_153 + -1LL) & 255LL) {
       case 0:
-        $p_160 = *((value *) $x_156 + 0LL);
-        if (($y_155 & 1) == 0) {
-          switch (*((value *) $y_155 + -1LL) & 255LL) {
+        $p_157 = *((value *) $x_153 + 0LL);
+        if (($y_152 & 1) == 0) {
+          switch (*((value *) $y_152 + -1LL) & 255LL) {
             case 0:
-              $q_162 = *((value *) $y_155 + 0LL);
+              $q_159 = *((value *) $y_152 + 0LL);
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               $result =
                 ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_114)
-                ($tinfo, $q_162, $p_160);
+                ($tinfo, $q_159, $p_157);
               return $result;
               break;
-            default:
-              $y_164 = 3LL;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_164;
-              break;
-            
-          }
-        } else {
-          switch ($y_155 >> 1LL) {
             default:
               $y_161 = 3LL;
               (*$tinfo).alloc = $alloc;
@@ -4619,37 +4353,47 @@ value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo,
               break;
             
           }
+        } else {
+          switch ($y_152 >> 1LL) {
+            default:
+              $y_158 = 3LL;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              return $y_158;
+              break;
+            
+          }
         }
         break;
       default:
-        $p_165 = *((value *) $x_156 + 0LL);
-        if (($y_155 & 1) == 0) {
-          switch (*((value *) $y_155 + -1LL) & 255LL) {
+        $p_162 = *((value *) $x_153 + 0LL);
+        if (($y_152 & 1) == 0) {
+          switch (*((value *) $y_152 + -1LL) & 255LL) {
             case 0:
-              $y_167 = 3LL;
+              $y_164 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_167;
+              return $y_164;
               break;
             default:
-              $q_168 = *((value *) $y_155 + 0LL);
+              $q_165 = *((value *) $y_152 + 0LL);
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               $result =
                 ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_114)
-                ($tinfo, $q_168, $p_165);
+                ($tinfo, $q_165, $p_162);
               return $result;
               break;
             
           }
         } else {
-          switch ($y_155 >> 1LL) {
+          switch ($y_152 >> 1LL) {
             default:
-              $y_166 = 3LL;
+              $y_163 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_166;
+              return $y_163;
               break;
             
           }
@@ -4658,31 +4402,31 @@ value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo,
       
     }
   } else {
-    switch ($x_156 >> 1LL) {
+    switch ($x_153 >> 1LL) {
       default:
-        if (($y_155 & 1) == 0) {
-          switch (*((value *) $y_155 + -1LL) & 255LL) {
+        if (($y_152 & 1) == 0) {
+          switch (*((value *) $y_152 + -1LL) & 255LL) {
             case 0:
-              $y_158 = 3LL;
+              $y_155 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_158;
+              return $y_155;
               break;
             default:
-              $y_159 = 3LL;
+              $y_156 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_159;
+              return $y_156;
               break;
             
           }
         } else {
-          switch ($y_155 >> 1LL) {
+          switch ($y_152 >> 1LL) {
             default:
-              $y_157 = 1LL;
+              $y_154 = 1LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_157;
+              return $y_154;
               break;
             
           }
@@ -4693,21 +4437,21 @@ value CoqdZArithdBinIntDefdZdeqb_uncurried_known_115(struct thread_info *$tinfo,
   }
 }
 
-value eqb_uncurried_known_114(struct thread_info *$tinfo, value $q_141, value $p_142)
+value eqb_uncurried_known_114(struct thread_info *$tinfo, value $q_138, value $p_139)
 {
   struct stack_frame frame;
   value root[2];
-  register value $p_143;
-  register value $q_144;
+  register value $p_140;
+  register value $q_141;
+  register value $y_142;
+  register value $y_143;
+  register value $p_144;
   register value $y_145;
-  register value $y_146;
-  register value $p_147;
+  register value $q_146;
+  register value $y_147;
   register value $y_148;
-  register value $q_149;
+  register value $y_149;
   register value $y_150;
-  register value $y_151;
-  register value $y_152;
-  register value $y_153;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4719,46 +4463,83 @@ value eqb_uncurried_known_114(struct thread_info *$tinfo, value $q_141, value $p
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($p_142 & 1) == 0) {
-    switch (*((value *) $p_142 + -1LL) & 255LL) {
+  if (($p_139 & 1) == 0) {
+    switch (*((value *) $p_139 + -1LL) & 255LL) {
       case 0:
-        $p_143 = *((value *) $p_142 + 0LL);
-        if (($q_141 & 1) == 0) {
-          switch (*((value *) $q_141 + -1LL) & 255LL) {
+        $p_140 = *((value *) $p_139 + 0LL);
+        if (($q_138 & 1) == 0) {
+          switch (*((value *) $q_138 + -1LL) & 255LL) {
             case 0:
-              $q_144 = *((value *) $q_141 + 0LL);
+              $q_141 = *((value *) $q_138 + 0LL);
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               $result =
                 ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_114)
-                ($tinfo, $q_144, $p_143);
+                ($tinfo, $q_141, $p_140);
               return $result;
               break;
             default:
-              $y_145 = 3LL;
+              $y_142 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_145;
+              return $y_142;
               break;
             
           }
         } else {
-          switch ($q_141 >> 1LL) {
+          switch ($q_138 >> 1LL) {
             default:
-              $y_146 = 3LL;
+              $y_143 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_146;
+              return $y_143;
               break;
             
           }
         }
         break;
       default:
-        $p_147 = *((value *) $p_142 + 0LL);
-        if (($q_141 & 1) == 0) {
-          switch (*((value *) $q_141 + -1LL) & 255LL) {
+        $p_144 = *((value *) $p_139 + 0LL);
+        if (($q_138 & 1) == 0) {
+          switch (*((value *) $q_138 + -1LL) & 255LL) {
+            case 0:
+              $y_145 = 3LL;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              return $y_145;
+              break;
+            default:
+              $q_146 = *((value *) $q_138 + 0LL);
+              $args = (*$tinfo).args;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              $result =
+                ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_114)
+                ($tinfo, $q_146, $p_144);
+              return $result;
+              break;
+            
+          }
+        } else {
+          switch ($q_138 >> 1LL) {
+            default:
+              $y_147 = 3LL;
+              (*$tinfo).alloc = $alloc;
+              (*$tinfo).limit = $limit;
+              return $y_147;
+              break;
+            
+          }
+        }
+        break;
+      
+    }
+  } else {
+    switch ($p_139 >> 1LL) {
+      default:
+        if (($q_138 & 1) == 0) {
+          switch (*((value *) $q_138 + -1LL) & 255LL) {
             case 0:
               $y_148 = 3LL;
               (*$tinfo).alloc = $alloc;
@@ -4766,21 +4547,17 @@ value eqb_uncurried_known_114(struct thread_info *$tinfo, value $q_141, value $p
               return $y_148;
               break;
             default:
-              $q_149 = *((value *) $q_141 + 0LL);
-              $args = (*$tinfo).args;
+              $y_149 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              $result =
-                ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_114)
-                ($tinfo, $q_149, $p_147);
-              return $result;
+              return $y_149;
               break;
             
           }
         } else {
-          switch ($q_141 >> 1LL) {
+          switch ($q_138 >> 1LL) {
             default:
-              $y_150 = 3LL;
+              $y_150 = 1LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               return $y_150;
@@ -4791,51 +4568,18 @@ value eqb_uncurried_known_114(struct thread_info *$tinfo, value $q_141, value $p
         break;
       
     }
-  } else {
-    switch ($p_142 >> 1LL) {
-      default:
-        if (($q_141 & 1) == 0) {
-          switch (*((value *) $q_141 + -1LL) & 255LL) {
-            case 0:
-              $y_151 = 3LL;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_151;
-              break;
-            default:
-              $y_152 = 3LL;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_152;
-              break;
-            
-          }
-        } else {
-          switch ($q_141 >> 1LL) {
-            default:
-              $y_153 = 1LL;
-              (*$tinfo).alloc = $alloc;
-              (*$tinfo).limit = $limit;
-              return $y_153;
-              break;
-            
-          }
-        }
-        break;
-      
-    }
   }
 }
 
-value eqb_uncurried_known_113(struct thread_info *$tinfo, value $m_133, value $n_134)
+value eqb_uncurried_known_113(struct thread_info *$tinfo, value $m_130, value $n_131)
 {
   struct stack_frame frame;
   value root[2];
+  register value $y_132;
+  register value $y_133;
+  register value $np_134;
   register value $y_135;
-  register value $y_136;
-  register value $np_137;
-  register value $y_138;
-  register value $mp_139;
+  register value $mp_136;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -4847,31 +4591,31 @@ value eqb_uncurried_known_113(struct thread_info *$tinfo, value $m_133, value $n
   frame.next = root;
   frame.root = root;
   frame.prev = (*$tinfo).fp;
-  if (($n_134 & 1) == 0) {
-    switch (*((value *) $n_134 + -1LL) & 255LL) {
+  if (($n_131 & 1) == 0) {
+    switch (*((value *) $n_131 + -1LL) & 255LL) {
       default:
-        $np_137 = *((value *) $n_134 + 0LL);
-        if (($m_133 & 1) == 0) {
-          switch (*((value *) $m_133 + -1LL) & 255LL) {
+        $np_134 = *((value *) $n_131 + 0LL);
+        if (($m_130 & 1) == 0) {
+          switch (*((value *) $m_130 + -1LL) & 255LL) {
             default:
-              $mp_139 = *((value *) $m_133 + 0LL);
+              $mp_136 = *((value *) $m_130 + 0LL);
               $args = (*$tinfo).args;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
               $result =
                 ((value (*)(struct thread_info *, value, value)) eqb_uncurried_known_113)
-                ($tinfo, $mp_139, $np_137);
+                ($tinfo, $mp_136, $np_134);
               return $result;
               break;
             
           }
         } else {
-          switch ($m_133 >> 1LL) {
+          switch ($m_130 >> 1LL) {
             default:
-              $y_138 = 3LL;
+              $y_135 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_138;
+              return $y_135;
               break;
             
           }
@@ -4880,25 +4624,25 @@ value eqb_uncurried_known_113(struct thread_info *$tinfo, value $m_133, value $n
       
     }
   } else {
-    switch ($n_134 >> 1LL) {
+    switch ($n_131 >> 1LL) {
       default:
-        if (($m_133 & 1) == 0) {
-          switch (*((value *) $m_133 + -1LL) & 255LL) {
+        if (($m_130 & 1) == 0) {
+          switch (*((value *) $m_130 + -1LL) & 255LL) {
             default:
-              $y_136 = 3LL;
+              $y_133 = 3LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_136;
+              return $y_133;
               break;
             
           }
         } else {
-          switch ($m_133 >> 1LL) {
+          switch ($m_130 >> 1LL) {
             default:
-              $y_135 = 1LL;
+              $y_132 = 1LL;
               (*$tinfo).alloc = $alloc;
               (*$tinfo).limit = $limit;
-              return $y_135;
+              return $y_132;
               break;
             
           }
@@ -4913,6 +4657,36 @@ value body(struct thread_info *$tinfo)
 {
   struct stack_frame frame;
   value root[6];
+  register value $y_864;
+  register value $y_865;
+  register value $y_866;
+  register value $y_867;
+  register value $y_868;
+  register value $y_869;
+  register value $y_870;
+  register value $y_871;
+  register value $y_872;
+  register value $y_873;
+  register value $y_874;
+  register value $y_875;
+  register value $y_876;
+  register value $y_877;
+  register value $y_878;
+  register value $y_879;
+  register value $y_880;
+  register value $y_881;
+  register value $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882;
+  register value $y_883;
+  register value $y_884;
+  register value $y_885;
+  register value $y_886;
+  register value $y_887;
+  register value $y_888;
+  register value $y_889;
+  register value $y_890;
+  register value $y_891;
+  register value $y_892;
+  register value $y_893;
   register value $y_894;
   register value $y_895;
   register value $y_896;
@@ -4931,7 +4705,7 @@ value body(struct thread_info *$tinfo)
   register value $y_909;
   register value $y_910;
   register value $y_911;
-  register value $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912;
+  register value $y_912;
   register value $y_913;
   register value $y_914;
   register value $y_915;
@@ -5084,7 +4858,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1062;
   register value $y_1063;
   register value $y_1064;
-  register value $y_1065;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065;
   register value $y_1066;
   register value $y_1067;
   register value $y_1068;
@@ -5114,7 +4888,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1092;
   register value $y_1093;
   register value $y_1094;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095;
+  register value $y_1095;
   register value $y_1096;
   register value $y_1097;
   register value $y_1098;
@@ -5152,7 +4926,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1130;
   register value $y_1131;
   register value $y_1132;
-  register value $y_1133;
+  register value $DDFV_FWdOSdRegistersdCmd_1133;
   register value $y_1134;
   register value $y_1135;
   register value $y_1136;
@@ -5182,7 +4956,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1160;
   register value $y_1161;
   register value $y_1162;
-  register value $DDFV_FWdOSdRegistersdCmd_1163;
+  register value $y_1163;
   register value $y_1164;
   register value $y_1165;
   register value $y_1166;
@@ -5219,7 +4993,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1197;
   register value $y_1198;
   register value $y_1199;
-  register value $y_1200;
+  register value $DDFV_FWdOSdRegistersdData2_1200;
   register value $y_1201;
   register value $y_1202;
   register value $y_1203;
@@ -5249,7 +5023,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1227;
   register value $y_1228;
   register value $y_1229;
-  register value $DDFV_FWdOSdRegistersdData2_1230;
+  register value $y_1230;
   register value $y_1231;
   register value $y_1232;
   register value $y_1233;
@@ -5317,7 +5091,7 @@ value body(struct thread_info *$tinfo)
   register value $y_1295;
   register value $y_1296;
   register value $y_1297;
-  register value $y_1298;
+  register value $DDFV_FWdOSdRegistersdPc_spk_1298;
   register value $y_1299;
   register value $y_1300;
   register value $y_1301;
@@ -5329,48 +5103,18 @@ value body(struct thread_info *$tinfo)
   register value $y_1307;
   register value $y_1308;
   register value $y_1309;
-  register value $y_1310;
-  register value $y_1311;
+  register value $prim_1310;
   register value $y_1312;
   register value $y_1313;
-  register value $y_1314;
+  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_1314;
   register value $y_1315;
   register value $y_1316;
   register value $y_1317;
   register value $y_1318;
   register value $y_1319;
-  register value $y_1320;
-  register value $y_1321;
-  register value $y_1322;
-  register value $y_1323;
-  register value $y_1324;
-  register value $y_1325;
-  register value $y_1326;
-  register value $y_1327;
-  register value $DDFV_FWdOSdRegistersdPc_spk_1328;
-  register value $y_1329;
-  register value $y_1330;
-  register value $y_1331;
-  register value $y_1332;
-  register value $y_1333;
-  register value $y_1334;
-  register value $y_1335;
-  register value $y_1336;
-  register value $y_1337;
-  register value $y_1338;
-  register value $y_1339;
-  register value $prim_1340;
-  register value $y_1342;
-  register value $y_1343;
-  register value $DDFV_FWdBitopsdNat_landdmax_8bit_value_1344;
-  register value $y_1345;
-  register value $y_1346;
-  register value $y_1347;
-  register value $y_1348;
-  register value $y_1349;
-  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1350;
-  register value $env_1351;
-  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352;
+  register value $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1320;
+  register value $env_1321;
+  register value $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322;
   register value *$alloc;
   register value *$limit;
   register value *$args;
@@ -5388,7 +5132,124 @@ value body(struct thread_info *$tinfo)
     $alloc = (*$tinfo).alloc;
     $limit = (*$tinfo).limit;
   }
-  $y_894 = 1LL;
+  $y_864 = 1LL;
+  $y_865 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_865 + -1LL) = 1024LL;
+  *((value *) $y_865 + 0LL) = $y_864;
+  $y_866 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_866 + -1LL) = 1024LL;
+  *((value *) $y_866 + 0LL) = $y_865;
+  $y_867 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_867 + -1LL) = 1024LL;
+  *((value *) $y_867 + 0LL) = $y_866;
+  $y_868 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_868 + -1LL) = 1024LL;
+  *((value *) $y_868 + 0LL) = $y_867;
+  $y_869 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_869 + -1LL) = 1024LL;
+  *((value *) $y_869 + 0LL) = $y_868;
+  $y_870 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_870 + -1LL) = 1024LL;
+  *((value *) $y_870 + 0LL) = $y_869;
+  $y_871 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_871 + -1LL) = 1024LL;
+  *((value *) $y_871 + 0LL) = $y_870;
+  $y_872 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_872 + -1LL) = 1024LL;
+  *((value *) $y_872 + 0LL) = $y_871;
+  $y_873 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_873 + -1LL) = 1024LL;
+  *((value *) $y_873 + 0LL) = $y_872;
+  $y_874 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_874 + -1LL) = 1024LL;
+  *((value *) $y_874 + 0LL) = $y_873;
+  $y_875 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_875 + -1LL) = 1024LL;
+  *((value *) $y_875 + 0LL) = $y_874;
+  $y_876 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_876 + -1LL) = 1024LL;
+  *((value *) $y_876 + 0LL) = $y_875;
+  $y_877 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_877 + -1LL) = 1024LL;
+  *((value *) $y_877 + 0LL) = $y_876;
+  $y_878 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_878 + -1LL) = 1024LL;
+  *((value *) $y_878 + 0LL) = $y_877;
+  $y_879 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_879 + -1LL) = 1024LL;
+  *((value *) $y_879 + 0LL) = $y_878;
+  $y_880 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_880 + -1LL) = 1024LL;
+  *((value *) $y_880 + 0LL) = $y_879;
+  $y_881 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_881 + -1LL) = 1024LL;
+  *((value *) $y_881 + 0LL) = $y_880;
+  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882 + -1LL) = 1024LL;
+  *((value *) $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882 + 0LL) = $y_881;
+  $y_883 = 1LL;
+  $y_884 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_884 + -1LL) = 1024LL;
+  *((value *) $y_884 + 0LL) = $y_883;
+  $y_885 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_885 + -1LL) = 1024LL;
+  *((value *) $y_885 + 0LL) = $y_884;
+  $y_886 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_886 + -1LL) = 1024LL;
+  *((value *) $y_886 + 0LL) = $y_885;
+  $y_887 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_887 + -1LL) = 1024LL;
+  *((value *) $y_887 + 0LL) = $y_886;
+  $y_888 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_888 + -1LL) = 1024LL;
+  *((value *) $y_888 + 0LL) = $y_887;
+  $y_889 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_889 + -1LL) = 1024LL;
+  *((value *) $y_889 + 0LL) = $y_888;
+  $y_890 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_890 + -1LL) = 1024LL;
+  *((value *) $y_890 + 0LL) = $y_889;
+  $y_891 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_891 + -1LL) = 1024LL;
+  *((value *) $y_891 + 0LL) = $y_890;
+  $y_892 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_892 + -1LL) = 1024LL;
+  *((value *) $y_892 + 0LL) = $y_891;
+  $y_893 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_893 + -1LL) = 1024LL;
+  *((value *) $y_893 + 0LL) = $y_892;
+  $y_894 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_894 + -1LL) = 1024LL;
+  *((value *) $y_894 + 0LL) = $y_893;
   $y_895 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_895 + -1LL) = 1024LL;
@@ -5457,11 +5318,14 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_911 + -1LL) = 1024LL;
   *((value *) $y_911 + 0LL) = $y_910;
-  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912 = (value) ($alloc + 1LL);
+  $y_912 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912 + -1LL) = 1024LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912 + 0LL) = $y_911;
-  $y_913 = 1LL;
+  *((value *) $y_912 + -1LL) = 1024LL;
+  *((value *) $y_912 + 0LL) = $y_911;
+  $y_913 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_913 + -1LL) = 1024LL;
+  *((value *) $y_913 + 0LL) = $y_912;
   $y_914 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_914 + -1LL) = 1024LL;
@@ -6066,14 +5930,13 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1064 + -1LL) = 1024LL;
   *((value *) $y_1064 + 0LL) = $y_1063;
-  $y_1065 = (value) ($alloc + 1LL);
+  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1065 + -1LL) = 1024LL;
-  *((value *) $y_1065 + 0LL) = $y_1064;
-  $y_1066 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1066 + -1LL) = 1024LL;
-  *((value *) $y_1066 + 0LL) = $y_1065;
+  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065 + -1LL) =
+    1024LL;
+  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065 + 0LL) =
+    $y_1064;
+  $y_1066 = 1LL;
   $y_1067 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1067 + -1LL) = 1024LL;
@@ -6186,13 +6049,14 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1094 + -1LL) = 1024LL;
   *((value *) $y_1094 + 0LL) = $y_1093;
-  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095 = (value) ($alloc + 1LL);
+  $y_1095 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095 + -1LL) =
-    1024LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095 + 0LL) =
-    $y_1094;
-  $y_1096 = 1LL;
+  *((value *) $y_1095 + -1LL) = 1024LL;
+  *((value *) $y_1095 + 0LL) = $y_1094;
+  $y_1096 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_1096 + -1LL) = 1024LL;
+  *((value *) $y_1096 + 0LL) = $y_1095;
   $y_1097 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1097 + -1LL) = 1024LL;
@@ -6337,14 +6201,11 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1132 + -1LL) = 1024LL;
   *((value *) $y_1132 + 0LL) = $y_1131;
-  $y_1133 = (value) ($alloc + 1LL);
+  $DDFV_FWdOSdRegistersdCmd_1133 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1133 + -1LL) = 1024LL;
-  *((value *) $y_1133 + 0LL) = $y_1132;
-  $y_1134 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1134 + -1LL) = 1024LL;
-  *((value *) $y_1134 + 0LL) = $y_1133;
+  *((value *) $DDFV_FWdOSdRegistersdCmd_1133 + -1LL) = 1024LL;
+  *((value *) $DDFV_FWdOSdRegistersdCmd_1133 + 0LL) = $y_1132;
+  $y_1134 = 1LL;
   $y_1135 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1135 + -1LL) = 1024LL;
@@ -6457,11 +6318,14 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1162 + -1LL) = 1024LL;
   *((value *) $y_1162 + 0LL) = $y_1161;
-  $DDFV_FWdOSdRegistersdCmd_1163 = (value) ($alloc + 1LL);
+  $y_1163 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdOSdRegistersdCmd_1163 + -1LL) = 1024LL;
-  *((value *) $DDFV_FWdOSdRegistersdCmd_1163 + 0LL) = $y_1162;
-  $y_1164 = 1LL;
+  *((value *) $y_1163 + -1LL) = 1024LL;
+  *((value *) $y_1163 + 0LL) = $y_1162;
+  $y_1164 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_1164 + -1LL) = 1024LL;
+  *((value *) $y_1164 + 0LL) = $y_1163;
   $y_1165 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1165 + -1LL) = 1024LL;
@@ -6602,14 +6466,11 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1199 + -1LL) = 1024LL;
   *((value *) $y_1199 + 0LL) = $y_1198;
-  $y_1200 = (value) ($alloc + 1LL);
+  $DDFV_FWdOSdRegistersdData2_1200 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1200 + -1LL) = 1024LL;
-  *((value *) $y_1200 + 0LL) = $y_1199;
-  $y_1201 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1201 + -1LL) = 1024LL;
-  *((value *) $y_1201 + 0LL) = $y_1200;
+  *((value *) $DDFV_FWdOSdRegistersdData2_1200 + -1LL) = 1024LL;
+  *((value *) $DDFV_FWdOSdRegistersdData2_1200 + 0LL) = $y_1199;
+  $y_1201 = 1LL;
   $y_1202 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1202 + -1LL) = 1024LL;
@@ -6722,11 +6583,14 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1229 + -1LL) = 1024LL;
   *((value *) $y_1229 + 0LL) = $y_1228;
-  $DDFV_FWdOSdRegistersdData2_1230 = (value) ($alloc + 1LL);
+  $y_1230 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdOSdRegistersdData2_1230 + -1LL) = 1024LL;
-  *((value *) $DDFV_FWdOSdRegistersdData2_1230 + 0LL) = $y_1229;
-  $y_1231 = 1LL;
+  *((value *) $y_1230 + -1LL) = 1024LL;
+  *((value *) $y_1230 + 0LL) = $y_1229;
+  $y_1231 = (value) ($alloc + 1LL);
+  $alloc = $alloc + 2LL;
+  *((value *) $y_1231 + -1LL) = 1024LL;
+  *((value *) $y_1231 + 0LL) = $y_1230;
   $y_1232 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1232 + -1LL) = 1024LL;
@@ -6991,14 +6855,11 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1297 + -1LL) = 1024LL;
   *((value *) $y_1297 + 0LL) = $y_1296;
-  $y_1298 = (value) ($alloc + 1LL);
+  $DDFV_FWdOSdRegistersdPc_spk_1298 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1298 + -1LL) = 1024LL;
-  *((value *) $y_1298 + 0LL) = $y_1297;
-  $y_1299 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1299 + -1LL) = 1024LL;
-  *((value *) $y_1299 + 0LL) = $y_1298;
+  *((value *) $DDFV_FWdOSdRegistersdPc_spk_1298 + -1LL) = 1024LL;
+  *((value *) $DDFV_FWdOSdRegistersdPc_spk_1298 + 0LL) = $y_1297;
+  $y_1299 = 1LL;
   $y_1300 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1300 + -1LL) = 1024LL;
@@ -7031,41 +6892,79 @@ value body(struct thread_info *$tinfo)
   $alloc = $alloc + 2LL;
   *((value *) $y_1307 + -1LL) = 1024LL;
   *((value *) $y_1307 + 0LL) = $y_1306;
-  $y_1308 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1308 + -1LL) = 1024LL;
-  *((value *) $y_1308 + 0LL) = $y_1307;
+  $y_1308 = 1LL;
   $y_1309 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1309 + -1LL) = 1024LL;
   *((value *) $y_1309 + 0LL) = $y_1308;
-  $y_1310 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1310 + -1LL) = 1024LL;
-  *((value *) $y_1310 + 0LL) = $y_1309;
-  $y_1311 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1311 + -1LL) = 1024LL;
-  *((value *) $y_1311 + 0LL) = $y_1310;
-  $y_1312 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1312 + -1LL) = 1024LL;
-  *((value *) $y_1312 + 0LL) = $y_1311;
+  (*$tinfo).alloc = $alloc;
+  (*$tinfo).limit = $limit;
+  *(root + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1298;
+  *(root + 3LL) = $DDFV_FWdOSdRegistersdData2_1200;
+  *(root + 2LL) = $DDFV_FWdOSdRegistersdCmd_1133;
+  *(root + 1LL) = $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065;
+  *(root + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882;
+  frame.next = root + 5LL;
+  (*$tinfo).fp = &frame;
+  $prim_1310 =
+    ((value (*)(struct thread_info *, value, value)) nat_shiftl)
+    ($tinfo, $y_1309, $y_1307);
+  $alloc = (*$tinfo).alloc;
+  $limit = (*$tinfo).limit;
+  if (!(2LL <= $limit - $alloc)) {
+    *(root + 5LL) = $prim_1310;
+    frame.next = root + 6LL;
+    (*$tinfo).nalloc = 2LL;
+    garbage_collect($tinfo);
+    $prim_1310 = *(root + 5LL);
+    $alloc = (*$tinfo).alloc;
+    $limit = (*$tinfo).limit;
+  }
+  $DDFV_FWdOSdRegistersdPc_spk_1298 = *(root + 4LL);
+  $DDFV_FWdOSdRegistersdData2_1200 = *(root + 3LL);
+  $DDFV_FWdOSdRegistersdCmd_1133 = *(root + 2LL);
+  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065 = *(root + 1LL);
+  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882 = *(root + 0LL);
+  (*$tinfo).fp = frame.prev;
+  $y_1312 = 1LL;
   $y_1313 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
   *((value *) $y_1313 + -1LL) = 1024LL;
   *((value *) $y_1313 + 0LL) = $y_1312;
-  $y_1314 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1314 + -1LL) = 1024LL;
-  *((value *) $y_1314 + 0LL) = $y_1313;
-  $y_1315 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1315 + -1LL) = 1024LL;
-  *((value *) $y_1315 + 0LL) = $y_1314;
+  $args = (*$tinfo).args;
+  (*$tinfo).alloc = $alloc;
+  (*$tinfo).limit = $limit;
+  *(root + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1298;
+  *(root + 3LL) = $DDFV_FWdOSdRegistersdData2_1200;
+  *(root + 2LL) = $DDFV_FWdOSdRegistersdCmd_1133;
+  *(root + 1LL) = $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065;
+  *(root + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882;
+  frame.next = root + 5LL;
+  (*$tinfo).fp = &frame;
+  $DDFV_FWdBitopsdNat_landdmax_8bit_value_1314 =
+    ((value (*)(struct thread_info *, value, value)) sub_uncurried_known_116)
+    ($tinfo, $y_1313, $prim_1310);
+  $alloc = (*$tinfo).alloc;
+  $limit = (*$tinfo).limit;
+  if (!(21LL <= $limit - $alloc)) {
+    *(root + 5LL) = $DDFV_FWdBitopsdNat_landdmax_8bit_value_1314;
+    frame.next = root + 6LL;
+    (*$tinfo).nalloc = 21LL;
+    garbage_collect($tinfo);
+    $DDFV_FWdBitopsdNat_landdmax_8bit_value_1314 = *(root + 5LL);
+    $alloc = (*$tinfo).alloc;
+    $limit = (*$tinfo).limit;
+  }
+  $DDFV_FWdOSdRegistersdPc_spk_1298 = *(root + 4LL);
+  $DDFV_FWdOSdRegistersdData2_1200 = *(root + 3LL);
+  $DDFV_FWdOSdRegistersdCmd_1133 = *(root + 2LL);
+  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065 = *(root + 1LL);
+  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882 = *(root + 0LL);
+  (*$tinfo).fp = frame.prev;
+  $y_1315 = 1LL;
   $y_1316 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1316 + -1LL) = 1024LL;
+  *((value *) $y_1316 + -1LL) = 1025LL;
   *((value *) $y_1316 + 0LL) = $y_1315;
   $y_1317 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
@@ -7077,195 +6976,40 @@ value body(struct thread_info *$tinfo)
   *((value *) $y_1318 + 0LL) = $y_1317;
   $y_1319 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1319 + -1LL) = 1024LL;
+  *((value *) $y_1319 + -1LL) = 1025LL;
   *((value *) $y_1319 + 0LL) = $y_1318;
-  $y_1320 = (value) ($alloc + 1LL);
+  $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1320 = (value) ($alloc + 1LL);
   $alloc = $alloc + 2LL;
-  *((value *) $y_1320 + -1LL) = 1024LL;
-  *((value *) $y_1320 + 0LL) = $y_1319;
-  $y_1321 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1321 + -1LL) = 1024LL;
-  *((value *) $y_1321 + 0LL) = $y_1320;
-  $y_1322 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1322 + -1LL) = 1024LL;
-  *((value *) $y_1322 + 0LL) = $y_1321;
-  $y_1323 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1323 + -1LL) = 1024LL;
-  *((value *) $y_1323 + 0LL) = $y_1322;
-  $y_1324 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1324 + -1LL) = 1024LL;
-  *((value *) $y_1324 + 0LL) = $y_1323;
-  $y_1325 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1325 + -1LL) = 1024LL;
-  *((value *) $y_1325 + 0LL) = $y_1324;
-  $y_1326 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1326 + -1LL) = 1024LL;
-  *((value *) $y_1326 + 0LL) = $y_1325;
-  $y_1327 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1327 + -1LL) = 1024LL;
-  *((value *) $y_1327 + 0LL) = $y_1326;
-  $DDFV_FWdOSdRegistersdPc_spk_1328 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdOSdRegistersdPc_spk_1328 + -1LL) = 1024LL;
-  *((value *) $DDFV_FWdOSdRegistersdPc_spk_1328 + 0LL) = $y_1327;
-  $y_1329 = 1LL;
-  $y_1330 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1330 + -1LL) = 1024LL;
-  *((value *) $y_1330 + 0LL) = $y_1329;
-  $y_1331 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1331 + -1LL) = 1024LL;
-  *((value *) $y_1331 + 0LL) = $y_1330;
-  $y_1332 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1332 + -1LL) = 1024LL;
-  *((value *) $y_1332 + 0LL) = $y_1331;
-  $y_1333 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1333 + -1LL) = 1024LL;
-  *((value *) $y_1333 + 0LL) = $y_1332;
-  $y_1334 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1334 + -1LL) = 1024LL;
-  *((value *) $y_1334 + 0LL) = $y_1333;
-  $y_1335 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1335 + -1LL) = 1024LL;
-  *((value *) $y_1335 + 0LL) = $y_1334;
-  $y_1336 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1336 + -1LL) = 1024LL;
-  *((value *) $y_1336 + 0LL) = $y_1335;
-  $y_1337 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1337 + -1LL) = 1024LL;
-  *((value *) $y_1337 + 0LL) = $y_1336;
-  $y_1338 = 1LL;
-  $y_1339 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1339 + -1LL) = 1024LL;
-  *((value *) $y_1339 + 0LL) = $y_1338;
-  (*$tinfo).alloc = $alloc;
-  (*$tinfo).limit = $limit;
-  *(root + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1328;
-  *(root + 3LL) = $DDFV_FWdOSdRegistersdData2_1230;
-  *(root + 2LL) = $DDFV_FWdOSdRegistersdCmd_1163;
-  *(root + 1LL) = $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095;
-  *(root + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912;
-  frame.next = root + 5LL;
-  (*$tinfo).fp = &frame;
-  $prim_1340 =
-    ((value (*)(struct thread_info *, value, value)) nat_shiftl)
-    ($tinfo, $y_1339, $y_1337);
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  if (!(2LL <= $limit - $alloc)) {
-    *(root + 5LL) = $prim_1340;
-    frame.next = root + 6LL;
-    (*$tinfo).nalloc = 2LL;
-    garbage_collect($tinfo);
-    $prim_1340 = *(root + 5LL);
-    $alloc = (*$tinfo).alloc;
-    $limit = (*$tinfo).limit;
-  }
-  $DDFV_FWdOSdRegistersdPc_spk_1328 = *(root + 4LL);
-  $DDFV_FWdOSdRegistersdData2_1230 = *(root + 3LL);
-  $DDFV_FWdOSdRegistersdCmd_1163 = *(root + 2LL);
-  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095 = *(root + 1LL);
-  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912 = *(root + 0LL);
-  (*$tinfo).fp = frame.prev;
-  $y_1342 = 1LL;
-  $y_1343 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1343 + -1LL) = 1024LL;
-  *((value *) $y_1343 + 0LL) = $y_1342;
-  $args = (*$tinfo).args;
-  (*$tinfo).alloc = $alloc;
-  (*$tinfo).limit = $limit;
-  *(root + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1328;
-  *(root + 3LL) = $DDFV_FWdOSdRegistersdData2_1230;
-  *(root + 2LL) = $DDFV_FWdOSdRegistersdCmd_1163;
-  *(root + 1LL) = $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095;
-  *(root + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912;
-  frame.next = root + 5LL;
-  (*$tinfo).fp = &frame;
-  $DDFV_FWdBitopsdNat_landdmax_8bit_value_1344 =
-    ((value (*)(struct thread_info *, value, value)) sub_uncurried_known_117)
-    ($tinfo, $y_1343, $prim_1340);
-  $alloc = (*$tinfo).alloc;
-  $limit = (*$tinfo).limit;
-  if (!(21LL <= $limit - $alloc)) {
-    *(root + 5LL) = $DDFV_FWdBitopsdNat_landdmax_8bit_value_1344;
-    frame.next = root + 6LL;
-    (*$tinfo).nalloc = 21LL;
-    garbage_collect($tinfo);
-    $DDFV_FWdBitopsdNat_landdmax_8bit_value_1344 = *(root + 5LL);
-    $alloc = (*$tinfo).alloc;
-    $limit = (*$tinfo).limit;
-  }
-  $DDFV_FWdOSdRegistersdPc_spk_1328 = *(root + 4LL);
-  $DDFV_FWdOSdRegistersdData2_1230 = *(root + 3LL);
-  $DDFV_FWdOSdRegistersdCmd_1163 = *(root + 2LL);
-  $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095 = *(root + 1LL);
-  $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912 = *(root + 0LL);
-  (*$tinfo).fp = frame.prev;
-  $y_1345 = 1LL;
-  $y_1346 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1346 + -1LL) = 1025LL;
-  *((value *) $y_1346 + 0LL) = $y_1345;
-  $y_1347 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1347 + -1LL) = 1024LL;
-  *((value *) $y_1347 + 0LL) = $y_1346;
-  $y_1348 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1348 + -1LL) = 1024LL;
-  *((value *) $y_1348 + 0LL) = $y_1347;
-  $y_1349 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $y_1349 + -1LL) = 1025LL;
-  *((value *) $y_1349 + 0LL) = $y_1348;
-  $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1350 = (value) ($alloc + 1LL);
-  $alloc = $alloc + 2LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1350 + -1LL) = 1025LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1350 + 0LL) = $y_1349;
-  $env_1351 = (value) ($alloc + 1LL);
+  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1320 + -1LL) = 1025LL;
+  *((value *) $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1320 + 0LL) = $y_1319;
+  $env_1321 = (value) ($alloc + 1LL);
   $alloc = $alloc + 8LL;
-  *((value *) $env_1351 + -1LL) = 7168LL;
-  *((value *) $env_1351 + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_912;
-  *((value *) $env_1351 + 1LL) =
-    $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1095;
-  *((value *) $env_1351 + 2LL) = $DDFV_FWdOSdRegistersdCmd_1163;
-  *((value *) $env_1351 + 3LL) = $DDFV_FWdOSdRegistersdData2_1230;
-  *((value *) $env_1351 + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1328;
-  *((value *) $env_1351 + 5LL) =
-    $DDFV_FWdBitopsdNat_landdmax_8bit_value_1344;
-  *((value *) $env_1351 + 6LL) =
-    $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1350;
-  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352 =
+  *((value *) $env_1321 + -1LL) = 7168LL;
+  *((value *) $env_1321 + 0LL) = $DDFV_FWdPlatformdPcspkrdSnd_fdSnd_evt_882;
+  *((value *) $env_1321 + 1LL) =
+    $DDFV_FWdPlatformdPcspkrdOs_commdsnd_command_1065;
+  *((value *) $env_1321 + 2LL) = $DDFV_FWdOSdRegistersdCmd_1133;
+  *((value *) $env_1321 + 3LL) = $DDFV_FWdOSdRegistersdData2_1200;
+  *((value *) $env_1321 + 4LL) = $DDFV_FWdOSdRegistersdPc_spk_1298;
+  *((value *) $env_1321 + 5LL) =
+    $DDFV_FWdBitopsdNat_landdmax_8bit_value_1314;
+  *((value *) $env_1321 + 6LL) =
+    $DDFV_FWdPlatformdPcspkrdOs_commdeinval_1320;
+  $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322 =
     (value) ($alloc + 1LL);
   $alloc = $alloc + 3LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322
      + -1LL) =
     2048LL;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322
      + 0LL) =
-    DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_118;
-  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352
+    DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_117;
+  *((value *) $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322
      + 1LL) =
-    $env_1351;
+    $env_1321;
   (*$tinfo).alloc = $alloc;
   (*$tinfo).limit = $limit;
-  return $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1352;
+  return $DDFV_FWdPlatformdPcspkrdPcspkr_linuxdpcspkr_evt_linux_clo_1322;
 }
 
 

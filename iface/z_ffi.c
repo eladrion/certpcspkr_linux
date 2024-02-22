@@ -8,10 +8,14 @@
 #include <z_ffi.h>
 // Needed for int64_from_Z
 #include <int6x_z.h>
+// Needed for int64_to_nat
+#include <int6x_nat.h>
 // Include the tracing functionality.
 #include <certicoq_stdio.h>
 // Include primitive operations on int63 from CertiCoq
 #include <prim_int63.h>
+// Include the call to pit_tick_rate.
+#include <pit.h>
 
 // Z -> bool
 value z_val_in_freq_interval(value x)
@@ -34,4 +38,11 @@ value z_val_in_freq_interval(value x)
     trace("[certcspkr]: Value %llu is NOT in interval [21,32766]", v);
   }
   return res;
+}
+
+value compute_duration(struct thread_info *tinfo, value x)
+{
+  uint64_t ret_val = pit_tick_rate() / int64_from_Z(x);
+
+  return int64_to_nat(tinfo, ret_val);
 }

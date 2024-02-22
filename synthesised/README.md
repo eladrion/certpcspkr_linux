@@ -14,16 +14,17 @@ From Coq Require Import ZArith.BinInt.
 CertiCoq Register [Register_io.in8          => "in8" with tinfo,
                    Register_io.in8_p        => "in8_p" with tinfo,
                    Register_io.out8         => "out8" with tinfo,
-                   Register_io.out8_p       => "out8_p" with tinfo
-   ] Include ["regio_ffi.h"].
+                   Register_io.out8_p       => "out8_p" with tinfo]
+         Include ["regio_ffi.h"].
 
 (* Register the locking primitives to use for the Kernel module. *)
-CertiCoq Register [Pcspkr_linux.linux_lock  => "spinlock" with tinfo
-   ] Include ["locking_ffi.h"].
+CertiCoq Register [Pcspkr_linux.linux_lock  => "spinlock" with tinfo]
+         Include ["locking_ffi.h"].
 
 (* Register the duration and frequency primitives to use for the Kernel module. *)
-CertiCoq Register [Val_range.is_valid_value => "z_val_in_freq_interval"
-   ] Include ["z_ffi.h"].
+CertiCoq Register [Val_range.is_valid_value           => "z_val_in_freq_interval",
+                   Count.Primitive.compute_duration   => "compute_duration" with tinfo]
+         Include ["z_ffi.h"].
 
 (* Register the primitives on nat to use for the Kernel module. *)
 CertiCoq Register [Nat.div                  => "nat_div" with tinfo,
@@ -31,9 +32,8 @@ CertiCoq Register [Nat.div                  => "nat_div" with tinfo,
                    Nat.land                 => "nat_land" with tinfo,
                    Nat.lor                  => "nat_lor" with tinfo,
                    Nat.shiftr               => "nat_shiftr" with tinfo,
-                   Nat.shiftl               => "nat_shiftl" with tinfo,
-                   Count.compute_duration   => "compute_duration" with tinfo
-   ] Include ["nat_ffi.h"].
+                   Nat.shiftl               => "nat_shiftl" with tinfo]
+         Include ["nat_ffi.h"].
 
 (* Compile the driver itself. *)
 CertiCoq Compile -build_dir "Synthesised/Platform/Pcspkr/" -file "pcspkr_evt_linux" pcspkr_evt_linux.

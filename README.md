@@ -14,7 +14,7 @@ The only functions which are not synthesised, are
 Those functions are called by the synthesised code using tooling from [VeriFFI](https://github.com/CertiCoq/VeriFFI).
 The synthesised code itself can be found in the folder `synthesised` together with a README.md that
 describes how the code was synthesised.
-The formalisation is not yet published but will be when it is presentable.
+The formalisation is not yet published but will be as soon as possible.
 
 # Aims and Limitations
 
@@ -22,6 +22,10 @@ The aim of this project is to show that it is in principle possible to compile w
 Device Drivers from code synthesised by CertiCoq. However, this project is still quite experimental
 and the performance of the synthesised code is weaker than manually written code. 
 But it supports the same functionality as the original driver.
+The main benefit is that the code synthesised by CertiCoq is correct. Thus, the synthesised
+functionality (i.e. the source code) of `pcspkr_event` will be correct.
+However, using [CompCert](https://compcert.org/) (a certified Clight compiler), it is even possible
+to extend the guarantee of correctness to the generation of the [assembly](https://compcert.org/man/manual001.html) code.
 
 The driver is not signed. Thus, when SecureBoot is activated, it will not be possible to load the driver.
 This is also a reason for recommending testing in a virtual machine under QEMU.
@@ -33,7 +37,8 @@ The compilation was not tested with other architectures. Also, testing in a virt
 especially under QEMU is recommended.
 
 Also, a the forks of [CertiCoq](https://github.com/eladrion/certicoq/tree/fphd) and [VeriFFI](https://github.com/eladrion/VeriFFI/tree/bugfixes) should be downloaded.
-See Building for details.
+See Building for details. If the synthesised code files shall be compiled with [CompCert](https://compcert.org/),
+the compiler has to be installed, too.
 
 # Building
 
@@ -70,6 +75,12 @@ cd certpcspkr/src
 make CERTICOQ_PATH=../../CertiCoq_kmod VERIFFI_PATH=../../VeriFFI_contrib/
 ```
 
+Alternatively, the compilation can be done using CompCert with the command
+
+```
+make CERTICOQ_PATH=../../CertiCoq_kmod VERIFFI_PATH=../../VeriFFI_contrib/ with_compcert
+```
+
 which produces the `certpcspkr.ko` in the folder `certpcspkr/src`.
 The variables `CERTICOQ_PATH` and `VERIFFI_PATH` are important here since the compilation includes copying the CertiCoq garbage collection
 and other C files.
@@ -98,7 +109,7 @@ In a shell, type:
 
 ```
 cd KernelModuleSynthesis
-cd certpcspkr_linux/src
+cd certpcspkr/src
 make CERTICOQ_PATH=../../CertiCoq_kmod VERIFFI_PATH=../../VeriFFI_contrib/
 ```
 

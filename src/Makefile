@@ -15,17 +15,28 @@ CQ_IGNORED_WARNINGS += -Wno-declaration-after-statement
 #CQ_IGNORED_WARNINGS += -Wno-int-conversion
 #CQ_IGNORED_WARNINGS += -Wno-incompatible-pointer-types
 
+CERTICOQ_DEFINES  = -D CLIGHT_KERNEL_CODE=1
+CERTICOQ_DEFINES += -D CERTICOQ_TRACE=1
+CERTICOQ_INCLUDES = -I$(PWD)
+
 # Set CLIGHT_KERNEL_CODE to make sure that the GC function printtree is not evaluated
 EXTRA_CFLAGS  = -O2 $(CQ_NO_WARN_ERRORS) $(CQ_IGNORED_WARNINGS)
-EXTRA_CFLAGS += -D CLIGHT_KERNEL_CODE=1
-EXTRA_CFLAGS += -D CERTICOQ_TRACE=1
+EXTRA_CFLAGS += $(CERTICOQ_DEFINES)
 # Add -fomit-framepointer since this is encouraged by CertiCoq documentation (But it does work without)
 #EXTRA_CFLAGS +=-fomit-frame-pointer
-EXTRA_CFLAGS +=-I$(PWD)
+EXTRA_CFLAGS += $(CERTICOQ_INCLUDES)
 
 default: all
 
-.PHONY: default copy manipulate all clean
+.PHONY: default copy manipulate all clean with_compcert
+
+%.o_shipped : ../synthesised/%.c
+	ccomp -c -o $@ $(CERTICOQ_DEFINES) $(CERTICOQ_INCLUDES) $<
+
+%.o_shipped.cmd : %.o_shipped
+	touch .$(basename $^).o.cmd
+	touch $@
+
 
 # Set the module object
 obj-m += certpcspkr.o
@@ -42,6 +53,9 @@ PRIMS_OBJS         := int6x_nat.o int6x_z.o int64.o prim_int63.o
 MODULE_IFACE_OBJS  := clight_iface.o
 # Objects implementing OS specific call redirections
 MODULE_OS_OBJS     := regio.o locking.o pit.o
+
+COMPCERT_OBJS      := pcspkr_evt_linux.o_shipped glue.o_shipped
+COMPCERT_OBJS_CMD  := pcspkr_evt_linux.o_shipped.cmd glue.o_shipped.cmd
 
 # Set the module object components
 certpcspkr-objs := certpcspkr_mod.o $(SYNTHESISED_OBJS) $(CERTICOQ_OBJS) $(CERTICOQ_FFI_OBJS) $(PRIMS_OBJS) $(MODULE_IFACE_OBJS) $(MODULE_OS_OBJS)
@@ -77,13 +91,10 @@ copy:
 	cp $(IFACE_PATH)/z_ffi.c ./
 	cp $(IFACE_PATH)/z_ffi.h ./
 	# Copy the synthesised code.
-	cp $(SYNTH_PATH)/glue.c ./
+#	cp $(SYNTH_PATH)/glue.c ./
 	cp $(SYNTH_PATH)/glue.h ./
-	cp $(SYNTH_PATH)/pcspkr_evt_linux.c ./
+#	cp $(SYNTH_PATH)/pcspkr_evt_linux.c ./
 	cp $(SYNTH_PATH)/pcspkr_evt_linux.h ./
-
-
-
 
 # Manipulate the files, i.e. make sure that the unused includes which break compilation are commented out.
 manipulate : copy
@@ -91,6 +102,9 @@ manipulate : copy
 	sed -i "s|#include <kmod_gc_stack.h>|#include <gc_stack.h>|" ./gc_stack.c
 
 all: manipulate
+	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" CONFIG_FUNCTION_TRACER= modules
+
+with_compcert : manipulate $(COMPCERT_OBJS) $(COMPCERT_OBJS_CMD)
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" CONFIG_FUNCTION_TRACER= modules
 
 clean:
@@ -116,6 +130,8 @@ clean:
 	# Delete the synthesised code.
 	rm -f ./glue.c
 	rm -f ./glue.h
+	rm -f ./glue.o*
 	rm -f ./pcspkr_evt_linux.c
 	rm -f ./pcspkr_evt_linux.h
+	rm -f ./pcspkr_evt_linux.o*
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" clean

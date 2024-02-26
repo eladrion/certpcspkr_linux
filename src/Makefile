@@ -96,12 +96,16 @@ copy:
 #	cp $(SYNTH_PATH)/pcspkr_evt_linux.c ./
 	cp $(SYNTH_PATH)/pcspkr_evt_linux.h ./
 
+copy_synthesised:
+	cp $(SYNTH_PATH)/glue.c ./
+	cp $(SYNTH_PATH)/pcspkr_evt_linux.c ./
+
 # Manipulate the files, i.e. make sure that the unused includes which break compilation are commented out.
 manipulate : copy
 	sed -i "s|#include \"kmod_gc_stack.h\"|#include <gc_stack.h>|" ./gc_stack.c
 	sed -i "s|#include <kmod_gc_stack.h>|#include <gc_stack.h>|" ./gc_stack.c
 
-all: manipulate
+all: manipulate copy_synthesised
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" CONFIG_FUNCTION_TRACER= modules
 
 with_compcert : manipulate $(COMPCERT_OBJS) $(COMPCERT_OBJS_CMD)

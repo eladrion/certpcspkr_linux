@@ -21,10 +21,11 @@ The formalisation is not yet published but will be as soon as possible.
 The aim of this project is to show that it is in principle possible to compile working Linux
 Device Drivers from code synthesised by CertiCoq. However, this project is still quite experimental
 and the performance of the synthesised code is weaker than manually written code. 
-But it supports the same functionality as the original driver.
-The main benefit is that the code synthesised by CertiCoq is correct. Thus, the synthesised
-functionality (i.e. the source code) of `pcspkr_event` will be correct.
-However, using [CompCert](https://compcert.org/) (a certified Clight compiler), it is even possible
+But it supports the same functionality as the original driver. 
+The main benefit is that the code synthesised by CertiCoq can be expected to be correct since
+large parts of CertiCoq were verified. Thus, the synthesised functionality (i.e. the source code) of
+the formalised `pcspkr_event` can be expected to be correct.
+Using [CompCert](https://compcert.org/) (a certified Clight compiler), it is even possible
 to extend the guarantee of correctness to the generation of the [assembly](https://compcert.org/man/manual001.html) code.
 
 The driver is not signed. Thus, when SecureBoot is activated, it will not be possible to load the driver.

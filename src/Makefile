@@ -46,9 +46,9 @@ SYNTHESISED_OBJS   := pcspkr_evt_linux.o glue.o
 # Objects copied from CertiCoq
 CERTICOQ_OBJS      := gc_stack.o kmod_alloc.o
 # Objects that include functionality directly called by synthesised code
-CERTICOQ_FFI_OBJS  := nat_ffi.o regio_ffi.o locking_ffi.o z_ffi.o
+CERTICOQ_FFI_OBJS  := arith_ffi_nat.o bitwise_ffi_nat.o regio_ffi_nat.o locking_ffi_nat.o z_ffi.o
 # Objects implementing primitives called by CERTICOQ_FFI_OBJS
-PRIMS_OBJS         := int6x_nat.o int6x_z.o int64.o prim_int63.o
+PRIMS_OBJS         := int6x_nat.o int6x_pos.o int6x_z.o int64.o prim_int63.o
 # Objects that interface the module with the synthesised code
 MODULE_IFACE_OBJS  := clight_iface.o
 # Objects implementing OS specific call redirections
@@ -77,16 +77,20 @@ copy:
 	# Copy the VeriFFI files
 	cp $(VERIFFI_C_PATH)/int6x_nat.c ./
 	cp $(VERIFFI_C_PATH)/int6x_nat.h ./
+	cp $(VERIFFI_C_PATH)/int6x_pos.c ./
+	cp $(VERIFFI_C_PATH)/int6x_pos.h ./
 	cp $(VERIFFI_C_PATH)/int6x_z.c ./
 	cp $(VERIFFI_C_PATH)/int6x_z.h ./
 	cp $(VERIFFI_C_PATH)/int64.c ./
 	cp $(VERIFFI_C_PATH)/int64.h ./
 	# Copy the coq->plain C interface files
-	cp $(IFACE_PATH)/locking_ffi.c ./
+	cp $(IFACE_PATH)/locking_ffi_nat.c ./
 	cp $(IFACE_PATH)/locking_ffi.h ./
-	cp $(IFACE_PATH)/nat_ffi.c ./
-	cp $(IFACE_PATH)/nat_ffi.h ./
-	cp $(IFACE_PATH)/regio_ffi.c ./
+	cp $(IFACE_PATH)/arith_ffi_nat.c ./
+	cp $(IFACE_PATH)/arith_ffi.h ./
+	cp $(IFACE_PATH)/bitwise_ffi_nat.c ./
+	cp $(IFACE_PATH)/bitwise_ffi.h ./
+	cp $(IFACE_PATH)/regio_ffi_nat.c ./
 	cp $(IFACE_PATH)/regio_ffi.h ./
 	cp $(IFACE_PATH)/z_ffi.c ./
 	cp $(IFACE_PATH)/z_ffi.h ./
@@ -124,12 +128,14 @@ clean:
 	rm -f ./config.h
 	# Delete the VeriFFI files
 	rm -f ./int6x_nat.*
+	rm -f ./int6x_pos.*
 	rm -f ./int6x_z.*
 	rm -f ./int64.*
 	# Delete the coq->plain C interface files
-	rm -f ./locking_ffi.*
-	rm -f ./nat_ffi.*
-	rm -f ./regio_ffi.*
+	rm -f ./arith_ffi*
+	rm -f ./bitwise_ffi*
+	rm -f ./locking_ffi*
+	rm -f ./regio_ffi*
 	rm -f ./z_ffi.*
 	# Delete the synthesised code.
 	rm -f ./glue.c

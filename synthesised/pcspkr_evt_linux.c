@@ -1,10 +1,11 @@
 #ifndef PCSPKR_EVT_LINUX_C
 #define PCSPKR_EVT_LINUX_C
 #include <gc_stack.h>
-#include "nat_ffi.h"
-#include "z_ffi.h"
+#include "arith_ffi.h"
+#include "bitwise_ffi.h"
 #include "locking_ffi.h"
 #include "regio_ffi.h"
+#include "z_ffi.h"
 #include "pcspkr_evt_linux.h"
 extern struct thread_info *make_tinfo(void);
 extern value f_case_known_128(struct thread_info *, value);
@@ -758,7 +759,7 @@ value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
               frame.next = root + 2LL;
               (*$tinfo).fp = &frame;
               $prim_302 =
-                ((value (*)(struct thread_info *, value, value)) nat_land)
+                ((value (*)(struct thread_info *, value, value)) land)
                 ($tinfo, $count_295,
                  $DDFV_FWdBitopsdNat_landdmax_8bit_value_proj_301);
               $alloc = (*$tinfo).alloc;
@@ -815,7 +816,7 @@ value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
               frame.next = root + 2LL;
               (*$tinfo).fp = &frame;
               $prim_312 =
-                ((value (*)(struct thread_info *, value, value)) nat_shiftr)
+                ((value (*)(struct thread_info *, value, value)) shiftr)
                 ($tinfo, $count_295, $y_311);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
@@ -1859,7 +1860,7 @@ value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
               frame.next = root + 2LL;
               (*$tinfo).fp = &frame;
               $prim_569 =
-                ((value (*)(struct thread_info *, value, value)) nat_land)
+                ((value (*)(struct thread_info *, value, value)) land)
                 ($tinfo, $prim_312, $y_568);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
@@ -2065,7 +2066,7 @@ value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
                                 (*$tinfo).fp = &frame;
                                 $prim_592 =
                                   ((value (*)(struct thread_info *, value, value)) 
-                                    nat_lor)
+                                    lor)
                                   ($tinfo, $prim_587, $y_591);
                                 $alloc = (*$tinfo).alloc;
                                 $limit = (*$tinfo).limit;
@@ -3169,7 +3170,7 @@ value f_case_127(struct thread_info *$tinfo, value $env_293, value $s_294)
               frame.next = root + 1LL;
               (*$tinfo).fp = &frame;
               $prim_856 =
-                ((value (*)(struct thread_info *, value, value)) nat_land)
+                ((value (*)(struct thread_info *, value, value)) land)
                 ($tinfo, $prim_602, $y_855);
               $alloc = (*$tinfo).alloc;
               $limit = (*$tinfo).limit;
@@ -6907,7 +6908,7 @@ value body(struct thread_info *$tinfo)
   frame.next = root + 5LL;
   (*$tinfo).fp = &frame;
   $prim_1310 =
-    ((value (*)(struct thread_info *, value, value)) nat_shiftl)
+    ((value (*)(struct thread_info *, value, value)) shiftl)
     ($tinfo, $y_1309, $y_1307);
   $alloc = (*$tinfo).alloc;
   $limit = (*$tinfo).limit;

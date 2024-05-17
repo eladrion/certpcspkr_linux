@@ -13,6 +13,9 @@ extern value alloc_make_Coq_Numbers_BinNums_positive_xI(struct thread_info *, va
 extern value make_Coq_Numbers_BinNums_positive_xO(value, value *);
 extern value alloc_make_Coq_Numbers_BinNums_positive_xO(struct thread_info *, value);
 extern value make_Coq_Numbers_BinNums_positive_xH(void);
+extern value make_Coq_Numbers_BinNums_N_N0(void);
+extern value make_Coq_Numbers_BinNums_N_Npos(value, value *);
+extern value alloc_make_Coq_Numbers_BinNums_N_Npos(struct thread_info *, value);
 extern value make_Coq_Numbers_BinNums_Z_Z0(void);
 extern value make_Coq_Numbers_BinNums_Z_Zpos(value, value *);
 extern value alloc_make_Coq_Numbers_BinNums_Z_Zpos(struct thread_info *, value);
@@ -22,10 +25,12 @@ extern value make_Coq_Init_Datatypes_bool_true(void);
 extern value make_Coq_Init_Datatypes_bool_false(void);
 extern unsigned int get_Coq_Init_Datatypes_nat_tag(value);
 extern unsigned int get_Coq_Numbers_BinNums_positive_tag(value);
+extern unsigned int get_Coq_Numbers_BinNums_N_tag(value);
 extern unsigned int get_Coq_Numbers_BinNums_Z_tag(value);
 extern unsigned int get_Coq_Init_Datatypes_bool_tag(value);
 //extern void print_Coq_Init_Datatypes_nat(value);
 //extern void print_Coq_Numbers_BinNums_positive(value);
+//extern void print_Coq_Numbers_BinNums_N(value);
 //extern void print_Coq_Numbers_BinNums_Z(value);
 //extern void print_Coq_Init_Datatypes_bool(value);
 extern value call(struct thread_info *, value, value);
@@ -46,6 +51,8 @@ extern signed char const prop_lit[7];
 extern signed char const names_of_Coq_Init_Datatypes_nat[2][2];
 
 extern signed char const names_of_Coq_Numbers_BinNums_positive[3][3];
+
+extern signed char const names_of_Coq_Numbers_BinNums_N[2][5];
 
 extern signed char const names_of_Coq_Numbers_BinNums_Z[3][5];
 

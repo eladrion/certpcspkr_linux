@@ -21,6 +21,9 @@ value alloc_make_Coq_Numbers_BinNums_positive_xI(struct thread_info *, value);
 value make_Coq_Numbers_BinNums_positive_xO(value, value *);
 value alloc_make_Coq_Numbers_BinNums_positive_xO(struct thread_info *, value);
 value make_Coq_Numbers_BinNums_positive_xH(void);
+value make_Coq_Numbers_BinNums_N_N0(void);
+value make_Coq_Numbers_BinNums_N_Npos(value, value *);
+value alloc_make_Coq_Numbers_BinNums_N_Npos(struct thread_info *, value);
 value make_Coq_Numbers_BinNums_Z_Z0(void);
 value make_Coq_Numbers_BinNums_Z_Zpos(value, value *);
 value alloc_make_Coq_Numbers_BinNums_Z_Zpos(struct thread_info *, value);
@@ -30,10 +33,12 @@ value make_Coq_Init_Datatypes_bool_true(void);
 value make_Coq_Init_Datatypes_bool_false(void);
 unsigned int get_Coq_Init_Datatypes_nat_tag(value);
 unsigned int get_Coq_Numbers_BinNums_positive_tag(value);
+unsigned int get_Coq_Numbers_BinNums_N_tag(value);
 unsigned int get_Coq_Numbers_BinNums_Z_tag(value);
 unsigned int get_Coq_Init_Datatypes_bool_tag(value);
 //void print_Coq_Init_Datatypes_nat(value);
 //void print_Coq_Numbers_BinNums_positive(value);
+//void print_Coq_Numbers_BinNums_N(value);
 //void print_Coq_Numbers_BinNums_Z(value);
 //void print_Coq_Init_Datatypes_bool(value);
 value call(struct thread_info *, value, value);
@@ -71,6 +76,9 @@ signed char const names_of_Coq_Init_Datatypes_nat[2][2] = { 79, 0, 83, 0,
 
 signed char const names_of_Coq_Numbers_BinNums_positive[3][3] = { 120, 73, 0,
   120, 79, 0, 120, 72, 0, /* skip 0 */ };
+
+signed char const names_of_Coq_Numbers_BinNums_N[2][5] = { 78, 48, 0, 0, 0,
+  78, 112, 111, 115, 0, /* skip 0 */ };
 
 signed char const names_of_Coq_Numbers_BinNums_Z[3][5] = { 90, 48, 0, 0, 0,
   90, 112, 111, 115, 0, 90, 110, 101, 103, 0, /* skip 0 */ };
@@ -139,6 +147,28 @@ value make_Coq_Numbers_BinNums_positive_xH(void)
   return (value) 1;
 }
 
+value make_Coq_Numbers_BinNums_N_N0(void)
+{
+  return (value) 1;
+}
+
+value make_Coq_Numbers_BinNums_N_Npos(value $arg0, value *$argv)
+{
+  *($argv + 0LL) = (value) 1024LL;
+  *($argv + 1LL) = $arg0;
+  return $argv + 1LL;
+}
+
+value alloc_make_Coq_Numbers_BinNums_N_Npos(struct thread_info *$tinfo, value $arg0)
+{
+  register value *$argv;
+  $argv = (*$tinfo).alloc;
+  *($argv + 0LL) = 1024LL;
+  *($argv + 1LL) = $arg0;
+  (*$tinfo).alloc = (*$tinfo).alloc + 2LL;
+  return $argv + 1LL;
+}
+
 value make_Coq_Numbers_BinNums_Z_Z0(void)
 {
   return (value) 1;
@@ -198,14 +228,14 @@ unsigned int get_Coq_Init_Datatypes_nat_tag(value $v)
     switch ($t) {
       case 0:
         return 1U;
-      
+
     }
   } else {
     $t = get_unboxed_ordinal($v);
     switch ($t) {
       case 0:
         return 0U;
-      
+
     }
   }
 }
@@ -222,14 +252,36 @@ unsigned int get_Coq_Numbers_BinNums_positive_tag(value $v)
         return 0U;
       case 1:
         return 1U;
-      
+
     }
   } else {
     $t = get_unboxed_ordinal($v);
     switch ($t) {
       case 0:
         return 2U;
-      
+
+    }
+  }
+}
+
+unsigned int get_Coq_Numbers_BinNums_N_tag(value $v)
+{
+  register _Bool $b;
+  register unsigned int $t;
+  $b = is_ptr($v);
+  if ($b) {
+    $t = get_boxed_ordinal($v);
+    switch ($t) {
+      case 0:
+        return 1U;
+
+    }
+  } else {
+    $t = get_unboxed_ordinal($v);
+    switch ($t) {
+      case 0:
+        return 0U;
+
     }
   }
 }
@@ -246,14 +298,14 @@ unsigned int get_Coq_Numbers_BinNums_Z_tag(value $v)
         return 1U;
       case 1:
         return 2U;
-      
+
     }
   } else {
     $t = get_unboxed_ordinal($v);
     switch ($t) {
       case 0:
         return 0U;
-      
+
     }
   }
 }
@@ -283,7 +335,7 @@ void print_Coq_Init_Datatypes_nat(value $v)
       print_Coq_Init_Datatypes_nat(*((value *) $args + 0));
       printf(rparen_lit);
       break;
-    
+
   }
 }
 
@@ -312,7 +364,28 @@ void print_Coq_Numbers_BinNums_positive(value $v)
     case 2:
       printf(*(names_of_Coq_Numbers_BinNums_positive + $tag));
       break;
-    
+
+  }
+}
+
+void print_Coq_Numbers_BinNums_N(value $v)
+{
+  register unsigned int $tag;
+  register void *$args;
+  $tag = get_Coq_Numbers_BinNums_N_tag($v);
+  switch ($tag) {
+    case 0:
+      printf(*(names_of_Coq_Numbers_BinNums_N + $tag));
+      break;
+    case 1:
+      $args = get_args($v);
+      printf(lparen_lit);
+      printf(*(names_of_Coq_Numbers_BinNums_N + $tag));
+      printf(space_lit);
+      print_Coq_Numbers_BinNums_positive(*((value *) $args + 0));
+      printf(rparen_lit);
+      break;
+
   }
 }
 
@@ -341,7 +414,7 @@ void print_Coq_Numbers_BinNums_Z(value $v)
       print_Coq_Numbers_BinNums_positive(*((value *) $args + 0));
       printf(rparen_lit);
       break;
-    
+
   }
 }
 

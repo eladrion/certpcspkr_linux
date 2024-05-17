@@ -3,9 +3,11 @@ certicoq_stdio.h
 certicoq_math.h
 kmod_alloc.*
 prim_int63.*
-locking_ffi.*
+locking_ffi*
 nat_ffi.*
-regio_ffi.*
+regio_ffi_*
+arith_ffi_*
+bitwise_ffi_*
 z_ffi.*
 coq_types_*
 prims_*
@@ -18,6 +20,7 @@ values.h
 pcspkr_evt_linux.*
 glue.*
 int6x_nat.*
+int6x_pos.*
 int6x_z.*
 int64.*
 *.o

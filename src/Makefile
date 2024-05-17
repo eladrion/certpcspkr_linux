@@ -1,30 +1,45 @@
+MOD_DIR = $(PWD)/..
 
-PRIMS_PATH=../prims
-IFACE_PATH=../iface
-SYNTH_PATH=../synthesised
+# Set the source directories
+PRIMS_PATH=$(MOD_DIR)/prims
+IFACE_PATH=$(MOD_DIR)/iface
+SYNTH_PATH=$(MOD_DIR)/synthesised
 
-CQ_RUNTIME_PATH=$(CERTICOQ_PATH)/plugin/runtime
-VERIFFI_C_PATH =$(VERIFFI_PATH)/c
+# Set the include path
+INC_PATH = $(MOD_DIR)/include
 
-# Missing return type is no error but still warn
+# Set the default CertiCoq path if not set and set the runtime path
+CERTICOQ_PATH   ?= ../../CertiCoq_kmod
+CQ_RUNTIME_PATH  = $(realpath $(CERTICOQ_PATH))/plugin/runtime
+
+# Set the default VeriFFI path if not set and set the runtime path
+VERIFFI_PATH    ?= ../../VeriFFI_contrib/
+VERIFFI_C_PATH   = $(realpath $(VERIFFI_PATH))/c
+
+# Configure Warnings and Errors
+## Missing return type is no error but still warn
 CQ_NO_WARN_ERRORS    = -Wno-error=return-type
-# Do not warn on unused variables
+## Do not warn on unused variables and declaration after statement
 CQ_IGNORED_WARNINGS  = -Wno-unused-variable
 CQ_IGNORED_WARNINGS += -Wno-declaration-after-statement
 #CQ_IGNORED_WARNINGS += -Wno-return-type
 #CQ_IGNORED_WARNINGS += -Wno-int-conversion
 #CQ_IGNORED_WARNINGS += -Wno-incompatible-pointer-types
 
+# Set defines for compilation
+## Set CLIGHT_KERNEL_CODE to make sure that the GC function printtree is not evaluated
 CERTICOQ_DEFINES  = -D CLIGHT_KERNEL_CODE=1
+## Activate kernel log debug printings in CertiCoq code.
 CERTICOQ_DEFINES += -D CERTICOQ_TRACE=1
-CERTICOQ_INCLUDES = -I$(PWD)
+## And set the includes
+CERTICOQ_INCLUDES = -I$(INC_PATH)/iface -I$(INC_PATH)/dri -I$(INC_PATH)/generated -I$(INC_PATH)/contrib
 
-# Set CLIGHT_KERNEL_CODE to make sure that the GC function printtree is not evaluated
+# Set oprimisation and warnings as compile flags
 EXTRA_CFLAGS  = -O2 $(CQ_NO_WARN_ERRORS) $(CQ_IGNORED_WARNINGS)
-EXTRA_CFLAGS += $(CERTICOQ_DEFINES)
+# Set defines and includes
+EXTRA_CFLAGS += $(CERTICOQ_DEFINES) $(CERTICOQ_INCLUDES)
 # Add -fomit-framepointer since this is encouraged by CertiCoq documentation (But it does work without)
 #EXTRA_CFLAGS +=-fomit-frame-pointer
-EXTRA_CFLAGS += $(CERTICOQ_INCLUDES)
 
 default: all
 
@@ -62,43 +77,21 @@ certpcspkr-objs := certpcspkr_mod.o $(SYNTHESISED_OBJS) $(CERTICOQ_OBJS) $(CERTI
 
 copy:
 	# copy the CertiCoq runtime files
-	cp $(CQ_RUNTIME_PATH)/certicoq_stdint.h ./
-	cp $(CQ_RUNTIME_PATH)/certicoq_stdio.h ./
-	cp $(CQ_RUNTIME_PATH)/certicoq_math.h ./
 	cp $(CQ_RUNTIME_PATH)/kmod_gc_stack.c ./gc_stack.c
-	cp $(CQ_RUNTIME_PATH)/kmod_gc_stack.h ./gc_stack.h
 	cp $(CQ_RUNTIME_PATH)/kmod_alloc.c ./
-	cp $(CQ_RUNTIME_PATH)/kmod_alloc.h ./
 	cp $(CQ_RUNTIME_PATH)/prim_int63.c ./
-	cp $(CQ_RUNTIME_PATH)/prim_int63.h ./
-	cp $(CQ_RUNTIME_PATH)/m.h ./
-	cp $(CQ_RUNTIME_PATH)/values.h ./
-	cp $(CQ_RUNTIME_PATH)/config.h ./
 	# Copy the VeriFFI files
 	cp $(VERIFFI_C_PATH)/int6x_nat.c ./
-	cp $(VERIFFI_C_PATH)/int6x_nat.h ./
 	cp $(VERIFFI_C_PATH)/int6x_pos.c ./
-	cp $(VERIFFI_C_PATH)/int6x_pos.h ./
 	cp $(VERIFFI_C_PATH)/int6x_z.c ./
-	cp $(VERIFFI_C_PATH)/int6x_z.h ./
 	cp $(VERIFFI_C_PATH)/int64.c ./
-	cp $(VERIFFI_C_PATH)/int64.h ./
 	# Copy the coq->plain C interface files
 	cp $(IFACE_PATH)/locking_ffi_nat.c ./
-	cp $(IFACE_PATH)/locking_ffi.h ./
 	cp $(IFACE_PATH)/arith_ffi_nat.c ./
-	cp $(IFACE_PATH)/arith_ffi.h ./
 	cp $(IFACE_PATH)/bitwise_ffi_nat.c ./
-	cp $(IFACE_PATH)/bitwise_ffi.h ./
 	cp $(IFACE_PATH)/regio_ffi_nat.c ./
-	cp $(IFACE_PATH)/regio_ffi.h ./
 	cp $(IFACE_PATH)/z_ffi.c ./
-	cp $(IFACE_PATH)/z_ffi.h ./
-	# Copy the synthesised code.
-#	cp $(SYNTH_PATH)/glue.c ./
-	cp $(SYNTH_PATH)/glue.h ./
-#	cp $(SYNTH_PATH)/pcspkr_evt_linux.c ./
-	cp $(SYNTH_PATH)/pcspkr_evt_linux.h ./
+	make -C $(PWD)/../include/contrib CQ_RUNTIME_PATH=$(CQ_RUNTIME_PATH) VERIFFI_C_PATH=$(VERIFFI_C_PATH) copy
 
 copy_synthesised:
 	cp $(SYNTH_PATH)/glue.c ./
@@ -117,15 +110,9 @@ with_compcert : manipulate $(COMPCERT_OBJS) $(COMPCERT_OBJS_CMD)
 
 clean:
 	# Delete the CertiCoq runtime files.
-	rm -f ./certicoq_stdint.h
-	rm -f ./certicoq_stdio.h
-	rm -f ./certicoq_math.h
 	rm -f ./gc_stack.*
 	rm -f ./kmod_alloc.*
 	rm -f ./prim_int63.*
-	rm -f ./m.h
-	rm -f ./values.h
-	rm -f ./config.h
 	# Delete the VeriFFI files
 	rm -f ./int6x_nat.*
 	rm -f ./int6x_pos.*
@@ -139,9 +126,8 @@ clean:
 	rm -f ./z_ffi.*
 	# Delete the synthesised code.
 	rm -f ./glue.c
-	rm -f ./glue.h
 	rm -f ./glue.o*
 	rm -f ./pcspkr_evt_linux.c
-	rm -f ./pcspkr_evt_linux.h
 	rm -f ./pcspkr_evt_linux.o*
+	make -C $(PWD)/../include/contrib clean
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" clean

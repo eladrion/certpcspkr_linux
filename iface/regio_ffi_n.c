@@ -56,5 +56,5 @@ value out8_p(struct thread_info *tinfo, value coq_reg_val, value coq_reg_id)
 
   // Call out8_p and return 0%Z
   do_out8_p(reg_val, reg_id);
-  return uint64_to_Z(tinfo, 0);
+  return int64_to_Z(tinfo, 0);
 }

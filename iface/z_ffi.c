@@ -8,7 +8,7 @@
 #include <z_ffi.h>
 // Needed for int64_from_Z
 #include <int6x_z.h>
-// Needed for int64_to_nat
+// Needed for uint64_to_nat
 #include <int6x_nat.h>
 // Include the tracing functionality.
 #include <certicoq_stdio.h>
@@ -41,6 +41,13 @@ value z_val_in_freq_interval(value x)
 }
 
 value compute_duration(struct thread_info *tinfo, value x)
+{
+  uint64_t ret_val = pit_tick_rate() / int64_from_Z(x);
+
+  return int64_to_Z(tinfo, ret_val);
+}
+
+value compute_duration_nat(struct thread_info *tinfo, value x)
 {
   uint64_t ret_val = pit_tick_rate() / int64_from_Z(x);
 

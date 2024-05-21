@@ -3,7 +3,26 @@
 This directory includes the synthesised implementation of the PC Speaker driver and the glue code generated
 by [CertiCoq](https://github.com/CertiCoq/certicoq).
 
-The following commands were used for the synthesis:
+There are different variants being synthesised from the formalisation.
+In all cases, the glue code to interface C and Coq was generated using
+
+```
+CertiCoq Generate Glue -build_dir "Synthesised/Platform/Pcspkr/"  -file "glue_all" [ nat, N, Z, bool].
+```
+
+to make sure that all primitives can be used.
+
+More important, there are 3 variants of the generated driver code.
+The first (`pcspkr_evt_linux_nat.c`) uses the Coq type `nat` as type for unsigned
+integer values while `pcspkr_evt_linux_n.c` and `pcspkr_evt_linux_n_minprims.c`
+use the binary Coq datatype `N`.
+Additionally, `pcspkr_evt_linux_n_minprims.c` uses only the really necessary
+primitives for register IO and locking. while `pcspkr_evt_linux_n.c` additionally
+uses primitives for division, shift operations and bitwise and/or.
+Also, there is a variant of `pcspkr_evt_linux_nat.c` that includes operations
+on big values of `nat` which will make the system freeze due to a stack overflow.
+
+The following commands were used for the generation of `pcspkr_evt_linux_nat.c`:
 
 ```
 From CertiCoq.Plugin Require Import Loader.
@@ -11,49 +30,76 @@ From CertiCoq.Plugin Require Import Loader.
 From Coq Require Import ZArith.BinInt.
 
 (* Register the register IO primitives to use for the Kernel module. *)
-CertiCoq Register [Register_io.in8          => "in8" with tinfo,
-                   Register_io.in8_p        => "in8_p" with tinfo,
-                   Register_io.out8         => "out8" with tinfo,
-                   Register_io.out8_p       => "out8_p" with tinfo]
+CertiCoq Register [Register_io.Nat.in8          => "in8" with tinfo,
+                   Register_io.Nat.in8_p        => "in8_p" with tinfo,
+                   Register_io.Nat.out8         => "out8" with tinfo,
+                   Register_io.Nat.out8_p       => "out8_p" with tinfo]
          Include ["regio_ffi.h"].
+
 
 (* Register the locking primitives to use for the Kernel module. *)
 CertiCoq Register [Pcspkr_linux.linux_lock  => "spinlock" with tinfo]
          Include ["locking_ffi.h"].
 
+
 (* Register the duration and frequency primitives to use for the Kernel module. *)
-CertiCoq Register [Val_range.is_valid_value           => "z_val_in_freq_interval",
-                   Count.Primitive.compute_duration   => "compute_duration" with tinfo]
+CertiCoq Register [Count_prim.Nat.compute_duration_nat   => "compute_duration_nat" with tinfo]
          Include ["z_ffi.h"].
 
 (* Register the primitives on nat to use for the Kernel module. *)
-CertiCoq Register [Nat.div                  => "nat_div" with tinfo,
-                   Nat.div2                 => "nat_div2" with tinfo,
-                   Nat.land                 => "nat_land" with tinfo,
-                   Nat.lor                  => "nat_lor" with tinfo,
-                   Nat.shiftr               => "nat_shiftr" with tinfo,
-                   Nat.shiftl               => "nat_shiftl" with tinfo]
-         Include ["nat_ffi.h"].
+CertiCoq Register [Nat.div                  => "div" with tinfo,
+                   Nat.div2                 => "div2" with tinfo]
+         Include ["arith_ffi.h"].
+
+(* Register the primitives on nat to use for the Kernel module. *)
+CertiCoq Register [Nat.land                 => "land" with tinfo,
+                   Nat.lor                  => "lor" with tinfo,
+                   Nat.shiftr               => "shiftr" with tinfo,
+                   Nat.shiftl               => "shiftl" with tinfo]
+         Include ["bitwise_ffi.h"].
 
 (* Compile the driver itself. *)
-CertiCoq Compile -build_dir "Synthesised/Platform/Pcspkr/" -file "pcspkr_evt_linux" pcspkr_evt_linux.
+CertiCoq Compile -build_dir "Synthesised/Platform/Pcspkr/" -file "pcspkr_evt_linux" Nat.pcspkr_evt_opt_prim.
 
-(* Generate the glue code. *)
-CertiCoq Generate Glue -build_dir "Synthesised/Platform/Pcspkr/"  -file "glue" [ nat, Z, bool].
+```
+
+The following commands were used for the generation of `pcspkr_evt_linux_n_minprims.c`:
+
+```
+(* Register the register IO primitives to use for the Kernel module. *)
+CertiCoq Register [Register_io.N.in8          => "in8" with tinfo,
+                   Register_io.N.in8_p        => "in8_p" with tinfo,
+                   Register_io.N.out8         => "out8" with tinfo]
+         Include ["regio_ffi.h"].
+
+(* Register the locking primitives to use for the Kernel module. *)
+CertiCoq Register [Pcspkr_linux.linux_lock  => "spinlock" with tinfo]
+         Include ["locking_ffi.h"].
+```
+
+The following commands were additionally used for the generation of `pcspkr_evt_linux_n.c`:
+
+```
+(* Register the primitives on N to use for the Kernel module. *)
+CertiCoq Register [N.div                  => "div" with tinfo,
+                   N.div2                 => "div2" with tinfo]
+         Include ["arith_ffi.h"].
+
+(* Register the primitives on N to use for the Kernel module. *)
+CertiCoq Register [N.land                 => "land" with tinfo,
+                   N.lor                  => "lor" with tinfo,
+                   N.shiftr               => "shiftr" with tinfo,
+                   N.shiftl               => "shiftl" with tinfo]
+         Include ["bitwise_ffi.h"].
 ```
 
 As can be seen there are many primitives being used. Most of them are used for performance reasons.
-The use of primitives for the functions `in8`, `out8`, `in8_p`, `out8_p` and `linux_lock` are strictly
+The use of primitives for the functions `in8`, `out8`, `in8_p` and `linux_lock` are strictly
 necessary since the functions are axiomatic in the formalisation.
 This again is necessary since the implementation of register writes and reads and also spinlocking are
 internal functionalities of Linux.
-However, a formalisation of `out8_p` exists but is omitted for performance reasons.
-
-Additionally to generating the PC Speaker event handler, glue code for communication between the
-synthesised and plain C code is synthesised (`CertiCoq Generate Glue`).
-The synthesis is here restricted to the strictly necessary data types, i.e. `nat` for the
-event `type` and the `mode` (either Bell or Tone), `Z` for the frequency `val` and `bool` for the use
-of `is_valid_value` as primitive.
+However, since a formalisation of `out8_p` exists, it is used in the `minprims`
+variant. The ordinary generation for `N` uses a mapping `Register_io.N.out8_p => "out8_p" with tinfo` for performance reasons.
 
 Only the glue code (glue.c and glue.h) was modified:
 

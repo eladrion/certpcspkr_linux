@@ -8,8 +8,14 @@
 
 // Used for call
 #include "glue.h"
+
+#ifdef SYN_USE_NAT_FOR_UINT
 // Used for int64_to_nat/int64_from_nat
 #include "int6x_nat.h"
+#else
+// Used for int64_to_n/int64_from_n
+#include "int6x_n.h"
+#endif
 // Used for int64_to_z/int64_from_z
 #include "int6x_z.h"
 // Obviously for printing
@@ -36,7 +42,7 @@ typedef enum { Z0, ZPOS, ZNEG } tag_Z;
 /*
  * This function handles the event triggered by the kernel.
  * Apart from many log messages, the function transforms the given
- * parameters to Coq types (nat and Z), initialises the closure
+ * parameters to Coq types (nat/N and Z), initialises the closure
  * and calls it by feeding the transformed parameters to it.
  */
 int handle_evt(struct thread_info* ti, unsigned int type, unsigned int code, int val)
@@ -52,13 +58,23 @@ int handle_evt(struct thread_info* ti, unsigned int type, unsigned int code, int
   //print_heapsize(ti);
 
   // Transform C values into Coq values
+  #ifdef SYN_USE_NAT_FOR_UINT
   value type_coq = int64_to_nat(ti, type);
   value code_coq = int64_to_nat(ti, code);
+  #else
+  value type_coq = uint64_to_N(ti, type);
+  value code_coq = uint64_to_N(ti, code);
+  #endif
   value val_coq  = int64_to_Z(ti, val);
 
   // Check whether transforming the Coq types back to C types yields the original values
+  #ifdef SYN_USE_NAT_FOR_UINT
   printk(KERN_INFO "[certcspkr]: int64_from_nat(int64_to_nat(type)) = %llu, expected %d\n", (unsigned long long)int64_from_nat(type_coq), type);
   printk(KERN_INFO "[certcspkr]: int64_from_nat(int64_to_nat(code)) = %llu, expected %d\n", (unsigned long long)int64_from_nat(code_coq), code);
+  #else
+  printk(KERN_INFO "[certcspkr]: uint64_from_N(uint64_to_N(type)) = %llu, expected %d\n", (unsigned long long)uint64_from_N(type_coq), type);
+  printk(KERN_INFO "[certcspkr]: uint64_from_N(uint64_to_N(code)) = %llu, expected %d\n", (unsigned long long)uint64_from_N(code_coq), code);
+  #endif
   printk(KERN_INFO "[certcspkr]: int64_from_Z(int64_to_Z(val))      = %lld, expected %d\n", (long long)int64_from_Z(val_coq), val);
 
 

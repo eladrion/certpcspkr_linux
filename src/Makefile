@@ -1,10 +1,10 @@
 MOD_DIR = $(PWD)/..
 
+
 # Set mode N with minimal primitives by default
 COMP_MODE ?=n_minprims
 
 # Set the source directories
-PRIMS_PATH=$(MOD_DIR)/prims
 IFACE_PATH=$(MOD_DIR)/iface
 SYNTH_PATH=$(MOD_DIR)/synthesised
 
@@ -38,6 +38,11 @@ ifeq ($(COMP_MODE),nat) # Use nat type
 CERTICOQ_DEFINES += -D SYN_USE_NAT_FOR_UINT=1
 endif
 
+## Add benchmarking code if desired.
+ifneq ($(BENCHMARK),)
+CERTICOQ_DEFINES += -D DO_BENCHMARK=1
+endif
+
 ## Activate kernel log debug printings in CertiCoq code.
 CERTICOQ_DEFINES += -D CERTICOQ_TRACE=1
 ## And set the includes
@@ -54,19 +59,30 @@ default: all
 
 .PHONY: default copy manipulate all clean with_compcert
 
-%.o_shipped : ../synthesised/%.c
-	ccomp -c -o $@ $(CERTICOQ_DEFINES) $(CERTICOQ_INCLUDES) $<
+vpath %.c $(SYNTH_PATH) $(CQ_RUNTIME_PATH)
+
+%.o_shipped : %.c
+	@echo "  Compiling $< to $@ with CompCert"
+	@ccomp -c -o $@ $(CERTICOQ_DEFINES) $(CERTICOQ_INCLUDES) $<
 
 %.o_shipped.cmd : %.o_shipped
-	touch .$(basename $^).o.cmd
-	touch $@
+	@echo "  Generating .$@"
+	@touch .$(basename $^).o.cmd
+	@touch $@
 
 
 # Set the module object
 obj-m += certpcspkr.o
 
 # Objects from synthesised code
-SYNTHESISED_OBJS   := pcspkr_evt_linux.o glue.o
+SYNTHESISED_OBJS   := glue.o
+ifeq ($(COMP_MODE),nat) # Use nat type
+SYNTHESISED_OBJS   += pcspkr_evt_linux_nat.o
+else ifeq ($(COMP_MODE),n) # Use N type
+SYNTHESISED_OBJS   += pcspkr_evt_linux_n.o
+else # Use N with minprims
+SYNTHESISED_OBJS   += pcspkr_evt_linux_n_minprims.o
+endif
 
 # Objects copied from CertiCoq
 CERTICOQ_OBJS      := gc_stack.o kmod_alloc.o
@@ -97,8 +113,18 @@ MODULE_IFACE_OBJS  := clight_iface.o
 # Objects implementing OS specific call redirections
 MODULE_OS_OBJS     := regio.o locking.o pit.o
 
-COMPCERT_OBJS      := pcspkr_evt_linux.o_shipped glue.o_shipped
-COMPCERT_OBJS_CMD  := pcspkr_evt_linux.o_shipped.cmd glue.o_shipped.cmd
+COMPCERT_OBJ_SRCNS := glue
+
+ifeq ($(COMP_MODE),nat) # Use nat type
+COMPCERT_OBJ_SRCNS += pcspkr_evt_linux_nat
+else ifeq ($(COMP_MODE),n) # Use N type
+COMPCERT_OBJ_SRCNS += pcspkr_evt_linux_n
+else # Use N with minprims
+COMPCERT_OBJ_SRCNS += pcspkr_evt_linux_n_minprims
+endif
+
+COMPCERT_OBJS      := $(addsuffix .o_shipped,$(COMPCERT_OBJ_SRCNS))
+COMPCERT_OBJS_CMD  := $(addsuffix .cmd,$(COMPCERT_OBJS))
 
 # Set the module object components
 certpcspkr-objs := certpcspkr_mod.o $(SYNTHESISED_OBJS) $(CERTICOQ_OBJS) $(CERTICOQ_FFI_OBJS) $(PRIMS_OBJS) $(MODULE_IFACE_OBJS) $(MODULE_OS_OBJS)
@@ -159,11 +185,11 @@ copy_synthesised:
 	@cp $(SYNTH_PATH)/glue.c ./
 # Copy the synthesised functionality depending on the mode.
 ifeq ($(COMP_MODE),nat) # Use nat type
-	@cp $(SYNTH_PATH)/pcspkr_evt_linux_nat.c ./pcspkr_evt_linux.c
+	@cp $(SYNTH_PATH)/pcspkr_evt_linux_nat.c ./
 else ifeq ($(COMP_MODE),n) # Use N type
-	@cp $(SYNTH_PATH)/pcspkr_evt_linux_n.c ./pcspkr_evt_linux.c
+	@cp $(SYNTH_PATH)/pcspkr_evt_linux_n.c ./
 else # Use N with minprims
-	@cp $(SYNTH_PATH)/pcspkr_evt_linux_n_minprims.c ./pcspkr_evt_linux.c
+	@cp $(SYNTH_PATH)/pcspkr_evt_linux_n_minprims.c ./
 endif
 
 # Manipulate the files, i.e. make sure that the unused includes which break compilation are commented out.
@@ -175,6 +201,13 @@ all: manipulate copy_synthesised
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" CONFIG_FUNCTION_TRACER= modules
 
 with_compcert : manipulate $(COMPCERT_OBJS) $(COMPCERT_OBJS_CMD)
+ifeq ($(COMP_MODE),nat) # Use nat type
+	@rm -f ./pcspkr_evt_linux_nat.c
+else ifeq ($(COMP_MODE),n) # Use N type
+	@rm -f ./pcspkr_evt_linux_n.c
+else # Use N with minprims
+	@rm -f ./pcspkr_evt_linux_n_minprims.c
+endif
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" CONFIG_FUNCTION_TRACER= modules
 
 clean:
@@ -201,7 +234,8 @@ clean:
 	@echo "Deleting copied synthesised code"
 	@rm -f ./glue.c
 	@rm -f ./glue.o*
-	@rm -f ./pcspkr_evt_linux.c
+	@rm -f ./pcspkr_evt_linux*.c
 	@rm -f ./pcspkr_evt_linux.o*
+	@rm -f ./*.o_shipped*
 	@make -C $(PWD)/../include/contrib clean
 	make -C /lib/modules/$(shell uname -r)/build M="$(PWD)" clean

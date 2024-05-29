@@ -93,7 +93,7 @@ CertiCoq Register [N.land                 => "land" with tinfo,
          Include ["bitwise_ffi.h"].
 ```
 
-As can be seen there are many primitives being used. Most of them are used for performance reasons.
+As can be seen there are many primitives being used depending on the variant. Most of them are used for performance reasons.
 The use of primitives for the functions `in8`, `out8`, `in8_p` and `linux_lock` are strictly
 necessary since the functions are axiomatic in the formalisation.
 This again is necessary since the implementation of register writes and reads and also spinlocking are
